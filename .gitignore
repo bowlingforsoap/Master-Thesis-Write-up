@@ -1,3 +1,15 @@
 /build/*
 !/build/main.pdf
 /logos/*.pdf
+main.toc
+main.synctex.gz
+main.run.xml
+main.pdf
+main.out
+main.lot
+main.log
+main.lof
+main.bcf
+main.aux
+main.blg
+main.bbl
