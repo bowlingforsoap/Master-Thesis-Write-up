@@ -1,0 +1,160 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Introduction}\label{chapter:introduction}
+\section{Motivation: Virtual Reality (VR) is a great enhancement for creative thinking tool-set in architecture.}
+
+\section{Problem Description:  VR applications imply certain design consideration to avoid cybersickness and communications are limited}
+\ldots according to (Churchill 1998[see Greenwald research]), but we still need to communicate the intentions of collaborators in some way.
+
+\section{Hypothesis}
+
+
+\chapter{Literature Review}
+\section{Creative Thinking in Architecture: Explore what actions/interactions architects perform during this process} % Maybe General to Specific would be my repetetive structure?
+Process Analysis: The main goal of Creative Thinking in Architecture. Tasks that can be solved utilizing the creative thinking process. The steps used in the creative thinking process. Common actions/interactions for different tasks at each step.
+
+\section{Human-Computer Interaction (HCI) and Evaluation: Research in what way are the new HCI systems are validated/evaluated}
+\subsection{HCI: The goals of the HCI field. Different sub-domains of HCI (psychology, computer science). Examples of specific types of interactions HCI deals with: VR, AR, etc.}
+\subsection{Solution validation/evaluation in HCI: methods, and principles.}
+
+\section{Collaborative Virtual Environments: Find out what we are going to start building our implementation upon}
+\subsection{Virtual Reality status quo: Virtual Reality development (and state-of-art). Advantages and Limitations.  Design obligations when developing VR applications. }
+
+\subsection{Interactions in Virtual Environments}
+\subsection{Collaborative Virtual Environments (CVEs) status quo: Development of CVEs from Churchill (1998) to Greenwald (2017). CVE design considerations (HCI aspect) and the state of art.}
+\subsection{Implementation approaches: Networking and VR (Maybe, more appropriate in Design and Implementation)}
+a. Networking: Overview of the ways to connect apps for real-time, low latencey communication
+b. VR: Overview and comparison of existing platforms for creating VR experiences
+
+
+\begin{comment}
+Methodology: approach to solving the problem; chosen HCI methodology for the final evaluation - no idea
+a. Chosen HCI evaluation methodology
+\end{comment}
+
+
+\chapter{Concept: Show how exactly and what we are going to approach}
+\section{Target Group: target audience that the experience would be tunned to; the needs and requirements of this target audience.}
+
+\section{Describe system components: Networking, PCs, Head-Mounted Displays, User Locality}
+
+\section{Target Actions: Actions that we are going to implement; Scenarios for and applications of these actions}
+
+\section{Explain how we are going to solve miscommunication problems in Collaborative Virtual Reality Environment}
+
+\section{Evaluation HCI Methodology: The way we are going to collect data and analyze the results.}
+
+
+\chapter{Design and Implementation}
+\section{Networking: Approach to establish real-time, low-latency communication between two VR headsets; framework for transferring actions over the network}
+
+\section{Interactions: Design and implementation of machine-agnostic interactions, which are broadcasted to users (local and remote) for processing}
+
+\section{Show how the previous two points come together}
+
+
+\chapter{Evaluation of Collaboration experience}
+\section{Evaluation test: documentation on the developed test structure}
+
+\section{Evaluation Results: un-biased results of the tests}
+
+
+\chapter{Conclusions}
+\section{A discussion of the analytical results and implications of these}
+
+\section{A discussion of limitations and perspectives}
+
+
+\chapter{Summary}
+\section{Describe what was researched}
+
+\section{Describe the tools used}
+
+\section{Describe evaluation process}
+
+\section{Address the results and conclusions}
+
+
+\begin{comment}
+See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
+
+\begin{table}[htpb]
+  \caption[Example table]{An example for a simple table.}\label{tab:sample}
+  \centering
+  \begin{tabular}{l l l l}
+    \toprule
+      A & B & C & D \\
+    \midrule
+      1 & 2 & 1 & 2 \\
+      2 & 3 & 2 & 3 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{figure}[htpb]
+  \centering
+  % This should probably go into a file in figures/
+  \begin{tikzpicture}[node distance=3cm]
+    \node (R0) {$R_1$};
+    \node (R1) [right of=R0] {$R_2$};
+    \node (R2) [below of=R1] {$R_4$};
+    \node (R3) [below of=R0] {$R_3$};
+    \node (R4) [right of=R1] {$R_5$};
+
+    \path[every node]
+      (R0) edge (R1)
+      (R0) edge (R3)
+      (R3) edge (R2)
+      (R2) edge (R1)
+      (R1) edge (R4);
+  \end{tikzpicture}
+  \caption[Example drawing]{An example for a simple drawing.}\label{fig:sample-drawing}
+\end{figure}
+
+\begin{figure}[htpb]
+  \centering
+
+  \pgfplotstableset{col sep=&, row sep=\\}
+  % This should probably go into a file in data/
+  \pgfplotstableread{
+    a & b    \\
+    1 & 1000 \\
+    2 & 1500 \\
+    3 & 1600 \\
+  }\exampleA
+  \pgfplotstableread{
+    a & b    \\
+    1 & 1200 \\
+    2 & 800 \\
+    3 & 1400 \\
+  }\exampleB
+  % This should probably go into a file in figures/
+  \begin{tikzpicture}
+    \begin{axis}[
+        ymin=0,
+        legend style={legend pos=south east},
+        grid,
+        thick,
+        ylabel=Y,
+        xlabel=X
+      ]
+      \addplot table[x=a, y=b]{\exampleA};
+      \addlegendentry{Example A};
+      \addplot table[x=a, y=b]{\exampleB};
+      \addlegendentry{Example B};
+    \end{axis}
+  \end{tikzpicture}
+  \caption[Example plot]{An example for a simple plot.}\label{fig:sample-plot}
+\end{figure}
+
+\begin{figure}[htpb]
+  \centering
+  \begin{tabular}{c}
+  \begin{lstlisting}[language=SQL]
+    SELECT * FROM tbl WHERE tbl.str = "str"
+  \end{lstlisting}
+  \end{tabular}
+  \caption[Example listing]{An example for a source code listing.}\label{fig:sample-listing}
+\end{figure}
+\end{comment}
