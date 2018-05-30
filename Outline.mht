@@ -1,0 +1,240 @@
+MIME-Version: 1.0
+Content-Location: file:///C:/B177B225/Outline.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<html xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:dt=3D"uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<meta name=3DProgId content=3DOneNote.File>
+<meta name=3DGenerator content=3D"Microsoft OneNote 15">
+<link id=3DMain-File rel=3DMain-File href=3DOutline.htm>
+<link rel=3DFile-List href=3D"Outline_files/filelist.xml">
+</head>
+
+<body lang=3Den-US style=3D'font-family:Calibri;font-size:11.0pt'>
+
+<div style=3D'direction:ltr;border-width:100%'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:0in;width:7.6041in'>
+
+<div style=3D'direction:ltr;margin-top:0in;margin-left:0in;width:1.3479in'>
+
+<p style=3D'margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Outlin=
+e</p>
+
+</div>
+
+<div style=3D'direction:ltr;margin-top:.0444in;margin-left:0in;width:2.2402=
+in'>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>=
+Wednesday,
+May 30, 2018</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>=
+10:59</p>
+
+</div>
+
+<div style=3D'direction:ltr;margin-top:.4361in;margin-left:0in;width:7.6041=
+in'>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>1
+Introduction</h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>1.1 Motivation:
+Teamwork is important. Creative thinking implies generation of ideas,
+collaboration, and communication. Virtual Reality (VR) is a great enhanceme=
+nt
+for creative thinking tool-set in architecture.</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>1.2 Problem
+Description: A lot of different unexpected things can happen during a VR
+collaboration experience. Users must have better situational awareness, so =
+that
+the system doesn't hinder their performance (here might be Gerchards quote)=
+.</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>1.3 Hypothesis:
+Situational awareness can be increase by taking advantage of multisensory
+processing.</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>2
+Literature Review </h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.1 Creative
+Thinking in Architecture: Explore what actions/interactions architects perf=
+orm
+during this process</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.2 Human-Comp=
+uter
+Interaction (HCI) and Evaluation: Research in what way are the new HCI syst=
+ems
+are validated/evaluated</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.2.1 HCI: The=
+ goals
+of the HCI field. Different sub-domains of HCI (psychology, computer scienc=
+e).
+Examples of specific types of interactions HCI deals with: VR, AR, etc</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.2.2 Solution
+validation/evaluation in HCI: methods, and principles</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.3 Collaborat=
+ive
+Virtual Environments: Find out what we are going to start building our
+implementation upon </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.3.1 Virtual
+Reality status quo: Virtual Reality development (and stateof-art). Advantag=
+es
+and Limitations. Design obligations when developing VR applications</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.3.2 Interact=
+ions
+in Virtual Environments</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.3.3 Collabor=
+ative
+Virtual Environments (CVEs): status quo, Development of CVEs from Churchill
+(1998) to Greenwald (2017). CVE design considerations (HCI aspect) and the
+state of art</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>2.3.4 Implemen=
+tation
+approaches: Networking and VR (Maybe, more appropriate in Design and
+Implementation) </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>3
+Concept: What are we going to do</h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>3.1 Target Gro=
+up:
+target audience that the experience would be tunned to; the needs and
+requirements of this target audience</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>3.2 Describe s=
+ystem
+components: Networking, PCs, Head-Mounted Displays, User Locality </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>3.3 Target Act=
+ions:
+Actions that we are going to implement; Scenarios for and applications of t=
+hese
+actions</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>3.4 Explain ho=
+w we
+are going to solve miscommunication problems in Collaborative Virtual Reali=
+ty
+Environment </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>3.5 Evaluation=
+ HCI
+Methodology: The way we are going to collect data and analyze the results</=
+p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>4
+Design and Implementation: How are we going to do it </h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>4.1 Networking:
+Approach to establish real-time, low-latency communication between two VR
+headsets; framework for transferring actions over the network </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>4.2 Interactio=
+ns:
+Design and implementation of machine-agnostic interactions, which are
+broadcasted to users (local and remote) for processing</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>4.3 Show how t=
+he
+previous two points come together </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>5
+Evaluation of Collaboration experience</h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>5.1 Evaluation=
+ test:
+documentation on the developed test structure</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>5.2 Evaluation
+Results: un-biased results of the tests </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>6
+Conclusion</h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>6.1 A discussi=
+on of
+the analytical results and implications of these</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>6.2 A discussi=
+on of
+limitations and perspectives</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>7
+Summary </h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>7.1 Describe w=
+hat
+was researched </p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>7.2 Describe t=
+he
+tools used</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>7.3 Describe
+evaluation process</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>7.4 Address the
+results and conclusions</p>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<h1 style=3D'margin:0in;font-family:Calibri;font-size:16.0pt;color:#1E4E79'=
+>References</h1>
+
+<p style=3D'margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style=3D'margin:0in'>&nbsp;</p>
+
+<p style=3D'text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>
