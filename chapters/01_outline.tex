@@ -1,82 +1,55 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\chapter{Introduction}\label{chapter:introduction}
-\section{Motivation: Teamwork is important. Creative thinking implies generation of ideas, collaboration, and communication. Virtual Reality (VR) is a great enhancement for creative thinking tool-set in architecture.}
-
-\section{Problem Description: A lot of different unexpected things can happen during a VR collaboration experience. Users must have better situational awareness, so that the system doesn't hinder their performance (here might be Gerchards quote)}
-
-\section{Hypothesis: Situational awareness can be increase by taking advantage of multisensory processing.}
 
 
-\chapter{Literature Review}
-\section{Creative Thinking in Architecture: Explore what actions/interactions architects perform during this process} % Maybe General to Specific would be my repetetive structure?
-Process Analysis: The main goal of Creative Thinking in Architecture. Tasks that can be solved utilizing the creative thinking process. The steps used in the creative thinking process. Common actions/interactions for different tasks at each step.
 
-\section{Human-Computer Interaction (HCI) and Evaluation: Research in what way are the new HCI systems are validated/evaluated}
-\subsection{HCI: The goals of the HCI field. Different sub-domains of HCI (psychology, computer science). Examples of specific types of interactions HCI deals with: VR, AR, etc.}
-\subsection{Solution validation/evaluation in HCI: methods, and principles.}
+\chapter{Introduction}
+\chapter{Literature review}
+\section{Human Information Processing}
+\section{Workspace Awareness}
+\section{Sonification}
+\chapter{Concept}
+\chapter{Experiments}
+\section{Pilot studies}
+\section{Spatial sound judgment study}
+\section{Workspace awareness study}
+\chapter{Conclusions}
+\chapter{Summary}
 
-\section{Collaborative Virtual Environments: Find out what we are going to start building our implementation upon}
-\subsection{Virtual Reality status quo: Virtual Reality development (and state-of-art). Advantages and Limitations.  Design obligations when developing VR applications. }
-\subsection{Interactions in Virtual Environments}
-\subsection{Collaborative Virtual Environments (CVEs): status quo, Development of CVEs from Churchill (1998) to Greenwald (2017). CVE design considerations (HCI aspect) and the state of art.}
-\subsection{Implementation approaches: Networking and VR (Maybe, more appropriate in Design and Implementation)}
-a. Networking: Overview of the ways to connect apps for real-time, low latencey communication
-b. VR: Overview and comparison of existing platforms for creating VR experiences
+%TODO
+Acknowledgements 
+Bibliography
+
+In Introduction I will write about the main motivation for this work, which is extending the CDP with a collaborative immersive virtual reality component, and the main problems that come along with it, specifically, user awareness of each other's actions. Then I would state my initial hypothesis about the additional cues being able to make the experience more "comfortable".
+
+The Literature Review section of the thesis will investigate human information processing and mention that auditory cues are a great and underused tool, which could be used for signaling, monitoring, and so on [1]. Then I turn to the Situation Awareness (SA) in VR, and how it is a measure of a user being able to perceive, interpret, and project the things happening within the environment [2]. I will then state that situation awareness is has subfield called Workspace Awareness (WA), which deals exactly with the awareness users have of each other in groupware systems [3,4]. We will see that WA deals mainly with monitoring and secondary tasks, and how "comfortable experience" can be described in terms of WA framework. Last part of Literature Review section turns to the field of sonification to explore how it can help with monitoring activities, and the different types and properties of sound that could be unitized [5].
+
+Concept/Discussion. Here I will state the purpose of the project and explain how I am going to solve the problem of WA in the collaborative architectural environment. I will classify the system according to WA framework, and then state that we want to answer the what and where WA questions with auditory cues and (possibly visual cues in the form of a radar view). I will mention the research by Gutwin (2011) and say that I will try to adapt it to our use case. Then I will describe what is needed to do it (what we need to study, experiment with, etc.) and what is needed to get the answers to my research question - whether the additional auditory (and visual cues) help with WA.
+
+Experiments. This section will one by one introduce the experiments made in this research: introduction (with statement of purpose), assumptions (limitations), apparatus and process, results and discussion. Here we will have all pilots in 1 subsection, and all the proper experiments (sound spatial judgement and, possibly, WA study) will have their own subsection.
+
+In the Conclusions section I will aggregate the all findings and prior discussion to try and give an answer to the research question. I will mention the limitations of the conducted study. This section will end with a look into the future work.
+
+In Summary I will go over the whole work step by step, recall what has been done, mention the results of the experiments
 
 
+
+
+
+%---------------Reference commands and structires
+
+% \chapter{Introduction}\label{chapter:introduction}
+% \section{Motivation: Teamwork is important. Creative thinking implies generation of ideas, collaboration, and communication. Virtual Reality (VR) is a great enhancement for creative thinking tool-set in architecture.}
+%\subsection{Solution validation/evaluation in HCI: methods, and principles.}
 \begin{comment}
 Methodology: approach to solving the problem; chosen HCI methodology for the final evaluation - no idea
 a. Chosen HCI evaluation methodology
 \end{comment}
 
 
-\chapter{Concept: What are we going to do}
-\section{Target Group: target audience that the experience would be tunned to; the needs and requirements of this target audience.}
-
-\section{Describe system components: Networking, PCs, Head-Mounted Displays, User Locality}
-
-\section{Target Actions: Actions that we are going to implement; Scenarios for and applications of these actions}
-
-\section{Explain how we are going to solve miscommunication problems in Collaborative Virtual Reality Environment}
-
-\section{Evaluation HCI Methodology: The way we are going to collect data and analyze the results.}
-
-
-\chapter{Design and Implementation: How are we going to do it/What was done}
-\section{Networking: Approach to establish real-time, low-latency communication between two VR headsets; framework for transferring actions over the network}
-
-\section{Interactions: Design and implementation of machine-agnostic interactions, which are broadcasted to users (local and remote) for processing}
-
-\section{Show how the previous two points come together}
-
-
-\chapter{Evaluation of Collaboration experience}
-\section{Evaluation test: documentation on the developed test structure}
-
-\section{Evaluation Results: un-biased results of the tests}
-
-
-\chapter{Conclusions}
-\section{A discussion of the analytical results and implications of these}
-
-\section{A discussion of limitations and perspectives}
-
-
-\chapter{Summary}
-\section{Describe what was researched}
-
-\section{Describe the tools used}
-
-\section{Describe evaluation process}
-
-\section{Address the results and conclusions}
-
-
 \begin{comment}
 See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
-
 \begin{table}[htpb]
   \caption[Example table]{An example for a simple table.}\label{tab:sample}
   \centering
