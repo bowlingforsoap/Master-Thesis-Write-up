@@ -548,6 +548,10 @@ INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplb8
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT chapters/ehtics_WA_experiment.tex
 INPUT chapters/ehtics_WA_experiment.tex
+INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplbi9e.tfm
+INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplbi9e.vf
+INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/adobe/palatino/pplbi8r.tfm
+INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/public/mathpazo/fplmbi.tfm
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
@@ -590,5 +594,6 @@ INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/public/fpl/fplrc8a
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb
+INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 INPUT c:/Users/bowli/Apps/texlive/2016/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb
