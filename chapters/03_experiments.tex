@@ -7,26 +7,37 @@
 \subsection{Spatial Judgement}
 \section{Workspace Awareness in Immersive Virtual Reality}
 % Goal of the study
+The goal of this study was to analyze \gls{wa} that participants have of others present in the same immersive \gls{vr} environment. Participants were presented with a primary and secondary tasks. Primary task was tracing 3D models with a 3D brush, and secondary task was a \gls{wa} task - reporting changes to the environment.
 
 \paragraph{Methods}
+Aspects of \gls{wa} that were evaluated was participants’ reaction speed when provided with different types of awareness presentation (audio and/or visual cues from the environment).
 
-% Participants, Procedure, Task
+% Participants
+12 participants (8 men and 4 women) were recruited among friends, employees from the chair, and stduents from the \gls{tum}; ages ranged from 22 to 32 (mean .., std. ..). Only one participant reported having "partially" good hearing, others reported good hearing. 3 people reported to be familiar with \gls{vr} technology, among them, one person reported being a proficient gamer and one - having partaken in driving simulator studies. Participants were a mix of gamers, non-gamers, and casual gamers. Two reported being online gamers, and another two - occasional online gamers. Only one person had prior experience with architecture, and had worked in the field. None of the participants saw the system before, or took part in the trial studies.
 
-% Apparatus: Unity, Resonance Audio, Marshall Major II Stereo headphones, Vive
+% Procedure
+Participants were given a written and verbal introduction to the experiment,
+after which they signed were asked to sign the consent form for using their data.
+Next, participants went through the tutorial, where the 3D brush, laser pointer for pinpointing the buildings and auditory cues were introduced. Participants went through a small scenario resembling the actual experiment, where they were asked to trace a pillar, while catching a moving building, and keeping track of how the building sounds and where it is visually.
+During the actual experiment, each participant was tested in each of the 3 test groups.
+At the end of the experiment, participants were asked to fill in a self-report questionnaire.
+Participants did not rest between the different conditions. 
 
-% Study Factors and Conditions: what my factors are, conditions ?= independer variables' values
+% Task
+Participants were tasked with the scenario, in which there are 2 architects (A1 and A2), who perform their separate tasks in the same urban district in \gls{vr}. A1 (participant) has 2 tasks: primary and secondary. The primary task is to trace given 3D shapes with a 3D brush (a tracked 6-\gls{dof} controller). Meanwhile, A2 (simulated ivisible user) can translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 is to keep track of changes to the environment and pinpoint them with a virtual laser pointer (another tracked 6-\gls{dof} controller).
 
-% Experimental Design
-\cite{gutwin_chalk_2011}:
-* Awareness presentation was rotated for each participant, so that each presentation was seen in the same position an equal number of times
-* There were eight trials in each condition, meaning that there were 24 data points measured per user in each session
-* Only one dependent measurement was collected - reaction speed in determining the position of a moving \gls{vb}.
+% Apparatus: Unity, Resonance Audio, stereo headphones, Vive
+Experiment was implemented with the help of Unity3d, version  2018.1.5f1 and Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off. For the hardware, \gls{vr} headset and controllers from the HTC Vive were used, along with on-ear stereo headphones, and a Windows 10 PC (TODO: specs).
+
+% Study Factors and Conditions: what my factors are, conditions == independent variables' values
+\textit{Experimental Design} 
+The study examined one independent variable: type of awareness presentation. 3 controlled awareness presentations  were made available to the participants: a minimap of the district (TODO: add figure), auditory cues emitted by translating buildings in the scene (sound of concrete sliding on concrete), and their combination. Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
+Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were chosen and translated randomly. There were 24 data points measured per user in each session. Data collected were the reaction speed in determining the position of a moving \gls{vb}, along with 3D drawings created by participants.
 
 %Gutwin vs our study%
 % TODO: add a pic: Gutwin's (vertical) and our (horizontal) working (sound) plane
-
 \begin{table}[]
-  \caption{Study comparison}
+  \caption{Study comparison: \cite{gutwin_chalk_2011} vs \gls{wa} in Immersive \gls{vr}}
   \label{table:study_comp}
   \begin{tabular}{|l|l|l|}
   \hline
@@ -38,8 +49,8 @@
   \end{tabular}
 \end{table}
 
+\paragraph{Results}
 
 \paragraph{Study limitations}
 % the fact that we only sample the level 1 SA/WA (we won't be going into sampling direction of translation guesses from the participants)
-
-\paragraph{Results}
+% could also try to describe it according to WA framework
