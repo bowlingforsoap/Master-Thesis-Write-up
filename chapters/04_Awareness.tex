@@ -48,38 +48,53 @@ o Bridge to Workspace Awareness
 
 \section{Workspace Awareness}
 % Definition
-\gls{wa} can be described as "the up-to-the-moment understanding of another person’s interaction with the shared workspace" \cite{gutwin_descriptive_2002}. 
+\gls{wa} can be described as "the up-to-the-moment understanding of another person’s interaction with the shared workspace" \cite{gutwin_descriptive_2002}. While this is a trivial task in real-world face-to-face collaboration, \gls{wa} becomes a bottleneck for productive collaboration because of limited information that systems usually provide, and unfamiliar interaction interfaces.
+ 
 % Description
-It is an extension of the concept of \gls{sa}, research from the \gls{hci} and \gls{cscw} fields, and authors' own observations and research. \gls{wa} could be characterized as an adaptation of \gls{sa} to the day-to-day working scenarios. This was desired, because as authors put it: "sorting slides on a table does not seem very similar to air combat in a jet fighter", or in our case, to architectural collaboration in immersive \gls{vr} environment.
+It is an extension of the concept of \gls{sa}, research from the \gls{hci} and \gls{cscw} fields, and authors' own observations and research. \gls{wa} could be characterized as an adaptation of \gls{sa} to the day-to-day working scenarios. This was desired, because as authors put it: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \cite{gutwin_descriptive_2002}, or in our case, to architectural collaboration in immersive \gls{vr} environment. Another major difference of \gls{sa} and \gls{wa} is that besides maintaining their \gls{sa} and performing the domain (their personal) task, collaborators have to perform their collaboration.
+
+% Framework 'classification'
+This led \cite{gutwin_descriptive_2002} to develop the \gls{wa} framework, which concerns itself with providing a toolset for describing and analyzing medium-sized workspaces. The framework is applicable to real-time distributed groupware for shared environments, and small mixed-focus collaboration groups busy with generation and execution tasks.
+% Framework descriprion
+The \gls{wa} framework is split in 3 parts: "What information makes up \gls{wa}?", "How is \gls{wa} information gathered?", "How is \gls{wa} used in collaboration?". 
+In Part I the authors address the information that collaborators might require from the workspace. While this can be any type of information, it can be categorized into the most common types. For example, the category "Who" concerns itself with the presence, identity, and authorship questions, and contains the following questions: "Is anyone else in the workspace?", "Who is participating? Who is that?", and "Who is doing that?". An example for the "Who" category can be seen in Fig. \ref{fig:watechniquesforwhoquestions}. There are 8 categories of questions in Part I of the framework: questions about the present (Who?, What?, Where?), and questions about the past (How?, When?, Who? (past), Where? (past), What? (past)). The \gls{wa} framework doesn't concern itself with the information about the future, because this requires projection.
+This part of the framework allows designers to compare and design awareness support in different groupware applications by providing a fixed vocabulary for describing their systems.
+Part II of the framework deals with the ways the information can be delivered to the users. The authors present 3 ways in which the information can be communicated in a workspace: through bodies and consequential communication, through artifacts and feedthrough, and through conversation, gesture, and intentional communication. While the last one speaks for itself, the first two deal with information transfer through the consequence of people's actions in the workspace, and the information emitted by the manipulated objects in the workspace (for example, a characteristic sound initiated by a person drawing in the workspace).
+By considering the different ways in which the information transfer can occur, system designers can make an educated decision about what approach to use in a particular situation.
+Part III of the framework turns to the question of how we make use of the information we gather through \gls{wa}. Here we discover 5 types of activities that benefit our \gls{wa} in some way: management of coupling, simplification of communication, coordination of actions, anticipation, and assistance (see summary in Fig. \ref{fig:summaryofactivitieswherwacanbeused}).
+This part of the framework allows awareness designers consider different ways people make use of the awareness information, and decide where, whether, and how much of this information is required.
+For example, if we take anticipation, "People anticipate others in several ways. They can prepare for their next action in a concerted activity, they can avoid conflicts, or they can provide materials, resources, or tools before they are needed".
 
 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/WA_techniques_for_WHO_questions}
+	\caption{}
+	\label{fig:watechniquesforwhoquestions}
+\end{figure}
 
-It addresses medium-sized workspaces..
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/summary_of_activities_wher_WA_can_be_used}
+	\caption{}
+	\label{fig:summaryofactivitieswherwacanbeused}
+\end{figure}
 
-WA is trivial in face-to-face, but not in digital.. why..
 
-Difference between WA and SA (418-419, 4.3 WA)
+The figure summarizing the framework:
 
-The WA framework
-Authors propose a 3-part framework, which aims to aid description and analysis of the problem from the perspective of \gls{wa}. ...
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/WA_framework}
+	\caption{}
+	\label{fig:waframework}
+\end{figure}
 
-Part I: "What information makes up \gls{wa}?"
-present and past is considered, not future..
-starting point and "vocabulary for describing and comparing awareness support in groupware applications".
-Part II: "How is \gls{wa} information gathered?"
-Bodies and consequential communication
-Artifacts and feedthrough <- that's us
-Conversation, gesture, and intentional communication
-Part III: "How is \gls{wa} used in collaboration"?
 
-The figure summarizing the framework
-
-o Relation to Situation awareness
-o Relation to human factors’ research?
-o Characteristics of awareness
+%o Relation to human factors’ research?
 
 * Measurement
-SAGAT is sorta not applicable, because not so many elements to query upon.
+?SAGAT is sorta not applicable, because not so many elements to query upon.
 o Bridge to Sonification: 
 * Awareness - secondary/monitoring task \& sonification is great for monitoring -> use it for our experiment 
 "Awareness is a secondary goal in the task – that is, the overall goal is not simply to maintain awareness but to complete some task in the environment"
