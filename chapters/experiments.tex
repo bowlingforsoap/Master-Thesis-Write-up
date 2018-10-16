@@ -3,10 +3,13 @@
 
 \chapter{Experiments}
 
-In total, 5 experiments were conducted for this thesis. Two were quick prototypes to validate the initial speculation, two - preparatory pilot studies to determine values for some properties of the final experiment and test the process of sampling participants for \gls{wa} index, and one formal study to test \nameref{final_study}.
+In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}.
 
-\section{Prototypes}
-Initial motivation for this work was a question of whether sudden manipulations of buildings in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to test this speculation: Buildings Popping Up and Moving Buildings.
+
+\begin{comment}
+\section{Prototypes/Proof of concept}
+
+Initial motivation for this work was a question of whether sudden manipulations of buildings in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to test this speculation, these are described in the Buildings Popping Up and Moving Buildings paragraphs.
 
 \begin{figure}
 	\centering
@@ -15,22 +18,30 @@ Initial motivation for this work was a question of whether sudden manipulations 
 	\label{fig:a1unawareofa2actions}
 \end{figure}
 
-\paragraph{Buildigns Popping Up} 
+\paragraph{Buildings Popping Up} 
 \label{buildingspoppingup}
-The first prototype looked into how would the participants' experience would be influenced by a building suddenly appearing before them, when they were concerned with their own task.
+The first prototype looked into how the participants' experience would be influenced, if a building suddenly appeared in-front of them, when they were occupied with their own task.
+
 % Participants
-3 participants (all male) were chosen for this experiment among the members of the \gls{hci} group at the University of Otago. Two had prior experience in \gls{vr}, one had not.
+3 participants (all male) were chosen among the members of the \gls{hci} group at the University of Otago. Two had prior experience in \gls{vr}, one had not.
+
 % Procedure & Task
-Participants were placed in the immersive \gls{vr} environment: a 3D model of the campus of the University of Otago. This was not a collaborative task, the participants were in the \gls{ve} alone. They were introduced to the affordances of the environment: teleportation, walking and looking around. Next, participants were asked to navigate to the university clock tower. While they were performing the navigation task, a building would pop up in-front of them a couple of times at pseudo-random times (decided and initiated by the experimenter). After the completion of the experiment the participants were asked to describe the experience, especially parts, where a building appeared in-front of them.
+Participants were placed in the immersive \gls{vr} environment: a 3D model of the campus of the University of Otago. This was not a collaborative task, the participants were in the \gls{ve} alone. First, the the affordances of the environment were introduced (teleportation, walking and looking around), then participants were asked to navigate to the university clock tower. During this navigation task, a building would pop up in-front of them a couple of times at pseudo-random times (decided and initiated by the experimenter). After the completion of the experiment the participants were asked to describe the experience, especially the parts, where a building appeared in-front of them.
+
 % Apparatus (i.e Unity, Resonance Audio, stereo headphones, Vive)
 Unity3d and Oculus Rift \gls{hmd} with Touch Motion controllers were used in this experiment.
+
 % Results
-The participant with no prior experience in \gls{vr} described the experience as unexpected, but was also not sure, whether he caused it, which could be attributed to the absence of the prior experience with the \gls{vr} technology. The other two participants indicated that they were a bit stuttered by the experience, but in general, "didn't care much for it".
+The participant with no prior experience in \gls{vr} described the experience as unexpected, but was also not sure, whether he caused it. The other two participants indicated that they were a bit stuttered by the experience, but in general, "didn't care much for it". Additionally, the participants described the experience as irritating, when the building continued to repeatedly appear after the first encounter.
 % Limitations
+% I do not check if anyone is concerned with the moving buildings when they get used to it.
+% This doesn't matter tho, because according to the WA, people should know what the others are doing in the same environment.
+% Discussion of the results?
 %...
 
+
 \paragraph{Moving Buildings}
-Due to the results of the first experiment, the problem was regarded as worth of further exploration. For the second prototype the decision was made to come a bit closer to the initial motivation: moving buildings.
+Due to the results of the first experiment, the problem was regarded as worthwhile of further exploration. For the second proof of concept, a decision was made to come a bit closer to the initial motivation: buildings moving in \gls{ve}.
 % Participants
 4 new participant (all male) were chosen among the members of \gls{hci} group at the University of Otago, none took part in the previous experiment. Three had moderate experience with \gls{vr}, one had little.
 % Procedure & Task
@@ -52,6 +63,8 @@ The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
 % Results
 
 % Limitations
+\end{comment}
+
 
 \section{Pilot Studies}
 In preparation to the \nameref{final_study} study, two pilot studies were conducted: \nameref{study_one}, and \nameref{study_two}. This was done to study certain aspects of the final study separately, and make decisions, such as what sound type (earcons or auditory icons) to choose, and at what speed to translate the buildings.
@@ -59,20 +72,65 @@ In preparation to the \nameref{final_study} study, two pilot studies were conduc
 \subsection{Sound Speed and Type}
 \label{study_one}
 % Goal of the study
+Some of the feedback from the initial prototypes indicates that the speed of the moving building was either too fast, or too slow. The goal of this study was to derive the speed participants felt would be appropriate to allow them to perform spatial judgments. Additionally, this pilot study was meant to help determine what type of auditory cues to use: earcons or auditory icons.
 
 \paragraph{Methods}
-
 % Participants
+Seven participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago. One had reported bad hearing, and one had a flu and a "stuffed nose".  None of the participants had any architectural background. Some of the participants were online gamers.
+% TODO: figure out the age distribution
 
-% Procedure
+% Procedure & Task
+The study was carried out in a \gls{ve} that was specifically setup for this purpose (see Fig. \ref{fig:clipimage001}). A participant was placed at the Center of the environment, in which there was a real-sized building that could be translated by the experimenter from and to any of the predefined positions: Left Front (LF), Right Front (RF), Left Back (LB), Right Back (RB), Front (F), Back (B), Left (L), Right (R), Center (C). When the building moved, a sound was emitted from its position. 
 
-% Task
+The purpose the whole research and this study was explained or reminded to the participants. They were placed at the center of the scene (C) with the building placed in front of them , and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head. 
+
+Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:pilot1predefinedtutorialtranslations}).
+For the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated with auditory cues to a new randomly selected position (see Fig. \ref{fig:pilot1controlpanel}). This was repeated for each type of sound (N=2), and each speed (M=3). 
+
+After going through all the sound types and speeds, participants were asked for their honest opinion, as to which sound was the best, and what speed was the most appropriate. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{C:/Users/bowli/AppData/Local/Temp/msohtmlclip1/01/clip_image001}
+	\caption{Experiment setup}
+	\label{fig:clipimage001}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/pilot1_predefined_tutorial_translations}
+	\caption{Predefined translation paths}
+	\label{fig:pilot1predefinedtutorialtranslations}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/pilot1_control_panel}
+	\caption{Control panel for translations}
+	\label{fig:pilot1controlpanel}
+\end{figure}
+
 
 % Apparatus (i.e Unity, Resonance Audio, stereo headphones, Vive)
 
-% Study Factors and Conditions: what my factors are, conditions == independent variables' values
 
-\subsection{Spatial Judgement}
+% Study Factors and Conditions: what my factors are, conditions == independent variables' values
+Repeated measurements design
+
+Which sound type was played first was also changed between participants, so that for 4 people the first one was the concrete auditory icon, and for the other - the sine wave "humming" earcon.
+
+Two sounds used in this study were: a sound mimicking a concrete block sliding on another concrete block (auditory icon), and a simple sine wave (earcon).
+
+Positions' selection was pseudo-random and made with some degree of bias to prioritize longer translation paths, so that users have more time to analyze the sound and guess (i.e. the path from RB to LB would be longer, than just RB to B).
+
+% Results
+
+% Discussion
+
+% Limitations
+
+
+\subsection{Spatial Judgment}
 \label{study_two}
 \section{Workspace Awareness in Immersive Virtual Reality}
 \label{final_study}
@@ -108,6 +166,7 @@ Participants were tasked with the scenario, in which there are 2 architects (A1 
 Experiment was implemented with the help of Unity3d, version  2018.1.5f1 and Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off. For the hardware, \gls{vr} headset and controllers from the HTC Vive were used, along with on-ear stereo headphones, and a Windows 10 PC (TODO: specs).
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
+% + Repeated-measures design?
 \textit{Experimental Design} 
 The study examined one independent variable: type of awareness presentation. 3 controlled awareness presentations  were made available to the participants: a minimap of the district (\ref{fig:minimap_controller}), auditory cues emitted by translating buildings in the scene (sound of concrete sliding on concrete), and their combination. Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
 Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were chosen and translated randomly. There were 24 data points measured per user in each session. Data collected were the reaction speed in determining the position of a moving \gls{vb}, along with 3D drawings created by participants.
