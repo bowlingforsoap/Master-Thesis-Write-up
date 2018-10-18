@@ -3,7 +3,7 @@
 
 \chapter{Experiments}
 
-In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}.
+In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}. The audio specialization tool used in all the pilots and final studies was Resonance Audio SDK for Unity with occlusion effect turned off.
 
 
 \begin{comment}
@@ -69,69 +69,263 @@ The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
 \section{Pilot Studies}
 In preparation to the \nameref{final_study} study, two pilot studies were conducted: \nameref{study_one}, and \nameref{study_two}. This was done to study certain aspects of the final study separately, and make decisions, such as what sound type (earcons or auditory icons) to choose, and at what speed to translate the buildings.
 
+
+
+
 \subsection{Sound Speed and Type}
 \label{study_one}
 % Goal of the study
 Some of the feedback from the initial prototypes indicates that the speed of the moving building was either too fast, or too slow. The goal of this study was to derive the speed participants felt would be appropriate to allow them to perform spatial judgments. Additionally, this pilot study was meant to help determine what type of auditory cues to use: earcons or auditory icons.
 
-\paragraph{Methods}
-% Participants
-Seven participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago. One had reported bad hearing, and one had a flu and a "stuffed nose".  None of the participants had any architectural background. Some of the participants were online gamers.
+\paragraph{Participants}
+Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers.
 % TODO: figure out the age distribution
 
-% Procedure & Task
-The study was carried out in a \gls{ve} that was specifically setup for this purpose (see Fig. \ref{fig:clipimage001}). A participant was placed at the Center of the environment, in which there was a real-sized building that could be translated by the experimenter from and to any of the predefined positions: Left Front (LF), Right Front (RF), Left Back (LB), Right Back (RB), Front (F), Back (B), Left (L), Right (R), Center (C). When the building moved, a sound was emitted from its position. 
+\paragraph{Procedure \& Task}
+The study was carried out in a \gls{ve} that was specifically constructed for this purpose (see Fig. \ref{fig:clipimage001}). A participant was placed at the Center (C) of the environment, in which there was a real-sized building that could be translated by the experimenter from and to any of the predefined positions: Left Front (LF), Right Front (RF), Left Back (LB), Right Back (RB), Front (F), Back (B), Left (L), Right (R), C. When the building moved, a sound would emit from its position.
 
-The purpose the whole research and this study was explained or reminded to the participants. They were placed at the center of the scene (C) with the building placed in front of them , and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head. 
+The purpose the whole research and this study was explained to the participants. They were placed at the center of the scene (C) with the building placed in front of them, and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head.
 
 Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:pilot1predefinedtutorialtranslations}).
-For the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated with auditory cues to a new randomly selected position (see Fig. \ref{fig:pilot1controlpanel}). This was repeated for each type of sound (N=2), and each speed (M=3). 
 
-After going through all the sound types and speeds, participants were asked for their honest opinion, as to which sound was the best, and what speed was the most appropriate. 
+At the start of the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated with auditory cues to a newly selected random position (see Fig. \ref{fig:arbitrary_translation}). This was repeated 5 to 10 times for each of 6 type of sound-speed combinations.
+
+After going through all the sound types and speeds, participants were asked for their honest opinion, as to which sound was the best, and what speed was the most appropriate.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{C:/Users/bowli/AppData/Local/Temp/msohtmlclip1/01/clip_image001}
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/pilot1_experiment_setup.png}
 	\caption{Experiment setup}
 	\label{fig:clipimage001}
 \end{figure}
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/pilot1_predefined_tutorial_translations}
-	\caption{Predefined translation paths}
-	\label{fig:pilot1predefinedtutorialtranslations}
-\end{figure}
+	\subfloat[Predefined translation paths]{
+		\label{fig:pilot1predefinedtutorialtranslations}
+		\includegraphics[width=0.3\linewidth]{figures/placeholders/pilot1_predefined_tutorial_translations}
+	} %
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/pilot1_control_panel}
-	\caption{Control panel for translations}
+	\subfloat[Arbitrary translations]{
+		\includegraphics[width=0.3\linewidth]{figures/pilot1_control_panel}
+		\label{fig:arbitrary_translation}
+	}
+	
+	\caption{Control panels}
 	\label{fig:pilot1controlpanel}
 \end{figure}
 
 
+\paragraph{Apparatus}
 % Apparatus (i.e Unity, Resonance Audio, stereo headphones, Vive)
-
+Experiment was implemented with the help of Unity3d  2018.1.5f1 and Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off. For the hardware, HTC Vive \gls{vr} headset, along with on-ear stereo headphones, and a Windows 10 PC.
+Audacity 2.2.2 was used prior to the experiments to: mixdown stereo sounds to mono, make audio tracks seamless, and increase the volume.
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
-Repeated measurements design
+\paragraph{Study design}
+The study followed the repeated measures design with 2 independent variables: translation speed and different types of auditory cues.
 
-Which sound type was played first was also changed between participants, so that for 4 people the first one was the concrete auditory icon, and for the other - the sine wave "humming" earcon.
+Three different translation speeds were tested: \textit{slow} - 20, \textit{medium }- 40, and \textit{fast }- 60 meters per second (m/s). Sound properties (i.e. pitch, playbackspeed) stayed constant throughout the different speeds.
 
-Two sounds used in this study were: a sound mimicking a concrete block sliding on another concrete block (auditory icon), and a simple sine wave (earcon).
+Two different types of the auditory cues were tested: earcons and auditory icons. A full volume 100 Hz sine wave in mono was used for an earcon (Type: Wave (.wav), Samplerate: 44100.0 Hz, Bitdepth: 16bit, Source: https://freesound.org/people/klangfabrik/sounds/28638/, Fig. \ref{fig:pilot1sinewaveedit}). As an auditory icon a mono sound mimicking moving concrete block with sound amplitude extrema reaching full volume was used (Type: Wave (.wav), Samplerate: 48000.0 Hz, Bitdepth: 16 bit, Source: https://freesound.org/people/FreqMan/sounds/25846/, Fig. \ref{fig:pilot1concreteonconcretesoundedit}).
+The type of sound played first was rotated for the participants, so that 4 of them heard the auditory icon first, and the other 4 - the earcon.
 
-Positions' selection was pseudo-random and made with some degree of bias to prioritize longer translation paths, so that users have more time to analyze the sound and guess (i.e. the path from RB to LB would be longer, than just RB to B).
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/pilot1_sinewave_edit}
+	\caption{Sine wave earcon before (top) and after (bottom) mixdown: stereo to mono}
+	\label{fig:pilot1sinewaveedit}
+\end{figure}
 
-% Results
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/pilot1_concrete_on_concrete_sound_edit}
+	\caption{Concrete sliding on concrete auditory icon before (top) and after (bottom) amplification, and crop}
+	\label{fig:pilot1concreteonconcretesoundedit}
+\end{figure}
 
-% Discussion
+Translations were pseudo-randomized across participants, their selection was made with some degree of bias towards longer translation paths, so that users have more time to analyze the sound and guess (i.e. the path from RB to LB would be longer, than just RB to B). Different translation paths can be seen in Fig. \ref{fig:pilot1translationpaths}.
 
-% Limitations
+Distances between the fixed translation end-points remained the same throughout the experiment: 20 Unity3d units (meters) between C-F, C-L, C-R, C-B, L-LB, and so on.
+
+\paragraph{Results}
+\textit{Preferred sound} 6 out of 8 participants preferred the concrete sound to the sine wave, 1 was indifferent as long as the speed was slow, and 1 preferred the sine wave.
+
+\textit{Preferred speed} The speed preference can be seen in the Table \ref{table:pilot1_results}.
+
+\begin{figure}
+	\centering
+	
+	\subfloat[Top-down view of the scene]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view.png}}%
+	\subfloat[Major translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&major_tranlsation_paths.png}}%
+	\subfloat[All translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&all_possible_translation_paths.png}}
+	
+	\caption{Possible translation end-points and paths}
+	\label{fig:pilot1translationpaths}
+\end{figure}
+
+
+\begin{table}[h]
+	\label{table:pilot1_results}
+	\caption{Experiment data}
+	
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\textbf{Participant} & \textbf{First sound played} & \textbf{Preferred sound} & \textbf{Preferred speed}                        \\ \hline
+		1                    & Concrete                    & Concrete                 & Medium                                          \\ \hline
+		2                    & Concrete                    & Concrete                 & Slowest, then medium                            \\ \hline
+		3                    & Sine wave                   & Concrete                 & Medium                                          \\ \hline
+		4                    & Sine wave                   & Concrete                 & First two -fine (fastest one - a bit too fast)  \\ \hline
+		5                    & Concrete                    & Either                   & Slowest                                         \\ \hline
+		6                    & Sine wave                   & Sine wave                & Fast (speed didn't affect it too much)          \\ \hline
+		7                    & Concrete                    & Concrete                 & Between slow and medium                         \\ \hline
+		8                    & Sine wave                   & Concrete                 & First two - fine (fastest one - a bit too fast) \\ \hline
+	\end{tabular}
+\end{table}
+
+\paragraph{Discussion}
+If we visualize the participants' preferences, and take the smallest common area, where they overlap, analysis shows that participants preferred the speed somewhere close to 40 m/s, but between 20 and 40 (Fig. \ref{fig:pilot1resultsanalysis})
+
+The preferred (concrete on concrete) sound, which was described by one participant as "dry and dull", has a distinct timbre, which is made of different harmonics and halftones. The sine wave, on the other hand, has only 1 fundamental frequency, which might make memorizing and spatial differentiation harder. Additionally, this frequency would most likely get cut of by the audio SDK, if occlusion effect was to be used.
+
+\begin{figure}	
+	\centering
+	
+	\subfloat["Medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_medium.png}}%
+	\subfloat["Slovest, then medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest_then_medium.png}}%
+	\subfloat["First two - fine..."]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_first_two_fine.png}}%
+	\subfloat["Slowest"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest.png}}
+	
+	\par\medskip
+	\subfloat["Fast..."]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_fast.png}}%
+	\subfloat["Between slow and medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_between_medium_and_slow.png}}%
+	\subfloat[Answers combined with 12\% opacity each]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_result_no_highlight.png}}	
+	
+	\par\medskip
+	\subfloat[Preferred speed according to analysis]{\includegraphics[scale=.15]{figures/pilot1/results/speed_fuzzy_preference_result.png}}
+	
+	\caption{Visual analysis of results, pilot 1}
+	\label{fig:pilot1resultsanalysis}
+\end{figure}
+
+\subparagraph{Limitations} 
+\textit{Auditory variation} Only 2 different types of auditory cues were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
+
+\textit{Front-to-back confusion} One of the major observation was the inability of participants to differentiate between translations happening in the back and in the front. For example, the translation from RF to LF was mistakenly indicated as RB to LB.
+%The confusion between front to back has to been pointed out to might have something to do with the sound reproduction in stereo headphones
+
+\textit{Visualization} As it was a preparatory study, the participants were simply asked to close their eyes when guessing the path of the building. Besides the obvious drawback of such approach, participants reported that it is possible to predict the path by relying on the change in brightness, which is perceivable even with the eyes closed, when the building is passing by.
+
+\textit{False negatives} Some users, who gave answers that were close to correct (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path. 
+% TODO: do I add the next sentence or do I put it in the next pilot?
+%This means that users have to be thoroughly instructed on all the possible translation paths before the start of the guessing tests to avoid false negatives.
+
+
+
 
 
 \subsection{Spatial Judgment}
 \label{study_two}
+%Goal
+The goal of the second pilot study was to check how much of a problem the front-to-back confusion actually causes. Additional motivation was to pilot the way for participants to point out the changes to the environment, which would be needed in the final study to infer participants' \gls{wa} index. 
+
+\paragraph{Participants}
+Thirteen participants (9 men and 4 women) were selected from the employees and students at the University of Otago, New Zealand. 
+\paragraph{Procedure \& Task}
+\paragraph{Apparatus} The same, as in \ref{study_one}, with addition of 6\gls{dof} tracked controllers.
+\paragraph{Study design}
+\paragraph{Results}
+
+\paragraph{Discussion}
+
+
+\subparagraph{Limitations}
+
+
+\begin{figure}
+	%\centering
+
+	\subfloat[B-F]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/B-F.png}}\hfill
+	\subfloat[B-L]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/B-L.png}}
+	\par\smallskip
+	\subfloat[B-LF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/B-LF.png}}\hfill
+	\subfloat[B-R]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/B-R.png}}
+	\par\smallskip
+	\subfloat[B-RF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/B-RF.png}}\hfill
+	\subfloat[F-B]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/F-B.png}}
+\end{figure}
+\begin{figure}	
+%	\centering
+	
+	\subfloat[F-L]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/F-L.png}}\hfill
+	\subfloat[F-LB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/F-R.png}}
+	\par\smallskip
+	\subfloat[F-R]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/L-B.png}}\hfill
+	\subfloat[F-RB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/F-LB.png}}
+	\par\smallskip
+	\subfloat[L-B]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/F-RB.png}}\hfill
+	\subfloat[L-F]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/L-F.png}}
+\end{figure}
+\begin{figure}
+%	\centering
+	
+	\subfloat[L-R]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/L-R.png}}\hfill
+	\subfloat[L-RB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/L-RB.png}}
+	\par\smallskip
+	\subfloat[L-RF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/L-RF.png}}\hfill
+	\subfloat[LB-F]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LB-F.png}}
+	\par\smallskip
+	\subfloat[LB-LF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LB-LF.png}}\hfill
+	\subfloat[LB-R]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LB-R.png}}
+\end{figure}
+\begin{figure}
+%	\centering
+	
+	\subfloat[LB-RB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LB-RB.png}}\hfill
+	\subfloat[LB-RF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LB-RF.png}}
+	\par\smallskip
+	\subfloat[LF-B]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LF-LB.png}}\hfill
+	\subfloat[LF-LB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LF-B.png}}
+	\par\smallskip
+	\subfloat[LF-R]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LF-R.png}}\hfill
+	\subfloat[LF-RB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LF-RB.png}}
+\end{figure}
+\begin{figure}
+%	\centering
+	
+	\subfloat[LF-RF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/LF-RF.png}}\hfill
+	\subfloat[R-B]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/R-F.png}}
+	\par\smallskip
+	\subfloat[R-F]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/R-B.png}}\hfill
+	\subfloat[R-L]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/R-L.png}}
+	\par\smallskip
+	\subfloat[R-LB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/R-LB.png}}\hfill
+	\subfloat[R-LF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/R-LF.png}}
+\end{figure}
+\begin{figure}
+	\centering
+	
+	\subfloat[RB-F]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RB-F.png}}\hfill
+	\subfloat[RB-L]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RB-L.png}}
+	\par\smallskip
+	\subfloat[RB-LB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RB-LB.png}}\hfill
+	\subfloat[RB-LF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RB-LF.png}}
+	\par\smallskip
+	\subfloat[RB-RF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RF-B.png}}\hfill
+	\subfloat[RF-B]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RB-RF.png}}
+\end{figure}
+\begin{figure}
+	\centering
+	
+	\subfloat[RF-L]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RF-L.png}}\hfill
+	\subfloat[RF-LB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RF-LB.png}}
+	\par\smallskip
+	\subfloat[RF-LF]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RF-RB.png}}\hfill
+	\subfloat[RF-RB]{\includegraphics[scale=0.075]{D:/Documents/studies/ss18/Thesis/Studies/SpatialJudgements/Generated/RF-LF.png}}
+%	\caption{Visual analysis of the results, pilot 2, pt.2}
+%	\label{fig:pilot2resltsanalysispt2}
+\end{figure}
+
 \section{Workspace Awareness in Immersive Virtual Reality}
 \label{final_study}
 % Goal of the study
@@ -140,10 +334,10 @@ The goal of this study was to analyze \gls{wa} that participants have of others 
 \paragraph{Methods}
 Aspects of \gls{wa} that were evaluated was participants’ reaction speed when provided with different types of awareness presentation (audio and/or visual cues from the environment).
 
-% Participants
+\paragraph{Participants}
 12 participants (8 men and 4 women) were recruited among friends, employees from the chair, and students from the \gls{tum}; ages ranged from 22 to 32 (mean 25.2, std. 2.5). Only one participant reported having "partially" good hearing, others reported good hearing. 3 people reported to be familiar with \gls{vr} technology, among them, one person reported being a proficient gamer and one - having partaken in driving simulator studies. Participants were a mix of gamers, non-gamers, and casual gamers. Participants were also equally distributed among people who had experience with \gls{vr}, those who had some experience, and those who had no prior experience. Two reported being online gamers, and another two - occasional online gamers. Only one person had prior experience with architecture, and had worked in the field. One participant tried 3D drawing in the system, but otherwise none of the participants had seen the system before, or took part in the trial studies.
 
-% Procedure
+\paragraph{Procedure}
 Participants were given a written and verbal introduction to the experiment,
 after which were asked to sign the consent form for using their data.
 Next, participants went through the tutorial, where the 3D brush, laser pointer for pinpointing the buildings and auditory cues were introduced. Participants went through a small scenario resembling the actual experiment, where they were asked to trace a pillar, while catching a moving building, and keeping track of how the building sounds and where it is visually.
@@ -151,7 +345,7 @@ During the actual experiment, each participant was tested in each of the 3 test 
 At the end of the experiment, participants were asked to fill in a self-report questionnaire.
 Participants did not rest between the different conditions. 
 
-% Task
+\paragraph{Task}
 Participants were tasked with the scenario, in which there are 2 architects (A1 and A2), who perform their separate tasks in the same urban district (\ref{fig:urbandistrict}) in \gls{vr}. A1 (participant) has 2 tasks: primary and secondary. The primary task is to trace given 3D shapes with a 3D brush (a tracked 6-\gls{dof} controller). Meanwhile, A2 (simulated ivisible user) can translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 is to keep track of changes to the environment and pinpoint them with a virtual laser pointer (another tracked 6-\gls{dof} controller).
 
 \begin{figure}
@@ -162,12 +356,12 @@ Participants were tasked with the scenario, in which there are 2 architects (A1 
 \end{figure}
 
 
-% Apparatus: Unity, Resonance Audio, stereo headphones, Vive
-Experiment was implemented with the help of Unity3d, version  2018.1.5f1 and Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off. For the hardware, \gls{vr} headset and controllers from the HTC Vive were used, along with on-ear stereo headphones, and a Windows 10 PC (TODO: specs).
+\paragraph{Apparatus} The same, as in \ref{study_two}.
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
 % + Repeated-measures design?
-\textit{Experimental Design} 
+\paragraph{Study design}
+%\textit{Experimental Design} 
 The study examined one independent variable: type of awareness presentation. 3 controlled awareness presentations  were made available to the participants: a minimap of the district (\ref{fig:minimap_controller}), auditory cues emitted by translating buildings in the scene (sound of concrete sliding on concrete), and their combination. Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
 Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were chosen and translated randomly. There were 24 data points measured per user in each session. Data collected were the reaction speed in determining the position of a moving \gls{vb}, along with 3D drawings created by participants.
 
@@ -210,6 +404,9 @@ Second distinction is in the primary task of the participant and the simulated a
 
 \paragraph{Results}
 
-\paragraph{Study limitations}
+\paragraph{Discussion}
+
+\subparagraph{Limitations}
 % the fact that we only sample the level 1 SA/WA (we won't be going into sampling direction of translation guesses from the participants)
 % could also try to describe it according to WA framework
+% frame drop
