@@ -3,7 +3,9 @@
 
 \chapter{Experiments}
 
-In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}. The audio specialization tool used in all the pilots and final studies was Resonance Audio SDK for Unity with occlusion effect turned off.
+In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}. 
+The audio specialization tool used in all the pilots and final studies was Resonance Audio SDK for Unity with occlusion effect turned off.
+Participants in all of the studies were asked for their consent, in case they were recorded.
 
 
 \begin{comment}
@@ -68,6 +70,18 @@ The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
 
 \section{Pilot Studies}
 In preparation to the \nameref{final_study} study, two pilot studies were conducted: \nameref{study_one}, and \nameref{study_two}. This was done to study certain aspects of the final study separately, and make decisions, such as what sound type (earcons or auditory icons) to choose, and at what speed to translate the buildings.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -192,7 +206,7 @@ The preferred (concrete on concrete) sound, which was described by one participa
 	\centering
 	
 	\subfloat["Medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_medium.png}}%
-	\subfloat["Slovest, then medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest_then_medium.png}}%
+	\subfloat["Slowest, then medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest_then_medium.png}}%
 	\subfloat["First two - fine..."]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_first_two_fine.png}}%
 	\subfloat["Slowest"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest.png}}
 	
@@ -224,22 +238,76 @@ The preferred (concrete on concrete) sound, which was described by one participa
 
 
 
+
+
+
+
+
+
+
 \subsection{Spatial Judgment}
 \label{study_two}
 %Goal
-The goal of the second pilot study was to check how much of a problem the front-to-back confusion actually causes. Additional motivation was to pilot the way for participants to point out the changes to the environment, which would be needed in the final study to infer participants' \gls{wa} index. 
+The goal of the second pilot study was to see how much information can sound convey about the buildings moving in the environment, and how much of a problem the front-to-back confusion actually causes. Additional motivation was to pilot the way for participants to point out the changes to the environment, which would be needed in the final study to infer the \gls{wa} index. 
 
 \paragraph{Participants}
-Thirteen participants (9 men and 4 women) were selected from the employees and students at the University of Otago, New Zealand. 
+Thirteen participants (9 men and 4 women; mean 29.4, std. 10.7) were selected from the employees and students at the University of Otago, New Zealand. 10 had good amount of prior experience with \gls{vr}, 8 reported good hearing, and 6 were regular online gamers. More detailed data about the participants can be found in Appendix \ref{app:pilot2questionnaire_data}. Most of the participants from the first pilot study took part in the second.
+
 \paragraph{Procedure \& Task}
-\paragraph{Apparatus} The same, as in \ref{study_one}, with addition of 6\gls{dof} tracked controllers.
+Participants were welcomed and asked to fill out the questionnaire (Appendix \ref{app:pilot2questionnaire_data}) prior to the experiment. Next, the goal of the study and the whole project was explained, and participants were put into the \gls{vr} environment to begin the tutorial. The affordances of the environment were explained before the tutorial. 
+
+% TODO: Describe the environment + screenshots
+A \gls{vr} environment was constructed specifically for this experiment. This environment had 2 modes: tutorial and experiment. In both of them, the participant would appear at the middle of the scene. There was a real-sized building and a cylindrical wall around with the center at the participant's position (Fig. ). The building was approximated with a cuboid extended along the vertical axis. Like in the previous pilot, this building would emit sound, when it translates through the scene.
+% TODO: figure
+
+% TODO: the participant, a participant, participant, participants?
+The goal of the tutorial mode was to allow the participant to understand the correlation between the visually perceived movements of the building and the sound emitted. This was indicated to the participant. In the tutorial mode, the building was visible, and the wall - invisible.
+40 translations were pre-scripted for the actual experiment, 20 of which were demonstrated in the tutorial mode in the sequential order (Fig. with tutorial paths highlighted). The translations of the building were initiated by the experimenter through the control panel. Participants were briefed to face the "Front" direction, when the experimenter voiced the path that the building was going to travel, or (in the experiment mode) the fact that a translation is about to get initiated. After that participants were allowed to move their head. This and the choice of the translation paths for the tutorial was informed by the idea of allowing the participant to build a complete picture, of how a translating building sounds in all the directions around the user. "Front" and "Back" directions were identified with text on a pole, and always visible (Fig. ).
+% TODO: figureS
+
+After the tutorial translations were demonstrated, participants were asked if they were ready to proceed to the actual experiment. Only one participant asked to repeat some of the translations to gain a better spatial understanding.
+
+In the experiment mode participants were not able to see the building, but would still hear the sounds when it would start moving. Also, the wall around the user became visible. The end-points of the translations of the building were always on this wall. Participants were asked to indicate where the building translated from and to with the help of a simulated laser pointer attached to the controller. The details of the controls can be found on Fig. %TODO: figure (1 - schematic controller with the controlls described like in games; 2,3,4 - how the laser pointer looks while pointing somewhere and on the wall, and what happens on-click).
+
+All 40 translations were initiated in a pseudo-random order for each participant. The order was decided by the experimenter. When a translation was initiated through the control panel, its button would gray-out and it wouldn't be possible to initiate the same translation in this experiment (Fig. ). This was done to make sure no translations were initiated twice.
+% TODO: figure - control panel with some translations grayed-out
+Participants answers were recorded by the system in a CSV file.
+
+When participants went through all the 40 translations, the experiment would end. Experimenter thanked the participants and ask for their feedback concerning the experiment.
+
+\paragraph{Apparatus} The same, as in \ref{study_one}, with addition of 6 \gls{dof} tracked controllers.
+
 \paragraph{Study design}
+The study used the repeated measures design with the only independent variable with 40 different values - the translation paths.
+
+The building could travel between the total of 8 end-points. These were moved equidistantly from the participant (approx. 28.3m away) at the same level on the cylinder wall.
+
+The auditory icon of a concrete bock sliding on a concrete block from the previous experiment was used in this one. 
+
+The speed of the building was chosen to be 30m/s.
+
 \paragraph{Results}
+
 
 \paragraph{Discussion}
 The visual analysis of the results of this study can be found in Appendix \ref{app:pilot2visual_analysis}.
 
 \subparagraph{Limitations}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Workspace Awareness in Immersive Virtual Reality}
 \label{final_study}
