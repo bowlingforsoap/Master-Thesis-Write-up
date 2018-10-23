@@ -277,7 +277,7 @@ Participants answers were recorded by the system in a CSV file.
 
 When participants went through all the 40 translations, the experiment would end. Experimenter thanked the participants and ask for their feedback concerning the experiment.
 
-\paragraph{Apparatus} The same, as in \ref{study_one}, with addition of 6 \gls{dof} tracked controllers.
+\paragraph{Apparatus} The same, as in \ref{study_one} \nameref{study_one}, with addition of 6 \gls{dof} tracked controllers.
 
 \paragraph{Study design}
 This study used the repeated measures design with one independent variable - translation paths (40 values).
@@ -305,7 +305,7 @@ The following was collected:
 \end{itemize}
 
 % Post-questionnaire summary
-Most participants reported not being able to differentiate front and back.
+At least half of the participants reported having trouble to differentiate front and back translations. Some thought the building was always in the back, but decided to give some answers in-front just to balance the results. One participant indicated that everything was "easy and logical" when the building was visible, and unclear when it was not.
 
 \paragraph{Discussion}
 % Example visual result w/ explanation
@@ -319,21 +319,25 @@ The results of the experiment were represented visually, as seen in the Fig. \re
 \end{figure}
 
 This visualization can be thought of as a top-down projection of the experiment environment.
+Individual answers are shown with semi-transparent directional rays of red-blue gradient. The beginning of individual rays is wider and red, the ending - thiner and blue. The transparency value $t$ was approx. equal $7.7$, and was computed as $t = 100 / n_{p}$, where $ n_{p} $ is the number of participants.
 The information in the left corner ("PATH") describes the actual translation path: "abbr." - name abbreviation of the path, "act." - actual angles the building traveled from and to. This data is also visualized with the green line, whose end-points are marked with big green circles and "From", and "To" labels.
 The information in the right corner ("STATS (deg.)") gives the statistical data for this path in degrees: "mean" - mean values for the "Guess From" and "Guess To" entries, respectively. This information is also visualized with the red line, whose end-points are marked with small red circles and "m.From", and "m.To" (which stand for: "mean From" and "mean To", respectively).
 Start- end end-points of translations are marked with their respective name abbreviations and deviation angles from the Front direction.
-Individual participants' answers are indicated with semi-transparent ray-arrows of red-blue gradient. The beginning of individual rays is wider and red, the ending - thiner and blue. The transparency value $t$ was approx. equal $7.7$, and was computed as $t = 100 / n_{p}$, where $ n_{p} $ is the number of participants.
+
+On this example we see the visualization of the guesses made by participants when the building traveled from Back to Front (B-F). A certain number of participants have guessed correctly, which is indicated by a brighter (or less transparent) overlay of the directional rays. The mean value goes from approx. $152.3\degree$ to approx. $- 30.8\degree$. The error of $\pm 45\degree$ can be considered negligible due to the limitations of the stereo headphones and the absence of the visual cues. At least 5 participants have guessed incorrectly, and at least one thought that the building moved from Front to Back, which is indicated by the red ray ending starting at the F point and going straight down.
+
 
 % Interpretation of the results
-29 out of 40 translations' means were close to the actual translation paths (about 45 degrees deviation from the actual start- and/or end-point). % Green dot
-6 out of the rest 11 translations can be considered close, if we eliminate the front-to-back confusion by mirroring either one of or both the start- and end-point.
-% Mean deviation for deviation of start and end /points // apparently, not useful for the stats analysis: https://en.wikipedia.org/wiki/Unbiased_estimation_of_standard_deviation
+The mean values for 29 out of 40 translations were close to the actual translation paths, if we assume the result being in the range of the negligible error of $\pm 45\degree$ as close. % Green dot
+Among the rest, 6 translations can be considered close, if we eliminate the front-to-back confusion by mirroring either one, or both the start and finish endpoints along the imaginary L-R line.
+% Mean deviation for deviation of start and end /points // <- estimate - apparently, not useful for the stats analysis: https://en.wikipedia.org/wiki/Unbiased_estimation_of_standard_deviation
+
 % Conclusion
-Deviation <= 45* should not be considered an error, because visual help would come into play and the limitations of the stereo-headphones.
+Regardless, of many erroneous guesses, the analysis shows promise for the given setup, and, considering the previous success of \cite{gutwin_chalk_2011} in representing spatial information with auditory cues through the stereo headphones, as well as the fact that in the final study participants will have visual cues to aid them in finding the sound source, and the fact that they won't be forced to always face the same direction, this approach deserves a further analysis.
 
-\subparagraph{Limitations}
+%\subparagraph{Limitations}
 
-
+% Number of participants
 
 
 
@@ -352,24 +356,25 @@ Deviation <= 45* should not be considered an error, because visual help would co
 \label{final_study}
 % Goal of the study
 The goal of this study was to analyze \gls{wa} that participants have of others present in the same immersive \gls{vr} environment. Participants were presented with a primary and secondary tasks. Primary task was tracing 3D models with a 3D brush, and secondary task was a \gls{wa} task - reporting changes to the environment.
-
-\paragraph{Methods}
-Aspects of \gls{wa} that were evaluated was participants’ reaction speed when provided with different types of awareness presentation (audio and/or visual cues from the environment).
+%\paragraph{Methods}
+The evaluated aspects of \gls{wa} were participants’ reaction speed when provided with different types of awareness presentation (audio and/or visual cues about the environment).
 
 \paragraph{Participants}
-12 participants (8 men and 4 women) were recruited among friends, employees from the chair, and students from the \gls{tum}; ages ranged from 22 to 32 (mean 25.2, std. 2.5). Only one participant reported having "partially" good hearing, others reported good hearing. 3 people reported to be familiar with \gls{vr} technology, among them, one person reported being a proficient gamer and one - having partaken in driving simulator studies. Participants were a mix of gamers, non-gamers, and casual gamers. Participants were also equally distributed among people who had experience with \gls{vr}, those who had some experience, and those who had no prior experience. Two reported being online gamers, and another two - occasional online gamers. Only one person had prior experience with architecture, and had worked in the field. One participant tried 3D drawing in the system, but otherwise none of the participants had seen the system before, or took part in the trial studies.
+12 participants (8 men and 4 women) were recruited among friends, employees from the chair, and students from the \gls{tum}; ages ranged from 22 to 32 (mean 25.2, std. 2.5). Only one participant reported having "partially" good hearing, others reported good hearing. 3 people reported to be familiar with \gls{vr} technology, among them, one person reported being a proficient gamer and one - having partaken in driving simulator studies. Participants were a mix of gamers, non-gamers, and casual gamers. Participants were also equally distributed among people who had experience with \gls{vr}, those who had some experience, and those who had no prior experience. Two reported being online gamers, and another two - occasional online gamers. Only one person had prior experience with architecture, and had worked in the field. One participant tried 3D drawing in the system before, but otherwise none had seen the system before, or took part in the previous studies.
 
 \paragraph{Procedure}
 Participants were given a written and verbal introduction to the experiment,
 after which were asked to sign the consent form for using their data. % TODO: add figures to appendix
-Next, participants went through the tutorial, where the 3D brush, laser pointer for pinpointing the buildings and auditory cues were introduced. Participants went through a small scenario resembling the actual experiment, where they were asked to trace a pillar, while catching a moving building, and keeping track of how the building sounds and where it is visually.
-During the actual experiment, each participant was tested in each of the 3 test groups.
+The verbal introduction was reinforced with the practical tutorial. During the tutorial, participants learned how to use the 3D voxel brush for tracing the shapes, the laser pointer to indicate they noticed changes to the environment, and the minimap to locate the moving buildings. Following that, the auditory cues were introduced, and the differences between the tutorial and the actual experiment part were explained. Participants went through a small scenario, resembling the experiment, where they were asked to trace a pillar, while catching a moving building, and keeping track of how the building sounds and where it is visually. Among other reasons, this was done to improve participants' understanding of how the translations sound when the building is at different locations relative to them.
+
+During the actual experiment, each participant was tested in each of the 3 test groups: \textit{Minimap and Sound}, \textit{Sound Only}, and \textit{Minimap Only}. Participants were instructed to keep focus on their main task and treat the experiment not as a test of their abilities to notice all the moving buildings, but rather as a test to check how good the system was in informing them of these changes. 
+When participants were done with a shape, they would voice this to the experimenter, and he would save the current voxel drawing, and switch the tracing shape to the next one.
 At the end of the experiment, participants were asked to fill in a self-report questionnaire.
 Participants did not rest between the different conditions. 
 After the end of the experiment, participants were asked to fill out a questionnaire. % TODO: add figure to appendix
 
 \paragraph{Task}
-Participants were tasked with the scenario, in which there are 2 architects (A1 and A2), who perform their separate tasks in the same urban district (\ref{fig:urbandistrict}) in \gls{vr}. A1 (participant) has 2 tasks: primary and secondary. The primary task is to trace given 3D shapes with a 3D brush (a tracked 6-\gls{dof} controller). Meanwhile, A2 (simulated ivisible user) can translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 is to keep track of changes to the environment and pinpoint them with a virtual laser pointer (another tracked 6-\gls{dof} controller).
+Participants were asked to follow a scenario, in which there were 2 architects (A1 and A2), who performed their separate tasks in the same urban district (\ref{fig:urbandistrict}) in \gls{vr}. A1 (participant) had 2 tasks, primary and secondary. The primary task was to trace given 3D shapes with a 3D voxel brush, which was implemented for one of the tracked 6-\gls{dof} controllers (see Fig. ). Meanwhile, A2 (simulated invisible agent) could translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 was to keep track of changes to the environment and point them out with a virtual laser pointer (another tracked 6-\gls{dof} controller).
 
 \begin{figure}
 	\centering
@@ -379,14 +384,20 @@ Participants were tasked with the scenario, in which there are 2 architects (A1 
 \end{figure}
 
 
-\paragraph{Apparatus} The same, as in \ref{study_two}.
+\paragraph{Apparatus} The same, as in \ref{study_two} \nameref{study_two}.
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
 % + Repeated-measures design?
 \paragraph{Study design}
 %\textit{Experimental Design} 
-The study examined one independent variable: type of awareness presentation. 3 controlled awareness presentations  were made available to the participants: a minimap of the district (\ref{fig:minimap_controller}), auditory cues emitted by translating buildings in the scene (sound of concrete sliding on concrete), and their combination. Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
-Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were chosen and translated randomly. There were 24 data points measured per user in each session. Data collected were the reaction speed in determining the position of a moving \gls{vb}, along with 3D drawings created by participants.
+This study followed the repeated measures design with one independent variable - the type of awareness presentation. 3 controlled awareness presentations were used
+\begin{itemize}
+	\item minimap of the district (\ref{fig:minimap_controller});
+	\item auditory cues emitted by translating buildings in the scene (sound of a concrete block sliding on a concrete surface);
+	\item combination of the minimap and auditory cues.
+\end{itemize}. 
+Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
+Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were randomly chosen and translated. In total, 24 data points were measured per participant in each session. Data collected were the reaction speed in determining the position of a moving building (catching it), along with 3D drawings created by participants. If the participant failed to catch the building, the reaction time was recorded as 0.
 
 \begin{figure}[h]
 	\centering
@@ -395,13 +406,26 @@ Each awareness presentation was tested for 10 minutes, during which exactly 8 bu
 	\label{fig:minimap_controller}
 \end{figure}
 
+The total of 13 tracing shapes were prepared for the participants: 1 tutorial shape and 12 experiment shapes (Fig. ). % TODO: tracing shapes' screenshots
+Participants went through them in the same order at a pace that felt comfortable to them.
 
 \paragraph{Gutwin vs our study}
-% TODO: add a pic: Gutwin's (vertical) and our (horizontal) working (sound) plane
-Since, this study extends upon \cite{gutwin_chalk_2011}, in this paragraph I provide a comparison of the two.
-The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. An important change here is the fact that participants are able to look around at the workspace, and notice some changes to the environment, even without the help of the minimap or auditory cues.
-Second distinction is in the primary task of the participant and the simulated agent. In \cite{gutwin_chalk_2011} the participant performs the same task, as an agent: drawing with chalk. Additionally, the participant's actions emit the same sound (even though, at a lower volume) as the drawings of the agent. In this study, the primary task of the participant is - 3D drawing with voxels. This activity doesn't emit any sound. It is also different from the agent's task - translation of buildings in the urban district. Nevertheless, the tasks are still contextually related with regards to the architectural activity in urban environment.
-\cite{gutwin_chalk_2011} do not specify the audio plane, in which the sound was simulated, in this experiment, the place was horizontal (TODO: ref figure). 
+Since, this study extends upon \cite{gutwin_chalk_2011}, this paragraph provides the comparison of the two.
+The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. An important change here was the fact that participants were able to look around at the workspace, and notice some changes to the environment, even without the help of the minimap or auditory cues. 
+% TODO: also, the fact that the head was tracked and this influenced the sound behaviour
+
+Second distinction was in the primary task of the participant and the simulated agent. In \cite{gutwin_chalk_2011} the participant performed the same task, as an agent: drawing with chalk. Additionally, the participant's actions emit the same sound at a lower volume as the agent's actions. In this study, the primary task of the participant is - 3D drawing with voxels. This activity doesn't emit any sound. It is also different from the agent's task - translation of buildings in the urban district. Nevertheless, the tasks are still contextually related with regards to the architectural activity in urban environment.
+
+In terms of the \gls{wa} framework, \cite{gutwin_chalk_2011} aim to answer the \textit{What?} and \textit{Where?} questions about the workspace: what is being done, and where is it being done. This study follows the same idea. In terms of levels of \gls{sa}, this study touches on all 3 levels: 
+\begin{enumerate}
+	\item Perception: participant realizes that something is happening in the environment;
+	\item Cognition: they understand that it is a building moving, and can locate;
+	\item Projection: participant sees or hears the way that building is moving, and based on this, tries to catch it at its next position.
+\end{enumerate}
+
+\cite{gutwin_chalk_2011} does not specify the audio plane, in which the sound was simulated, in this experiment, the plane was horizontal (TODO: ref figure). 
+
+Similarities between the two studies include: the study design, the object of analysis - \gls{wa}, and the use of auditory icons for the auditory cues.
 
 \begin{figure}[h]
 	\centering
@@ -410,39 +434,39 @@ Second distinction is in the primary task of the participant and the simulated a
 	\label{fig:gutwinvsmystudysoundplane}
 \end{figure}
 
-
-\begin{table}[]
+% TODO: linebreak
+\begin{table}[h]
   \caption{Study comparison: \cite{gutwin_chalk_2011} vs \gls{wa} in Immersive \gls{vr}}
   \label{table:study_comp}
   \begin{tabular}{|l|l|l|}
   \hline
-                             & \cite{gutwin_chalk_2011}                & This study           \\ \hline
-  Workspace dimensions				 & 2D									   & 3D \\ \hline
-  Primary (distraction) task & The same as the primary for the simulated actor & Contextually related \\ \hline
-  Working (sound) plane      & Variable             & Horizonatal          \\ \hline
-  Sound type                 & Auditory icons        & Auditory icons       \\ \hline
-  Object of analysis         & Workspace awareness   & Workspace Awareness  \\ \hline
+                             & \textbf{\cite{gutwin_chalk_2011}}                & \textbf{\nameref{This study}}           \\ \hline
+  \textbf{Workspace dimensions}				 & 2D									   & 3D \\ \hline
+  \textbf{Participant's primary (distraction) task} & The same as the primary for the simulated agent & Contextually related \\ \hline
+  \textbf{Sound plane}      & Not specified             & Horizonatal          \\ \hline
+  \textbf{Type of auditory cues}                 & Auditory icons        & Auditory icons       \\ \hline
+  \textbf{Object of analysis}         & Workspace awareness   & Workspace Awareness  \\ \hline
   \end{tabular}
 \end{table}
 
 \paragraph{Results}
 A sample of the collected data can be seen in Fig. \ref{fig:finalstudydataexample}. The link to the complete data can be found in Appendix \ref{app:final_study_data_collected}.
 
-The following data was collected:
+The following was collected:
 \begin{itemize}
-	\item Translation id - unique ID number for the translation, which was constructed in the following way: yyyyMMddHHmmssffff (where "y" stands for "year", "M" for "month", and so on);
-	\item Reaction time - time in seconds between the start of a random translation, until it was caught. If the translation was not noticed by the us a participant, or they were not able to catch it, the assigned value is 0;
-	\item Group - number code for different experiment groups: 1 - Minimap and Sound, 2 - Sound Only, 3 - Minimap Only.
+	\item Translation id - unique ID number for the translation, which was constructed in the following way: yyyyMMddHHmmssffff (where "yyyy" is the year, "MM" is the month, and so on);
+	\item Reaction time - time in seconds between the start of a random translation, until it was caught. If the translation was not noticed by the a participant, or they were not able to catch it, the assigned value is 0;
+	\item Group - number code for different experiment groups: 1 - \textit{Minimap and Sound}, 2 - \textit{Sound Only}, 3 - \textit{Minimap Only}.
 \end{itemize}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/final_study_data_example}
-	\caption{Collected data sample}
+	\caption{Data collected for a participant}
 	\label{fig:finalstudydataexample}
 \end{figure}
 
-One of the questions of the end-questionnaire was to rate different awareness presentations with an integer score from the most (1) to the least (3) useful (Fig. \ref{fig:finalstudyawarenesspresentationuserpreference}). Participants were allowed to give the same rating to different presentations (i.e. some participants ranked \textit{Minimap and Sound} and \textit{Sound Only} presentations with the score - 1).
+When asked to rate different awareness presentations with an integer score from the most (1) to the least (3) useful, participants gave the feedback, shown in Fig. \ref{fig:finalstudyawarenesspresentationuserpreference}. It was allowed to give the same rating to different presentations (i.e. some participants ranked \textit{Minimap and Sound} and \textit{Sound Only} presentations with the score - 1).
 
 \begin{figure}
 	\centering
@@ -451,17 +475,20 @@ One of the questions of the end-questionnaire was to rate different awareness pr
 	\label{fig:finalstudyawarenesspresentationuserpreference}
 \end{figure}
 
+Most participants managed to trace the first 3-4 shapes, only one was able to finish 6.
 
 \paragraph{Discussion}
-Due to a bug in the implementation, sound wouldn't play sometimes for the first translation in the sound-only, sound + minimap, or both groups. The entries where the sound did not play were removed from the dataset prior to its analysis. Additionally, to make group observations comparable, in every group, where the sound did play on the first translation, or, like in case with the minimap-only group, the sound was never supposed to play, the last data entry for the group was removed. This way, experiment went from 8 observations per group to 7 observations per group.
+Due to a bug in the implementation, sound wouldn't play sometimes for the first translation in the \textit{Sound Only}, \textit{Minimap and Sound}, or both groups. The entries where the sound did not play were removed from the dataset prior to its analysis. Additionally, to make group observations comparable, in every group, where the sound did play on the first translation, or, like in case with the \textit{Minimap Only} group, the sound was never supposed to play, the last data entry for the group was removed. This way, experiment went from 8 observations per group for each participant to 7.
 
-The visual analysis shows that around $ \dfrac{1}{4} $th of all the translations were not caught: 11 from Group 1, 19 from Group 2, and 26 from Group 3 (Fig. \ref{fig:histograms_combined}, \ref{fig:distributions_freqReaction0}).
+The visual analysis shows that around $1/4$th of all the translations were not caught: 11 from Group 1, 19 from Group 2, and 26 from Group 3 (Fig. \ref{fig:histograms_combined}, \ref{fig:distributions_freqReaction0}).
 
-Side-by-side distributions clearly indicate that Groups 1 and 2 took less time for participants to catch them (see the violin diagram in Fig \ref{fig:distributions_violin}). Generally, the distribution of the first two groups suggests their relative comparativeness. The fact that the \textit{Sound Only} group has the smallest reaction times could possibly be an error and the result of a building simply being in the participant's sight. The elongated handle of the violin for the \textit{Sound Only} group could indicate that it was harder to catch the building after noticing it for the first time, which also correlates with the observations of the users during the experiment.
+Side-by-side distributions clearly indicate that Groups 1 and 2 took less time for participants to catch them (see the violin diagram in Fig \ref{fig:distributions_violin}). Generally, the distribution of the first two groups suggests their relative similarity. The fact that the \textit{Sound Only} group has the smallest reaction times could possibly be an error and the result of a building simply being in the participant's sight. The elongated top-handle of the distribution for the \textit{Sound Only} group could indicate that it was harder to catch the building after noticing it for the first time, which also correlates with the observations of the users during the experiment.
+
+In general, it was observed that it was mostly due to the building or the minimap being in the participants' sight that they were able to spot the moving building in the \textit{Minimap Only} group. On the other hand, in case of the groups that relied on the auditory cues, participants were always informed aware that there was a translation happening, even if they had difficulties exactly locating it (i.e. in the \textit{Sound Only} group).
+
+The results of the analysis and participant-feedback suggest that the additional auditory cues help users to improve their awareness of the workspace. The best best awareness presentation was the \textit{Minimap and Sound} group, followed by \textit{Sound Only} and \textit{Minimap Only}.
 
 Statistical summary for each group can be found in Table \ref{tab:final_study_stats}.
-
-The results of the analysis and participant-feedback suggest the best awareness presentation was the \textit{Minimap and Sound} group, followed by \textit{Sound Only} and \textit{Minimap Only}.
 
 \begin{figure}
 	\centering
@@ -479,7 +506,7 @@ The results of the analysis and participant-feedback suggest the best awareness 
 	\subfloat[Uncaught buildings]{\label{fig:distributions_freqReaction0}\includegraphics[scale=.15]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotFreqColorReaction0.png}}
 	
 	\par \smallskip
-	\subfloat[Side-by-side comparison of reaction time]{\label{fig:distributions_violin}\includegraphics[scale=.15]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotViolinNon0.png}}
+	\subfloat[Side-by-side comparison of reaction time, excluding uncaught buildings]{\label{fig:distributions_violin}\includegraphics[scale=.15]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotViolinNon0.png}}
 	
 	\caption{Data distributions}
 	\label{fig:histograms}
@@ -511,8 +538,10 @@ The results of the analysis and participant-feedback suggest the best awareness 
 	\caption{Statistical summary}
 \end{table}
 
-\subparagraph{Limitations}
+\subparagraph{Limitations} % TODO: rename this paragraph? Make it "Observations" and move to the Results?
 % the fact that we only sample the level 1 SA/WA (we won't be going into sampling direction of translation guesses from the participants)
 % could also try to describe it according to WA framework
 % frame drop
-% minimap
+\textit{Frame rate} The implementation of the voxel drawing system was not aimed at maximizing performance, as the result the frame rate dropped to around 70 FPS, when completing some of the shapes (i.e. the Low Poly Trees). One participants indicated that they felt a little bit dizzy due to this problem at one point.
+
+\textit{Minimap} Some users indicated that the minimap implementation was not the most convenient, especially in the \textit{Minimap Only}, where to monitor the map they had to take their attention of the main task. While this will most likely be the case in any implementation, a possible solution would be to see the effects of having the minimap attached to the users head in a non-obstructive way.
