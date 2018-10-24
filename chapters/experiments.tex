@@ -93,7 +93,6 @@ Some feedback from the initial prototypes indicated that the speed of the moving
 
 \paragraph{Participants}
 Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers.
-% TODO: figure out the age distribution
 
 \paragraph{Procedure \& Task}
 The study was carried out in a \gls{ve} that was specifically constructed for this purpose (see Fig. \ref{fig:clipimage001}). A participant would be placed at the Center (C) of the environment. A real-sized building, approximated with a cuboid, was present in the environment. It could be translated by the experimenter from and to any of the predefined positions: Left Front (LF), Right Front (RF), Left Back (LB), Right Back (RB), Front (F), Back (B), Left (L), Right (R), C. When the building moved, it would emit sound.
@@ -230,12 +229,7 @@ The preferred (concrete on concrete) sound, which was described by one participa
 
 \textit{Visualization} As it was a preparatory study, the participants were simply asked to close their eyes when guessing the path of the building. Besides the obvious drawback of such approach, participants reported that it is possible to predict the path by relying on the change in brightness, which is perceivable even with the eyes closed, when the building is passing by.
 
-\textit{False negatives} Some users, who gave answers that were close to correct (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path. 
-% TODO: do I add the next sentence or do I put it in the next pilot?
-%This means that users have to be thoroughly instructed on all the possible translation paths before the start of the guessing tests to avoid false negatives.
-
-
-
+\textit{False negatives} Some users, who gave answers that were close to correct (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path.
 
 
 
@@ -256,23 +250,63 @@ Thirteen participants (9 men and 4 women; mean 29.4, std. 10.7) were selected fr
 \paragraph{Procedure \& Task}
 Participants were welcomed and asked to fill out the questionnaire (Appendix \ref{app:pilot2questionnaire_data}) prior to the experiment. Next, the goals of the study, the project, and the tutorial were explained along with participant's individual task. Next, participants were put into the \gls{vr} environment to begin the tutorial.
 
-% TODO: Describe the environment + screenshots
-This \gls{vr} environment was constructed specifically for this experiment. This environment had 2 modes: tutorial and experiment. In both of them, the participant would appear at the middle of the scene. There was a real-sized building and a cylindrical wall around the participant with the center at their position (Fig. ). The building was approximated with a cuboid extended along the vertical axis. Like in the previous pilot, this building would emit sound, when it translated through the scene.
-% TODO: figure
+This \gls{vr} environment was constructed specifically for this experiment. This environment had 2 modes: tutorial and experiment (Fig. \ref{fig:pilot2experiement_environment}). In both of them, the participant would appear at the middle of the scene. There was a real-sized building and a cylindrical wall around the participant with the center at their position. The building was approximated with a cuboid extended along the vertical axis. Like in the previous pilot, this building would emit sound, when it translated through the scene.
+% TODO: add tutorial, back view sreenshot
+\begin{figure}
+	\centering
+	\subfloat[Tutorial mode]{\includegraphics[width=0.7\linewidth]{figures/pilot2_environment_tutorial}}
+	\par
+	\subfloat[Experiment mode, front view]{\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_experiment_front}}
+	\par
+	\subfloat[Experiment mode, back view]{\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_experiment_back}}
+	\caption{Experiment environment}
+	\label{fig:pilot2experiement_environment}
+\end{figure}
 
 % TODO: the participant, a participant, participant, participants?
-The goal of the tutorial mode was to allow the participant to understand the correlation between the visually perceived movements of the building and the sound emitted. The affordances of the environment were explained prior to the tutorial. 
+The goal of the tutorial mode was to allow the participant to understand the correlation between the visually perceived movements of the building and the sound emitted. The affordances of the environment were explained prior to the tutorial.
+
 In the tutorial mode, the building was visible, and the wall - invisible.
-40 translations were pre-scripted for the actual experiment, 20 of which were demonstrated in the tutorial mode in the sequential order (Fig. with tutorial paths highlighted). The translations of the building would be initiated by the experimenter through the control panel. Participants were briefed to face the "Front" direction, when the experimenter voiced the path that the building was going to travel, or (in the experiment mode) the fact that a translation is about to get initiated. After that participants were allowed to move their head. This and the choice of the translation paths for the tutorial was informed by the idea of allowing the participant to build a complete picture, of how a translating building sounds in all the directions around the user. "Front" and "Back" directions were identified with text on a pole, and were always visible (Fig. ).
-% TODO: figureS
+40 translations were pre-scripted for the actual experiment, 20 of which were demonstrated. The control panel for this experiment can be viewed in Fig. \ref{fig:pilot2tutorialcontrolpanelhighlighted}, the buttons that are highlighted in blue were used to initiate tutorial translations. These translations were initiated in the same order for all the participants.
+
+Participants were briefed to face the "Front" direction, when the experimenter voiced the path that the building was going to travel, or (in the experiment mode) the fact that a translation is about to get initiated. After that participants were allowed to move their head. This and the choice of the translation paths for the tutorial was informed by the idea of allowing the participant to build a complete picture, of how a translating building sounds in all the directions around the user. "Front" and "Back" directions were identified with text on a pole, and were always visible (Fig. \ref{fig:pilot2experiement_environment}).
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_control_panel_highlighted}
+	\caption{Control panel}
+	\label{fig:pilot2tutorialcontrolpanelhighlighted}
+\end{figure}
+
 
 After the tutorial translations were demonstrated, participants were asked if they were ready to proceed to the actual experiment. Only one participant asked to repeat some of the translations to gain a better spatial understanding.
 
-In the experiment mode participants were not able to see the building, but would still hear the sounds when it started moving. The wall around the user was visible. The end-points of the translations of the building were always on this wall. Participants were asked to indicate where the building translated from and to with the help of a simulated laser pointer attached to the controller. The details of the controls can be found on Fig. %TODO: figure (1 - schematic controller with the controlls described like in games; 2,3,4 - how the laser pointer looks while pointing somewhere and on the wall, and what happens on-click).
-To indicate that translation started or ended at some point, participants would point the laser pointer at the wall and click the touchpad. They got a visual cue that they had made a selection.
+In the experiment mode participants were not able to see the building, but would still hear the sounds when it started moving. The wall around the user was visible. The end-points of the translations of the building were always on this wall. Participants were asked to indicate where the building translated from and to with the help of a simulated laser pointer attached to the controller. The details of the controls can be found on Fig. \ref{fig:pilot2tutorialcontrollerswithexplanation}.
+To indicate that translation started or ended at some point, participants would point the laser pointer at the wall and click the touchpad. They got a visual cue that they had made a selection (Fig. \ref{fig:pilot2tutorialgivinganswer}).
 
-All 40 translations were initiated in a pseudo-random order for each participant. This order was decided by the experimenter. Each translation could be initiated only once, to make sure no translations were initiated multiple times. The experimenter was responsible for  initiating the translations. 
-% TODO: figure - control panel with some translations grayed-out
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_controllers_with_explanation}
+	\caption{Controls}
+	\label{fig:pilot2tutorialcontrollerswithexplanation}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_givinganswer1}}
+	\par
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_givinganswer2}}
+	\par
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_givinganswer3}}
+	
+	\caption{Giving an answer (guess)}
+	\label{fig:pilot2tutorialgivinganswer}
+\end{figure}
+
+
+All 40 translations were initiated in a pseudo-random order for each participant. This order was decided by the experimenter. Each translation could be initiated only once, to make sure no translations were initiated multiple times (after the initiation the button for this translation would be grayed-out and rendered inactive, see Fir. \ref{fig:pilot2tutorialcontrolpanelhighlighted}). The experimenter was responsible for  initiating the translations.
 Participants answers were recorded by the system in a CSV file.
 
 When participants went through all the 40 translations, the experiment would end. Experimenter thanked the participants and ask for their feedback concerning the experiment.
@@ -282,14 +316,17 @@ When participants went through all the 40 translations, the experiment would end
 \paragraph{Study design}
 This study used the repeated measures design with one independent variable - translation paths (40 values).
 
-The building could travel between the total of 8 end-points. These were moved equidistantly placed around the participant (approx. 28.3m away) on the cylinder wall.
+The building could travel between the total of 8 endpoints. These were moved equidistantly placed around the participant (approx. 28.3m away) on the cylinder wall.
+% TODO: add top-down screenshot of these endpoints 
 
 The auditory icon of a concrete bock sliding on a concrete surface from the previous experiment was used. 
 
 The translation speed of the building was 30m/s.
 
 \paragraph{Results}
-Complete data collected during the experiment can be found in Appendix \ref{app:pilot2data_collected}.
+
+A sample of the collected data can be seen in Fig. \ref{fig:pilot2datasample}. The link to the complete data can be found in Appendix \ref{app:pilot2data_collected}.
+
 The following was collected:
 \begin{itemize}
 	\item From X, From Y, From Z - start-point of the translation;
@@ -303,6 +340,17 @@ The following was collected:
 	\item Guess Angle From, Guess Angle To - angle between the C-F and C-(Guess From X, 0, Guess From Z), C-(Guess To X, 0, Guess To Z), respectively;
 	\item Divergence Angle From, Divergence Angle To - angular distance between the Angle From and Guess Angle From, Angle To and Guess Angle To, respectively.
 \end{itemize}
+
+\begin{figure}
+	\centering
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_datasample1}}
+	\par
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_datasample2}}
+	\caption{Collected data sample}
+	\label{fig:pilot2datasample}
+\end{figure}
+
+
 
 % Post-questionnaire summary
 At least half of the participants reported having trouble to differentiate front and back translations. Some thought the building was always in the back, but decided to give some answers in-front just to balance the results. One participant indicated that everything was "easy and logical" when the building was visible, and unclear when it was not.
@@ -364,8 +412,22 @@ The evaluated aspects of \gls{wa} were participants’ reaction speed when provi
 
 \paragraph{Procedure}
 Participants were given a written and verbal introduction to the experiment,
-after which were asked to sign the consent form for using their data. % TODO: add figures to appendix
-The verbal introduction was reinforced with the practical tutorial. During the tutorial, participants learned how to use the 3D voxel brush for tracing the shapes, the laser pointer to indicate they noticed changes to the environment, and the minimap to locate the moving buildings. Following that, the auditory cues were introduced, and the differences between the tutorial and the actual experiment part were explained. Participants went through a small scenario, resembling the experiment, where they were asked to trace a pillar, while catching a moving building, and keeping track of how the building sounds and where it is visually. Among other reasons, this was done to improve participants' understanding of how the translations sound when the building is at different locations relative to them.
+and were asked to sign the consent form for using their data.
+Next participants were placed in the immersive \gls{vr} environment, which implemented 2 modes: tutorial and experiment (Fig \ref{fig:finalstudy_immersive_vr_environment}). In the tutorial mode, only one building (the clock tower) and the test tracing shape would be visible.
+Participants learned how to use the 3D voxel brush for tracing the shapes, the laser pointer to indicate they noticed changes to the environment, and the minimap to locate the moving buildings. Following that, the auditory cues were introduced, and the differences between the tutorial and the actual experiment part were explained. Participants went through a small scenario, resembling the experiment, where they were asked to trace a pillar, and in the meanwhile try to catch the moving building a couple of times. They were also asked to keep track of how the building sounds and where it is visually.
+
+\begin{figure}
+	\centering
+	
+	\subfloat[Tutorial environment, the clock tower]{\includegraphics[scale=.29]{D://Documents/studies/ss18/Thesis/tum-thesis-latex/figures/finalstudy_environment_tutorial}}
+	\par
+	\subfloat[Experiemnt environment, the clock tower]{\includegraphics[scale=.29]{D://Documents/studies/ss18/Thesis/tum-thesis-latex/figures/finalstudy_environment2}}
+	\par
+	\subfloat[Experiemnt environment, the tracing shape]{\includegraphics[scale=.29]{D://Documents/studies/ss18/Thesis/tum-thesis-latex/figures/finalstudy_environment}}
+	
+	\caption{Virtual environment}
+	\label{fig:finalstudy_immersive_vr_environment}
+\end{figure}
 
 During the actual experiment, each participant was tested in each of the 3 test groups: \textit{Minimap and Sound}, \textit{Sound Only}, and \textit{Minimap Only}. Participants were instructed to keep focus on their main task and treat the experiment not as a test of their abilities to notice all the moving buildings, but rather as a test to check how good the system was in informing them of these changes. 
 When participants were done with a shape, they would voice this to the experimenter, and he would save the current voxel drawing, and switch the tracing shape to the next one.
@@ -423,9 +485,9 @@ In terms of the \gls{wa} framework, \cite{gutwin_chalk_2011} aim to answer the \
 	\item Projection: participant sees or hears the way that building is moving, and based on this, tries to catch it at its next position.
 \end{enumerate}
 
-\cite{gutwin_chalk_2011} does not specify the audio plane, in which the sound was simulated, in this experiment, the plane was horizontal (TODO: ref figure). 
+\cite{gutwin_chalk_2011} do not specify the details of their spatial sound, however, since it was a 2D study, it is plausible that all sounds originate in the same plane, we will call it sound plane. In case of \cite{gutwin_chalk_2011} this plane can be positioned in 3 different ways: vertically, horizontally, or somewhere in-between (Fig. \ref{fig:gutwinvsmystudysoundplane}a). In all cases, where the plane is positioned in an orientation that is different from the orientation of the screen, participants would have to build a mapping between for the interface. In this study, sounds are also emitted from the same plane, which is positioned horizontally (Fig. \ref{fig:gutwinvsmystudysoundplane}b).
 
-Similarities between the two studies include: the study design, the object of analysis - \gls{wa}, and the use of auditory icons for the auditory cues.
+Other similarities between the two studies include: the study design, the object of analysis (\gls{wa}), and the use of auditory icons as auditory cues.
 
 \begin{figure}[h]
 	\centering
@@ -525,6 +587,9 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 \end{comment}
 
 \begin{table}[h]
+	\label{tab:final_study_stats}
+	\caption{Statistical summary}
+	
 	\begin{tabular}{|l|l|l|l|}
 		\hline
 		& \textbf{Group 1: Minimap and Sound} & \textbf{Group 2: Sound Only} & \textbf{Group 3: Minimap Only} \\ \hline
@@ -533,15 +598,4 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 		\textbf{Range (sec.)} & {[}1.865601, 11.195500{]}           & {[}1.567505, 13.192500{]}    & {[}1.890381, 14.635010{]}      \\ \hline
 		\textbf{Num. caught}  & 73                                  & 65                           & 58                             \\ \hline
 	\end{tabular}
-
-	\label{tab:final_study_stats}
-	\caption{Statistical summary}
 \end{table}
-
-\subparagraph{Limitations} % TODO: rename this paragraph? Make it "Observations" and move to the Results?
-% the fact that we only sample the level 1 SA/WA (we won't be going into sampling direction of translation guesses from the participants)
-% could also try to describe it according to WA framework
-% frame drop
-\textit{Frame rate} The implementation of the voxel drawing system was not aimed at maximizing performance, as the result the frame rate dropped to around 70 FPS, when completing some of the shapes (i.e. the Low Poly Trees). One participants indicated that they felt a little bit dizzy due to this problem at one point.
-
-\textit{Minimap} Some users indicated that the minimap implementation was not the most convenient, especially in the \textit{Minimap Only}, where to monitor the map they had to take their attention of the main task. While this will most likely be the case in any implementation, a possible solution would be to see the effects of having the minimap attached to the users head in a non-obstructive way.
