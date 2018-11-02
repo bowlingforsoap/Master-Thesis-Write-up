@@ -1,4 +1,39 @@
-\chapter{Collaboration in Virtual Environments} %\chapter{Collaboration in Similar Projects}
+\chapter{Collaboration in Virtual Environments}
+
+Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. \cite{bannon_perspectives_nodate} argues that the first shift towards requirements of a group, instead of an individual has begun when the methods and results provided by field of \gls{hci} started receiving the criticism for their inability to meet the needs of the designers of the collaborative software. The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. The shift of attention to the human-computer-human interaction (HCHI) was caused by the \gls{cmc} movement. Nevertheless, Bannon notes that it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive position came through the establishment of the \gls{cscw} field. It puts emphasis on the actual processes being done, and looks at the ways to support the existing group workflows.
+
+%[CVE - churchil,greenwald]
+The next paradigm shift started to happen in the late 1990s, where the already established field of \gls{cscw} started facing the problems of its own, specifically when trying to apply the approach to more open-ended and creative tasks. \cite{churchill_collaborative_1998} argue that the \gls{cscw} approach at the time was better at addressing the routine tasks, such as those with clear-cut requirements for the form of the input and output data: video conferencing, email, co-authoring applications, etc. In contrast, the tasks, like design, where users spend significant amount of time discussing and negotiating may suffer from imposing a certain structure early on. The topic of \gls{cve} was raised in order to tackle this problem. Churchill and Snowdon describe \gls{cve}s as "distributed, virtual reality that is designed to support collaborative activities". The main difference from the \gls{cscw} was in the freedom of self-expression, interaction with common objects (artifacts) in the scene, and communication. The differences in these approaches can be seen in Fig. \ref{fig:approaches_to_collaboration} and are instantly noticeable: while \gls{cscw} looks like a traditional desktop application, the \gls{cve} reminds more of a computer game, than a tool to promote collaboration during remote collaboration.
+
+\begin{figure}
+	\centering
+	\hfill
+	\subfloat[CSCW]{\includegraphics[width=0.4\linewidth]{figures/churchill_snowdon_cscw_vs_cve/A-room-created-using-The-Palace-with-two-avatar-embodiments}}
+	\hfill
+	\subfloat[CVE]{\includegraphics[width=0.4\linewidth]{figures/churchill_snowdon_cscw_vs_cve/Embodiments-in-MASSIVE-1}}
+	\hfill
+	\caption{Approaches to collaboration (Source: \cite{churchill_collaborative_1998})}
+	\label{fig:approaches_to_collaboration}
+\end{figure}
+
+%[immersive CVE - greenwald cocoverse]
+The history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \cite{greenwald_technology_2017}. The paper argues that initially the interfaces to control the virtual character required so much attentional load that it hindered the primary task, which in turn resulted in \gls{cve} technology finding much broader application in gaming. This was the case until the introduction of the first generation of the \gls{vr} setups from Oculus Rift and HTC Vive that offered sub-millimeter tracking of head and hand-held controllers, high-resolution, high fidelity and wide field-of-view displays at consumer-friendly prices. This caused a resurgence of the technology, its adoption by the consumer market, and opened new possibilities and applications for the technology by providing a more intuitive interface.
+
+Now that we are familiar with the development history and fields involved in digital collaboration, it is time to take a look at the tools available % TODO: what have the actual research in the field addressed so far (to see, if it helps us solve our problem).
+to tackle the problem we have - the unexpected manipulations in the immersive workspace. % ?This is a communication problem
+% CocoVerse
+Greenwald et al. (\cite{greenwald_cocoverse_nodate}, \cite{greenwald_investigating_2017}, \cite{greenwald_technology_2017}) are exploring the utility of shared immersive \gls{vr} for collaborative learning and co-operation. Authors claim their system, CocoVerse, is the first of its kind in the research community multi-user framework for collaboration and co-creation. The topics addressed in these works are the ones of social presence (the quality of the medium in convincing users in the salience of the others, present in the same \gls{ve}), co-presence (psychological and emotional interactions between the users), embodiment (how users are represented), as well as non-verbal communication.
+% Greenspace II
+Some research in the field is addressing the question
+% Lena
+% Gutwin
+% Ammi & Katz
+
+As we have seen, even in the fields of \gls{cscw} and \gls{cve}, a broad range of topics can be addressed with respect to collaboration..
+We have viewed non-visual, 2D, immersive \gls{vr} environments 
+These are only some..
+We will now take a closer look at the awareness approach, as it provides us with..
+
 
 Collaboration can be approached in different ways, depending on the task at hand. More traditional approach is with \gls{cscw} systems, it works well when the task is routine and just requires either information exchange, or an execution of a pre-defined task \cite{churchill_collaborative_1998}. For more creative and non-trivial tasks, which can be obscured by enforcing a certain workflow early-on, an approach using \gls{cve} is more appropriate.
 
@@ -7,7 +42,7 @@ Collaboration can be approached in different ways, depending on the task at hand
 One of the origins of \gls{cve}s is the field of \gls{vr}. This is mostly due to the aim  to allow users creative freedom, and reduce the learning curve by providing an intuitive interface. The task of a \gls{cve} is to facilitate communication and collaboration. They allow synchronous and asynchronous task execution, and provide the support for real-time sharing of visual artifacts \cite{churchill_collaborative_1998}.
 
 \subparagraph{}
-% Cocoverse, Greenwald
+% Cocoverse, Greenwald - first system of this kind in the research community
 A good and concise review of the history of the \gls{cve}s can be found in \cite{greenwald_technology_2017}. The state of art in the area of CVEs was reached by one of the authors, in \cite{greenwald_cocoverse_nodate} and \cite{greenwald_investigating_2017} he presents CocoVerse - a shared immersive \gls{vr} environment for local collaboration and co-creation (Fig. \ref{fig:cocoverse}).
 
 \begin{figure}
@@ -27,13 +62,13 @@ The system is a room-scale shared immersive \gls{vr} experience, which allows us
 %%% Focus and the results
 Authors report the overall success and promise of such setups as an engine for learning and creativity. They further review, how the sense of social presence is influenced by the complexity of avatars and high movement realism. \cite{greenwald_investigating_2017} proposes guidelines for deciding on the level of sophistication of the embodiment based on the type of experience that is being digitalized.
 
-\subparagraph[CSCW]{}
 % Concise: what other CVE projects addressed.
 Among other CVEs that were explored, \cite{lena_real-time_nodate} proposes a system, which connects two different mediums (an interactive table computer, and a CAVE-environment), and focuses on the way to develop consistent interactions across the environment. % TODO: more (e.g. Kulik)
 
 % Conclusion: something else is needed
 Generally, it seems that the focus of the modern \gls{cve} projects is more on exploring the aspects of the intentional communication and interactions, where users are always aware of each other during the collaboration task. I our case, the focus should be more on consequential communication, which arises as a result of user's actions.
 
+\subparagraph[CSCW]{}
 % CSCWs
 We will now turn to the field of \gls{cscw}, which is regarded by \cite{churchill_collaborative_1998} as the main way to approach the automation of the collaborative work, before the paradigm shift towards \gls{cve}s. \gls{cscw} applications also provide distributed access to a shared context. However, unlike \gls{cve}s, these applications provide a less malleable environment that is restricted by requirements of a certain workflow. Examples of \gls{cscw} applications include: emailing software, project management and conferencing tools, shared calendars and drawing tools, etc.
 
