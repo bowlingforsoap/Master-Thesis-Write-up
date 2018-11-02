@@ -1,9 +1,12 @@
 \chapter{Collaboration in Virtual Environments}
+% TODO: Virtual reality has to be introduced somewhere; and the difference in what I mean by simply VR and immersive VR explained.
 
-Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. \cite{bannon_perspectives_nodate} argues that the first shift towards requirements of a group, instead of an individual has begun when the methods and results provided by field of \gls{hci} started receiving the criticism for their inability to meet the needs of the designers of the collaborative software. The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. The shift of attention to the human-computer-human interaction (HCHI) was caused by the \gls{cmc} movement. Nevertheless, Bannon notes that it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive position came through the establishment of the \gls{cscw} field. It puts emphasis on the actual processes being done, and looks at the ways to support the existing group workflows.
+\paragraph[History]{}
+
+Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. \cite{bannon_perspectives_nodate} argues that the first shift towards requirements of a group, instead of an individual has begun when the methods and results provided by field of \gls{hci} started receiving the criticism for their inability to meet the needs of the designers of the collaborative software. The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. The shift of attention to the human-computer-human interaction (HCHI) was caused by the \gls{cmc} movement. Nevertheless, it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive measure came through the establishment of the \gls{cscw} field. The special term "groupware" was coined, which indicated the emphasis on software to support the work of users in groups and their established workflows.
 
 %[CVE - churchil,greenwald]
-The next paradigm shift started to happen in the late 1990s, where the already established field of \gls{cscw} started facing the problems of its own, specifically when trying to apply the approach to more open-ended and creative tasks. \cite{churchill_collaborative_1998} argue that the \gls{cscw} approach at the time was better at addressing the routine tasks, such as those with clear-cut requirements for the form of the input and output data: video conferencing, email, co-authoring applications, etc. In contrast, the tasks, like design, where users spend significant amount of time discussing and negotiating may suffer from imposing a certain structure early on. The topic of \gls{cve} was raised in order to tackle this problem. Churchill and Snowdon describe \gls{cve}s as "distributed, virtual reality that is designed to support collaborative activities". The main difference from the \gls{cscw} was in the freedom of self-expression, interaction with common objects (artifacts) in the scene, and communication. The differences in these approaches can be seen in Fig. \ref{fig:approaches_to_collaboration} and are instantly noticeable: while \gls{cscw} looks like a traditional desktop application, the \gls{cve} reminds more of a computer game, than a tool to promote collaboration during remote collaboration.
+The next paradigm shift started to happen in the late 1990s, where the already established field of \gls{cscw} started facing the problems of its own, specifically when trying to apply the approach to more open-ended and creative tasks. \cite{churchill_collaborative_1998} argue that the \gls{cscw} approach at the time was better at addressing the routine tasks, such as those with clear-cut requirements for the form of the input and output data: video conferencing, email, co-authoring applications, shared drawing applications, etc. In contrast, the tasks, like design, where users spend significant amount of time discussing and negotiating may suffer from imposing a certain structure early on. In answer to this problem, an approach emerged that has its origins in the domain of \gls{vr} - the \gls{cve}. Churchill and Snowdon describe \gls{cve}s as "distributed, virtual reality that is designed to support collaborative activities". The main difference from the \gls{cscw} was in the freedom of self-expression, interaction with common objects (artifacts) in the scene, and communication. The differences in these approaches can be seen in Fig. \ref{fig:approaches_to_collaboration} and are instantly noticeable: while \gls{cscw} looks like a traditional desktop application, the \gls{cve} reminds more of a computer game, than a tool to promote collaboration during remote collaboration. 
 
 \begin{figure}
 	\centering
@@ -17,23 +20,80 @@ The next paradigm shift started to happen in the late 1990s, where the already e
 \end{figure}
 
 %[immersive CVE - greenwald cocoverse]
-The history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \cite{greenwald_technology_2017}. The paper argues that initially the interfaces to control the virtual character required so much attentional load that it hindered the primary task, which in turn resulted in \gls{cve} technology finding much broader application in gaming. This was the case until the introduction of the first generation of the \gls{vr} setups from Oculus Rift and HTC Vive that offered sub-millimeter tracking of head and hand-held controllers, high-resolution, high fidelity and wide field-of-view displays at consumer-friendly prices. This caused a resurgence of the technology, its adoption by the consumer market, and opened new possibilities and applications for the technology by providing a more intuitive interface.
+The next leap in digital collaboration was initiated with the introduction of the first generation \gls{vr} setups from Oculus Rift and HTC Vive. Their sub-millimeter tracking of head and hand-held controllers, high-resolution, high fidelity and wide field-of-view displays eased the problem of foreign interface  requiring high attention load, the initial reason why \gls{cve}s found much broader application in gaming, than in distributed workspaces. More detail on the history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \cite{greenwald_technology_2017}.
 
-Now that we are familiar with the development history and fields involved in digital collaboration, it is time to take a look at the tools available % TODO: what have the actual research in the field addressed so far (to see, if it helps us solve our problem).
-to tackle the problem we have - the unexpected manipulations in the immersive workspace. % ?This is a communication problem
-% CocoVerse
-Greenwald et al. (\cite{greenwald_cocoverse_nodate}, \cite{greenwald_investigating_2017}, \cite{greenwald_technology_2017}) are exploring the utility of shared immersive \gls{vr} for collaborative learning and co-operation. Authors claim their system, CocoVerse, is the first of its kind in the research community multi-user framework for collaboration and co-creation. The topics addressed in these works are the ones of social presence (the quality of the medium in convincing users in the salience of the others, present in the same \gls{ve}), co-presence (psychological and emotional interactions between the users), embodiment (how users are represented), as well as non-verbal communication.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/Cocoverse}
+	\caption{CocoVerse, environment affordances and avatars (Source: \cite{greenwald_cocoverse_nodate})}
+	\label{fig:cocoverse}
+\end{figure}
+
+\paragraph[Related Work]{}
+We will now take a look at the some of the problems that were appraoched in the domain of digital collaboration.
+
+% Interactions and navigation // THis is more a single-player problem
 % Greenspace II
-Some research in the field is addressing the question
+Some collaborative projects address the question of interactions with shared artifacts. From the earlier studies, \cite{davidson_greenspace_1996} present an immersive \gls{vr} system with 6 \gls{dof} tracked head and hand movements that facilitates design review and discussion of the architectural design decisions. This was much an exploratory study, where participants got to explore the design of a 3D environment in an interactive fashion. The authors report their findings on the navigation, communication, manipulation and some social affordances of the resulting application.
 % Lena
+\cite{lena_real-time_nodate} presents a research into what constitutes an interactions in \gls{vr} and utilizes the findings in the \gls{cdp} project to connect two "different realities": an interactive table computer and a CAVE-environment. Intentional non-verbal communication and embodiment are also explored.
+
+% Presence
+% CocoVerse
+Next popular topic of research is the different types of presence, also described as a feeling of "being there".
+Greenwald et al. (\cite{greenwald_cocoverse_nodate}, \cite{greenwald_investigating_2017}, \cite{greenwald_technology_2017}) are exploring the utility of shared immersive \gls{vr} for collaborative learning and co-operation. Authors present a system that is the first of its kind in the research community multi-user framework for collaboration and co-creation, CocoVerse (Fig. \ref{fig:cocoverse}). The topics addressed are: social presence (the quality of the medium in convincing users in the salience of the others, present in the same \gls{ve}), co-presence (psychological and emotional interactions between the users), embodiment (how users are represented), as well as non-verbal communication (i.e. through gestures).
+Even though, it is already closer to our initial problem formulation, this stream of research focuses mostly on the phase where users' attention is equally engaged on the same subject.
+
+% Awareness
+\cite{gutwin_descriptive_2002} split a collaborative situation into two parts: the domain task and the collaborative part. Ammi and Katz, in their study on communication via audio and haptic feedback in abstract and non-visual environments, prior to implementation, derive requirements to the individual (domain) and collaborative parts of the application \cite{ammi_intermodal_2015}. The former include the concept of \gls{sa}, and the later consists of process and \gls{wa}.
+% Situation & Workspace awareness differences
+\gls{sa} is defined by Endsley as: "the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future" \cite{endsley_situation_1988}. In-fact, \gls{wa} is a special type of \gls{sa} in shared workspaces. The first difference is that the focus of the \gls{sa} on the domain task only is extended with the focus on collaborative task. Secondly, the extreme flow of information that is typical for \gls{sa} due to its roots in the jet fighter simulations, is reduced in volume to match the use case of shared collaboration between colleagues. Main reason for this is, as authors put it: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \cite{gutwin_descriptive_2002}.
+
+% Similaritites
+The part that is similar about the two types of awareness, and that makes this topic interesting in the context of current thesis, is that in both cases users are unable to gather the information they need. If, in case of a jet fighter simulation, the pilot is simply overwhelmed by the sheer volume of the information presented, then in the sorting slides task the users is failing to gather information due to the fact that the system does not present them with adequate awareness information by default.
+
+% Workspace awareness framework: types of communication
+The authors go ahead and introduce a descriptive framework to help groupware
+designers determine what types of awareness presentations to include in their systems, and allow the comparison of the systems based on the extent to which they promote \gls{wa}.
+The framework consists of three parts:
+\begin{description}
+	\item[Part I] What information makes up \gls{wa}?
+	\item[Part II] How is the \gls{wa} information gathered?
+	\item[Part III] How is \gls{wa} used in collaboration?
+\end{description}
+
+The second part of the framework provides insights about the different sources of \gls{wa} information: 
+\begin{enumerate}
+	\item Bodies and consequential communication;
+	\item Artifacts and feedthrough;
+	\item Conversation, gesture, and intentional communication.
+\end{enumerate}.
+While 1 and 3 can be summarized as non-intentional and intentional communication, artifacts in 2 are certain objects of interest in the workspace, and the feedthrough is a mechanism, where artifacts would give off information (audio, visual, etc.) when manipulated that serves as a feedback to the person performing manipulation and as notification to others present in the workspace.
+
+% Gutwin_chalk_2011
+Feedthrough is utilized in the \cite{gutwin_chalk_2011} study. The authors study the use of auditory cues to promote \gls{wa} in a shared chalkboard application. System allows users to perform 2D drawings that are accompanied by an auditory feedback...
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
+	\caption{Shared chalkboard application, tracing shape and minimap (Source: \cite{gutwin_chalk_2011})}
+	\label{fig:gutwinchalk2011}
+\end{figure}
+
+\begin{comment}
+
+
 % Gutwin
+Gutwin and Greenberg explore the effects of synthesized sound in a shared chalkboard \gls{cscw} on the \gls{wa} ("the up-to-the-moment understanding of another person’s interaction with a shared workspace"). In this system two users are sharing a 2D workspace (a chalkboard). One user was real (participant) and another was simulated (agent). The agent would draw in an off-screen part of the workspace, this activity was accompanied by a synthesized sound. The real user had two tasks - primary and secondary. The former was to trace a given 2D shape (i.e. an outline of a ship) in their part of the shared workspace, and the later was to indicate whether they noticed the changes caused by the agent. % TODO: I don't look so deep into other studies
+The authors study the extent of the ability of auditory cues to signal changes in the workspace, in comparison and in combination with a minimap.
+
 % Ammi & Katz
+\cite{ammi_intermodal_2015} study the application of abstract and non-visual \gls{vr} environments in the context of improving communication. The system facilitates a collaborative search of targets with the help of audio and haptic feedback. The authors work out a specification for both the individual and the collaborative aspects of the task. The concept of \gls{sa} is used to address the former, and workspace and process awarenesses - the later.
 
 As we have seen, even in the fields of \gls{cscw} and \gls{cve}, a broad range of topics can be addressed with respect to collaboration..
 We have viewed non-visual, 2D, immersive \gls{vr} environments 
 These are only some..
 We will now take a closer look at the awareness approach, as it provides us with..
-
+% Intentional and unintentional communication? Communication with aware person and unaware person - Nah, the difference is in the type of the task that is being conducted. In gutwin the domain task is being explored, while the others explore the collaborative part.
 
 Collaboration can be approached in different ways, depending on the task at hand. More traditional approach is with \gls{cscw} systems, it works well when the task is routine and just requires either information exchange, or an execution of a pre-defined task \cite{churchill_collaborative_1998}. For more creative and non-trivial tasks, which can be obscured by enforcing a certain workflow early-on, an approach using \gls{cve} is more appropriate.
 
@@ -105,7 +165,7 @@ Next, we are going to take a closer look at the awareness approach % TODO: did I
 , its history, and how it aids the design of the groupware systems. 
 
 
-
+\end{comment}
 
 
 
