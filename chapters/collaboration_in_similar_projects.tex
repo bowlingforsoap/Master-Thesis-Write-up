@@ -1,8 +1,9 @@
-\chapter{Collaboration in Virtual Environments}
+\chapter{Related Work}
 % TODO: Virtual reality has to be introduced somewhere; and the difference in what I mean by simply VR and immersive VR explained.
 
-\paragraph[History]{}
+This master thesis focuses on two broad topics: collaboration and sound. It puts the work at the intersection of the fields of \gls{vr}, \gls{cscw}, \gls{cve} and \gls{hci}.
 
+\paragraph[]{Collaboration}
 Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. \cite{bannon_perspectives_nodate} argues that the first shift towards requirements of a group, instead of an individual has begun when the methods and results provided by field of \gls{hci} started receiving the criticism for their inability to meet the needs of the designers of the collaborative software. The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. The shift of attention to the human-computer-human interaction (HCHI) was caused by the \gls{cmc} movement. Nevertheless, it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive measure came through the establishment of the \gls{cscw} field. The special term "groupware" was coined, which indicated the emphasis on software to support the work of users in groups and their established workflows.
 
 %[CVE - churchil,greenwald]
@@ -67,17 +68,18 @@ The second part of the framework provides insights about the different sources o
 	\item Bodies and consequential communication;
 	\item Artifacts and feedthrough;
 	\item Conversation, gesture, and intentional communication.
-\end{enumerate}.
-While 1 and 3 can be summarized as non-intentional and intentional communication, artifacts in 2 are certain objects of interest in the workspace, and the feedthrough is a mechanism, where artifacts would give off information (audio, visual, etc.) when manipulated that serves as a feedback to the person performing manipulation and as notification to others present in the workspace.
-
+\end{enumerate}
+While 1 and 3 can be summarized as non-intentional and intentional communication, feedthrough is a mechanism of interest for our purposes, as it implies that artifacts (objects in the \gls{ve}) give off information (audio, visual, etc.) when manipulated, which simultaneously serves as a feedback to the person performing the manipulation and as a notification to the others present in the workspace.
 % Gutwin_chalk_2011
-Feedthrough is utilized in the \cite{gutwin_chalk_2011} study. The authors study the use of auditory cues to promote \gls{wa} in a shared chalkboard application. System allows users to perform 2D drawings that are accompanied by an auditory feedback...
+The authors utilize this mechanism in their study on the use of synthesized audio to promote to promote \gls{wa} in a shared chalkboard application \cite{gutwin_chalk_2011}. In the systems, users are tasked with tracing a 2D shape (i.e. an outline of a ship), which is accompanied with an auditory feedback. There are two types of users in this environment - the real one (participant) and the simulated (user agent). The later is responsible for drawing shapes in the off-screen part of the workspace, while the former has two tasks - the primary and secondary. The primary task is to trace a given shape, and the secondary is to report that they noticed changes to the environment caused by the user agent. Among other topics, the authors explore the effect different awareness presentations and their combinations (type of auditory feedback, availability of the minimap of the environment, workspace clutter, and attention load) have on the \gls{wa}. They report a substantial increase in awareness due to the use of audio to convey information.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
 	\caption{Shared chalkboard application, tracing shape and minimap (Source: \cite{gutwin_chalk_2011})}
 	\label{fig:gutwinchalk2011}
 \end{figure}
+
+In the next chapter we take a closer look at some of sound properties that can be utilized our application to counter the unexpected changes to the environment and enhance the \gls{wa}.
 
 \begin{comment}
 
@@ -155,7 +157,7 @@ The system is a 2D shared drawing application with one real (participant) and on
 
 %%% Focus and the results
 One of the characteristics of the \gls{wa} is that it is a peripheral (or a secondary) task by nature \cite{gutwin_descriptive_2002}, % TODO: I might be using the same quote in the Awareness chapter. Change.
-as such, \cite{gutwin_chalk_2011} attempt to keep participant's attention on the main task by varying the difficulty of the tracing activity: the tracing shape was made to distort occasionally. Authors also study the effect of the workspace clutter, the size of the minimap, the type of auditory cues, and the awareness presentation on the \gls{wa}.
+as such, \cite{gutwin_chalk_2011} attempt to keep participant's attention on the main task by varying the difficulty of the tracing activity: the tracing shape was made to oscilate occasionally. Authors also study the effect of the workspace clutter, the size of the minimap, the type of auditory cues, and the awareness presentation on the \gls{wa}.
 
 The authors report significant improvements to the group awareness in cases, where it is hard to attend to the visual displays, or the line of sight is obscured. Additionally, they provide their thoughts with regards to how and why the audio awareness helps in the collaborative scenarios, as well as the possible limitations of its application.
 
