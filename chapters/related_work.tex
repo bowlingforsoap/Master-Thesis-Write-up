@@ -1,9 +1,70 @@
 \chapter{Related Work}
-% TODO: Virtual reality has to be introduced somewhere; and the difference in what I mean by simply VR and immersive VR explained.
+This master thesis focuses on two broad topics, sound and collaboration, which puts at the intersection of the fields of \gls{hci}, \gls{vr}, and \gls{cscw} and \gls{cve}. We will start with introducing the field of \gls{hci}, and the role human factors play in it.
 
-This master thesis focuses on two broad topics: collaboration and sound. It puts the work at the intersection of the fields of \gls{vr}, \gls{cscw}, \gls{cve} and \gls{hci}.
+\paragraph{HCI}
+\cite[Chapter~4.1.1]{jr_3d_2017} define \gls{hci} as "a field that seeks to understand the relationship between human users and digital technological artifacts and to design new, effective ways for humans to use computer technologies for all sorts of purposes". The word "computer" can mean anything from a smartphone to a desktop computer to a \gls{vr} setup, which also implies different interfaces: touch-based, 2D, immersive 3D, etc. Modern \gls{hci} deals not only with the human-computer interactions, but also pays attention to the computer as a medium for collaborative work, and hence human-human interactions. The goals pursued by the research in the field is not to simply understand the interactions we already use today, but to design the new interactions, be it through novel hardware and software solutions or innovative application of the existing ones. Lately,\gls{hci} experienced a shift from focusing on the \gls{ui} to the \gls{ux}, which encompasses \gls{ui}, but also deals with the ecology that the system exists in (social context, cultural differences, skills and emotional state of the users, and so on).
 
-\paragraph[]{Collaboration}
+\subparagraph{Human Factors}
+One of the principal reference points in \gls{hci} is the notion of human factors, or as they are also called, ergonomics. Two of the main factors are Perception and Cognition, they constitute a significant part of this thesis, and we will now explore why that is the case. The third main factor is Physical Ergonomics, which is employed to design comfortable and effective interfaces with regard to the human physiology. It is not highly relevant for this work, and thus will be addressed only scarcely. A review of physical ergonomics factor can be found in \cite[Chapter~3.5]{jr_3d_2017}.
+
+% 3.1 Intro: definition and examples
+
+% 3.2 Information processing: how human IP is tied with the main human factors, the graph; short, one-paragraph, explanation of everything in the graph
+If we consider the interactions with the outside world, everything we do happens based on the information we get from our environment and body. \cite{jr_3d_2017} argue that the processing of this information can be mapped to the aforementioned as humans, process this information is governed by the aforementioned human factors (see Fig. \ref{fig:informationprocessingloop}).
+First, the outside events or stimuli are perceived (interpreted and understood according to past experience) through the senses. Based on the interpreted information, an action can be taken, or this information can be saved in the working (short-term) memory. Short-term memory has limited capacity, and is directly affected by the attention. Contrary, long-term memory is vast, is not directly affected by the attention, and used to store information about the world. Based on the actions taken, the responses can be fed back into the information processing loop.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{figures/placeholders/information_processing_loop}
+	\caption{Information processing loop (Redrawn from \cite{jr_3d_2017})}
+	\label{fig:informationprocessingloop}
+\end{figure}
+
+% 3.3 Perception: responsible for auditory perseption and comprises one part of this work (perceptual mechanisms; types of perceptual cues; sensory substitution and multisensory processing)
+Perception factors deal with all information, available to us through our senses: visual, auditory, somatosensory (haptic) and chemical sensing systems. This factor is responsible for receiving and interpreting information.
+Previously, we hypothesized that additional auditory cues may lead to an overall improvement of the satisfaction with the collaboration experience. Auditory cues is a topic residing in the realm of perception - sounds have to be first heard and matched to the previous experience and memory. 
+Additionally, the study of perception includes the topics of multisensory processing, where sensing registering an event in one sensory channel helps improve its perception in another, and of sensory substitution, where one sensory system assumes the role that would normally be taken by another (for example, the substitution of somatosensory information with sound in systems, where haptic feedback is not available).
+
+% 3.4 Cognition governs awareness, a state of noticing certain details about the environment, people, or tasks.
+Cognition is defined in \cite[Chapter~3.4] as "the driving force behind the generation and usage of knowledge". It is responsible for our thought process and is directly linked to the perception and attention. The study of cognition is a study of how these thought processes function and how cognition effects our interactions with the environment.
+For the purpose of this thesis, we are interested in the concept of awareness, which focuses on the analysis and design of systems in a way that helps users be more aware of certain details about the environment (for example, other people, tasks, or the workspace).
+The main cognition problems that occur in the designed interface are mental (cognition) load and human error. The former can occur due to the properties of the task (difficulty, priority, etc.), or exceeding the attention and processing resources of an individual. The latter can be generally described as a lack of success in performing the task, and can also occur due to perception and physical ergonomics issues.
+
+% 3.5 Physical ergonomics: "enables us to design systems that can be used comfortably and effectively". Not strictly relevent to this work.. Except maybe for the controlls (participants complained about the mapping), but this should go into summary. Explores 
+\begin{comment}
+The last factor, physical ergonomics, puts emphasis on the affordances of the human body in designing different \gls{hci}s: its components and their function, different motion types, sensory-motor distribution, and posture. The typical issues addressed for this factor are fatigue and user comfort.
+\end{comment}
+
+% Example: 1.1 sound waves -> 1.2 sound -> 1.3 car signaling -> 2.1 I'm on the road -> 2.2 it can hit me -> 2.3 I should get away! -> 3. action
+If we take a situation, where a person is crossing the road and the car going at them and signaling, the stages of the information processing loop can be decomposed as following:
+\begin{description}
+	\item[Perception:] \hfill
+		
+		\begin{enumerate}
+			\item Waves of frequency 20 Hz - 20 kHz are received at the outer ear;
+			\item The waves are interpreted as sound;
+			\item The sound is classified as that of moving vehicle.
+		\end{enumerate}
+	\item[Congition:] \hfill
+		
+		\begin{enumerate}
+			\item The person realizes that they are on the road;
+			\item They realize that the car can hit them;
+			\item The decide to get off the road.
+		\end{enumerate}
+	\item[Physical Ergonomics:] \hfill
+			
+			The person gets off the road.
+		
+\end{description}
+
+\paragraph{VR}
+% May also be addressed in Chapter 2. 3D User Interfaces: History and Roadmap and in the part about the HMDs
+% Next we will take a look at the history of \gls{vr}, which is relevant for the both, \gls{hci} and \gls{cve} research
+
+
+\paragraph[]{CSCWs and CVEs}
+% TODO: say that HCI wasn't always as invested in the collaborative aspects
 Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. \cite{bannon_perspectives_nodate} argues that the first shift towards requirements of a group, instead of an individual has begun when the methods and results provided by field of \gls{hci} started receiving the criticism for their inability to meet the needs of the designers of the collaborative software. The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. The shift of attention to the human-computer-human interaction (HCHI) was caused by the \gls{cmc} movement. Nevertheless, it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive measure came through the establishment of the \gls{cscw} field. The special term "groupware" was coined, which indicated the emphasis on software to support the work of users in groups and their established workflows.
 
 %[CVE - churchil,greenwald]
@@ -22,6 +83,8 @@ The next paradigm shift started to happen in the late 1990s, where the already e
 
 %[immersive CVE - greenwald cocoverse]
 The next leap in digital collaboration was initiated with the introduction of the first generation \gls{vr} setups from Oculus Rift and HTC Vive. Their sub-millimeter tracking of head and hand-held controllers, high-resolution, high fidelity and wide field-of-view displays eased the problem of foreign interface  requiring high attention load, the initial reason why \gls{cve}s found much broader application in gaming, than in distributed workspaces. More detail on the history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \cite{greenwald_technology_2017}.
+
+\begin{comment}
 
 \begin{figure}
 	\centering
@@ -80,6 +143,8 @@ The authors utilize this mechanism in their study on the use of synthesized audi
 \end{figure}
 
 In the next chapter we take a closer look at some of sound properties that can be utilized our application to counter the unexpected changes to the environment and enhance the \gls{wa}.
+
+\end{comment}
 
 \begin{comment}
 
