@@ -229,7 +229,7 @@ The preferred (concrete on concrete) sound, which was described by one participa
 	\label{fig:pilot1resultsanalysis}
 \end{figure}
 
-\subparagraph{Limitations} 
+\subparagraph{Issues} 
 \textit{Auditory variation} Only 2 different types of auditory cues were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
 
 \textit{Front-to-back confusion} One of the major observation was the inability of participants to differentiate between translations happening in the back and in the front. For example, the translation from RF to LF was mistakenly indicated as RB to LB. The reason for this is the use of stereo headphones, which do not provide intuitive spatial cues for sounds happening in front and in the back of the user.
@@ -626,3 +626,10 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 		\textbf{Num. caught}  & 73                                  & 65                           & 58                             \\ \hline
 	\end{tabular}
 \end{table}
+
+\paragraph{Issues} \hfill
+\textit{Frame rate} The implementation of the voxel drawing system was not aimed at maximizing performance, as the result the frame rate dropped to around 70 FPS, when completing some of the shapes (i.e. the Low Poly Trees). One participants indicated that they felt a little bit dizzy due to this problem at one point.
+
+\textit{Minimap} Some users indicated that the minimap implementation was not the most convenient, especially in the \textit{Minimap Only}, where to monitor the map they had to take their attention of the main task. While this will most likely be the case in any implementation, a possible solution would be to see the effects of having the minimap attached to the users head in a non-obstructive way.
+
+\textit{Controls} Some users indicated that the controller mappings chosen for the final study were not convenient (Appendix \ref{app:finalstudy_controls}). Specifically, the fact that the main function of the 3D brush controller was mapped to the trigger, but for the minimap controller - to the touchpad. The controls were chosen this way, because drawing with your thumb constantly on the touchpad did not seem so convenient, however, the laser pointer's capabilities map perfectly to the two input affordances for the touchpad, the touch and press, while the pressure sensitivity of the trigger does not provide such a clear separation between the press levels. This ambiguity of choice indicates that physical ergonomics factors should also play a role, when implementing the actual system for collaboration in immersive \gls{vr}.
