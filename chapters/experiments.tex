@@ -1,25 +1,23 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-
-% TODO: I mention the control mapping or correspondense building a couple of times. - this is ergonomics and knowledge building respectively?
-
 \chapter{Experiments}
 
-% TODO: shouldn't there be a Contept introductionary part, where I describe the idea for the last experiment, and that implicitly explains the need for the pilot studies. Different parts of the concept are the focus of the differnt studies conducted. The concept part can be smallish, and as a list or a table, too. <==================================================== I feel like this should be just spread out through the studies. 
 % \gls{wa} framework: what? where? (Part I) feedthrough (Part II) anicipation and coordination of actions (Part III) <==== i.e. this goes at the description of the final study
 % Note also that the sound is rendered with respect to the spatial position and orientation of the head-mounted display.
 
-In total, 5 experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}. 
-The audio specialization tool used in all the pilots and final studies was Resonance Audio SDK for Unity with occlusion effect turned off.
-Participants in all of the studies were asked for their consent, in case they were recorded.
-% TODO: specify that pilots and the final studies are not really CVEs, but are meant to simulate one
+In total, five experiments were conducted for this thesis. Two were quick proof-of-concept experiments to validate the initial speculation, two - pilot studies to determine values for some properties of the final experiment and test the process of sampling participants on \gls{wa} index, and one formal study to test \nameref{final_study}. 
+In all the experiments participants were alone in the \gls{ve}.
 
+\paragraph{Apparatus} % and design}
+Relatively similar apparatus was used across all studies:
+experiments were implemented with the help of Unity3d  2018.1.5f1; audio spatialisation tool was Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off; hardware-wise, HTC Vive \gls{vr} and Oculus Rift headsets, 6 \gls{dof} controllers, along with on-ear stereo headphones, and a Windows 10 PC. 
 
-\begin{comment}
-\section{Prototypes/Proof of concept}
+%The design of all the experiments was similar in regard to how they approached collaboration: all the studies were a simulation of collaborative use case, meaning that 
 
-Initial motivation for this work was a question of whether sudden manipulations of buildings in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to test this speculation, these are described in the Buildings Popping Up and Moving Buildings paragraphs.
+\section{Proof of Problem}
+
+Initial motivation for this work was a question of whether sudden events (movements of the buildings) in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to validate this motivation, these are described in the \nameref{par:appearing_building} and \nameref{par:approaching_building} paragraphs.
 
 \begin{figure}
 	\centering
@@ -28,18 +26,18 @@ Initial motivation for this work was a question of whether sudden manipulations 
 	\label{fig:a1unawareofa2actions}
 \end{figure}
 
-\paragraph{Buildings Popping Up} 
-\label{buildingspoppingup}
+\paragraph{Appearing building} 
+\label{par:appearing_building}
 The first prototype looked into how the participants' experience would be influenced, if a building suddenly appeared in-front of them, when they were occupied with their own task.
 
 % Participants
-3 participants (all male) were chosen among the members of the \gls{hci} group at the University of Otago. Two had prior experience in \gls{vr}, one had not.
+Three participants (all male) were chosen among the members of the \gls{hci} group at the University of Otago. Two had prior experience in \gls{vr}, one had not.
 
 % Procedure & Task
-Participants were placed in the immersive \gls{vr} environment: a 3D model of the campus of the University of Otago. This was not a collaborative task, the participants were in the \gls{ve} alone. First, the the affordances of the environment were introduced (teleportation, walking and looking around), then participants were asked to navigate to the university clock tower. During this navigation task, a building would pop up in-front of them a couple of times at pseudo-random times (decided and initiated by the experimenter). After the completion of the experiment the participants were asked to describe the experience, especially the parts, where a building appeared in-front of them.
+Participants were placed in the immersive \gls{vr} environment, which constituted of 3D approximations of buildings at the campus of the University of Otago and surrounding districts. First, the the affordances of the environment were introduced: teleportation, walking and looking around; then participants were asked to navigate to the university clock tower. During this navigation task, a building would pop up in-front of them multiple times at experimenter's disposal. After the completion of the experiment the participants were asked to describe the experience, especially the parts, where a building appeared in-front of them.
 
 % Apparatus (i.e Unity, Resonance Audio, stereo headphones, Vive)
-Unity3d and Oculus Rift \gls{hmd} with Touch Motion controllers were used in this experiment.
+%Unity3d and Oculus Rift \gls{hmd} with Touch Motion controllers were used in this experiment.
 
 % Results
 The participant with no prior experience in \gls{vr} described the experience as unexpected, but was also not sure, whether he caused it. The other two participants indicated that they were a bit stuttered by the experience, but in general, "didn't care much for it". Additionally, the participants described the experience as irritating, when the building continued to repeatedly appear after the first encounter.
@@ -49,13 +47,18 @@ The participant with no prior experience in \gls{vr} described the experience as
 % Discussion of the results?
 %...
 
+\paragraph{Approaching buildings}
+\label{par:approaching_building}
+In the second prototype the decision was made to move closer to the initial concern: buildings moving through and close to users in immersive \gls{vr} environment.
+%Due to the results of the first experiment, the problem was regarded as worthwhile of further exploration. For the second proof of concept, a decision was made to come a bit closer to the initial motivation: buildings moving in \gls{ve}.
 
-\paragraph{Moving Buildings}
-Due to the results of the first experiment, the problem was regarded as worthwhile of further exploration. For the second proof of concept, a decision was made to come a bit closer to the initial motivation: buildings moving in \gls{ve}.
 % Participants
-4 new participant (all male) were chosen among the members of \gls{hci} group at the University of Otago, none took part in the previous experiment. Three had moderate experience with \gls{vr}, one had little.
+4 new participant (all male) were chosen among the members of \gls{hci} group at the University of Otago; none of them took part in the previous experiment. Two had moderate and two had little experience with the \gls{vr} technology.
+
 % Procedure & Task
-The environment affordances and the introduction remained the same. The task was extended, so that when participants find the clock tower, they were asked to assume their place at the viewing spot prepared for them (Fig. \ref{fig:prototype2viewvingspot}). At this point the participants were asked to observe the clock tower and tell the experimenter if anything seemed odd about it. Some elements of the tower were off axis (Fig. \ref{fig:prototype2clocktoweroddfeatures}), and this task was meant to lull participants' vigilance. As soon as participants started looking for any odd features, the movement of the clock tower towards the used with the speed of 200 units (meters) per second was initiated by the experimented. The approximate distance to from the viewing spot to the tower was 69 meters, the clock tower would stop 0.5 meters in-front of a participant. At this point the experiment would finish, and the participants would be asked about their experience.
+The environment affordances of the environment remained the same, as in the previous prototype. The introduction remained the same, as well. The task was extended, so that when participants find the clock tower, they were asked to assume their place at the specially prepared viewing spot (Fig. \ref{fig:prototype2viewvingspot}). At this point the participants were asked to observe the clock tower and tell the experimenter, if anything seemed odd about its features (some elements of the tower were slightly off axis: see Fig. \ref{fig:prototype2clocktoweroddfeatures}). This was done to distract participants, and suddenly initiate the movement of the clock tower towards them. The speed of the clock tower building was 200 units (meters) per second, the initial distance from the viewing spot to the tower was approximately 69 meters; the clock tower would stop 0.5 meters in-front of a participant. At this point the experiment would finish, and the participants would be asked about their experience.
+
+% TODO: indicate the viewing spot better
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/prototype2_viewving_spot}
@@ -68,36 +71,24 @@ The environment affordances and the introduction remained the same. The task was
 	\caption{The odd features of the university clock tower model}
 	\label{fig:prototype2clocktoweroddfeatures}
 \end{figure}
+
 % Apparatus
-The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
+%The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
+
 % Results
+The participants' feedback about the experience was variable: two (one with good, and one with little experience with \gls{vr}) indicated that the building approaching them was an unpleasant experience, one of them said he was startled by it. The other two participants indicated that the experience was "not scary". One of them thought that this was due to the building moving to slow. Two participants reported thinking that the moving building was a result of them pressing a button or a tracking error.	
 
 % Limitations
-\end{comment}
+In spite of the informal nature of the preliminary prototype experiments, the results indicated disagreement among the participants, and the problem was deemed worthy of further exploration.
 
 
 \section{Pilot Studies}
-In preparation to the \nameref{final_study} study, two pilot studies were conducted: \nameref{study_one}, and \nameref{study_two}. This was done to study certain aspects of the final study separately, and make decisions, such as what sound type (earcons or auditory icons) to choose, and at what speed to translate the buildings.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+After the research into sonification and awareness, and after the vision for the final \nameref{final_study} study was established, two pilot studies were conducted, \nameref{study_one} and \nameref{study_two}. This was done in order to study certain aspects of the final study separately, and make decisions, such as what sound type (abstract earcons or auditory icons) to choose, at what speed to translate the buildings, and whether stereo headphones are suitable for the planned system.
 
 \subsection{Sound Speed and Type}
 \label{study_one}
 % Goal of the study
-Some feedback from the initial prototypes indicated that the speed of the moving building was either too fast, or too slow. The goal of this study was to derive the speed participants felt would be appropriate to allow them to perform spatial judgments. Additionally, this pilot study was meant to determine what type of auditory cues to use: earcons or auditory icons.
+Feedback from the initial prototypes indicated that the speed of the moving building was too slow. The goal of this study was to derive the speed participants felt comfortable with, and that would allow them to make correct spatial judgments. Additionally, this pilot study was meant to determine what type of auditory cues to use: abstract earcons or auditory icons.
 
 \paragraph{Participants}
 Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers.
@@ -169,7 +160,8 @@ Translations were pseudo-randomized across participants, their selection was mad
 
 Distances between the fixed translation end-points remained the same throughout the experiment: 20 Unity3d units (meters) between C-F, C-L, C-R, C-B, L-LB, and so on.
 
-\paragraph{Results}
+\paragraph{Results} \hfill
+
 \textit{Preferred sound} 6 out of 8 participants preferred the concrete sound to the sine wave, 1 was indifferent as long as the speed was slow, and 1 preferred the sine wave.
 
 \textit{Preferred speed} The speed preference can be seen in the Table \ref{table:pilot1_results}.
@@ -207,7 +199,7 @@ Distances between the fixed translation end-points remained the same throughout 
 \paragraph{Discussion}
 If we visualize the participants' preferences, and take the smallest common area, where they overlap, analysis shows that participants preferred the speed somewhere close to 40 m/s, but between 20 and 40 (Fig. \ref{fig:pilot1resultsanalysis})
 
-The preferred (concrete on concrete) sound, which was described by one participant as "dry and dull", has a distinct timbre, which is made of different harmonics and halftones. The sine wave, on the other hand, has only 1 fundamental frequency, which might make memorizing and spatial differentiation harder. Additionally, this frequency would most likely get cut of by the audio SDK, if occlusion effect was to be used.
+The preferred (concrete on concrete) sound, which was described by one participant as "dry and dull", has a distinct timbre, which is made of different harmonics and overtones. The sine wave, on the other hand, has only 1 fundamental frequency, which might make memorizing and spatial differentiation harder. Additionally, this frequency would most likely get cut of by the audio SDK, if occlusion effect was to be used.
 
 \begin{figure}	
 	\centering
@@ -229,15 +221,17 @@ The preferred (concrete on concrete) sound, which was described by one participa
 	\label{fig:pilot1resultsanalysis}
 \end{figure}
 
-\subparagraph{Issues} 
-\textit{Auditory variation} Only 2 different types of auditory cues were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
+\subparagraph{Issues and shortcomings} \hfill
 
-\textit{Front-to-back confusion} One of the major observation was the inability of participants to differentiate between translations happening in the back and in the front. For example, the translation from RF to LF was mistakenly indicated as RB to LB. The reason for this is the use of stereo headphones, which do not provide intuitive spatial cues for sounds happening in front and in the back of the user.
-%The confusion between front to back has to been pointed out to might have something to do with the sound reproduction in stereo headphones
+\textit{Front-to-back confusion} One of the major issues was the inability of participants to differentiate between translations happening in the back and in the front. For example, the translation from RF to LF was mistakenly indicated as RB to LB. The reason for this is the use of stereo headphones, which do not provide intuitive spatial cues for sounds happening in front and in the back of the user.
+
+\textit{False negatives} Some users, who gave answers that were close to the correct ones (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path.
+
+\textit{Auditory variation} Only 2 different types of auditory cues were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
 
 \textit{Visualization} As it was a preparatory study, the participants were simply asked to close their eyes when guessing the path of the building. Besides the obvious drawback of such approach, participants reported that it is possible to predict the path by relying on the change in brightness, which is perceivable even with the eyes closed, when the building is passing by.
 
-\textit{False negatives} Some users, who gave answers that were close to correct (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path.
+
 
 
 
@@ -304,7 +298,7 @@ Participants answers were recorded by the system in a CSV file.
 
 When participants went through all the 40 translations, the experiment would end. Experimenter thanked the participants and ask for their feedback concerning the experiment.
 
-\paragraph{Apparatus} The same, as in \ref{study_one} \nameref{study_one}, with addition of 6 \gls{dof} tracked controllers.
+%\paragraph{Apparatus} The same, as in \ref{study_one} \nameref{study_one}, with addition of 6 \gls{dof} tracked controllers.
 
 \paragraph{Study design}
 This study used the repeated measures design with one independent variable - translation paths (40 values).
@@ -457,7 +451,7 @@ Participants were asked to follow a scenario, in which there were 2 architects (
 \end{figure}
 
 
-\paragraph{Apparatus} The same, as in \ref{study_two} \nameref{study_two}.
+%\paragraph{Apparatus} The same, as in \ref{study_two} \nameref{study_two}.
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
 % + Repeated-measures design?
@@ -482,55 +476,58 @@ Each awareness presentation was tested for 10 minutes, during which exactly 8 bu
 \end{figure}
 
 The total of 13 tracing shapes were prepared for the participants: 1 tutorial shape and 12 experiment shapes (Appendix \ref{app:finalstudy_tracingshapes}).
-Participants went through them in the same order at a pace that felt comfortable to them.
+Participants went through them in the same order at the pace that they felt comfortable with.
 
-\paragraph{Gutwin vs our study}
+\paragraph{Comparison with \nameref{par:shared_chalkboard_application}}
 Since, this study extends upon \cite{gutwin_chalk_2011}, this paragraph provides the comparison of the two.
-The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. An important change here was the fact that participants were able to look around at the workspace, and notice some changes to the environment, even without the help of the minimap or auditory cues. 
+The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. This means, first of all, that were able to look around the workspace, and notice changes to the environment, even without the help of the minimap or auditory cues. 
+Second of all this 
 % TODO: also, the fact that the head was tracked and this influenced the sound behaviour
 
 Second distinction was in the primary task of the participant and the simulated agent. In \cite{gutwin_chalk_2011} the participant performed the same task, as an agent: drawing with chalk. Additionally, the participant's actions emit the same sound at a lower volume as the agent's actions. In this study, the primary task of the participant is - 3D drawing with voxels. This activity doesn't emit any sound. It is also different from the agent's task - translation of buildings in the urban district. Nevertheless, the tasks are still contextually related with regards to the architectural activity in urban environment.
 
-In terms of the \gls{wa} framework, \cite{gutwin_chalk_2011} aim to answer the \textit{What?} and \textit{Where?} questions about the workspace: what is being done, and where is it being done. This study follows the same idea. In terms of levels of \gls{sa}, this study touches on all 3 levels: 
+In terms of the \gls{wa} framework, \cite{gutwin_chalk_2011} aim to answer the \textit{What?} and \textit{Where?} questions about the workspace: what is being done, and where is it being done. This study follows the same idea. In terms of \gls{sa}, just like \cite{gutwin_chalk_2011}, the present study touches on all 3 of its levels: 
 \begin{enumerate}
 	\item Perception: participant realizes that something is happening in the environment;
 	\item Cognition: they understand that it is a building moving, and can locate;
 	\item Projection: participant sees or hears the way that building is moving, and based on this, tries to catch it at its next position.
 \end{enumerate}
 
-\cite{gutwin_chalk_2011} do not specify the details of their spatial sound, however, since it was a 2D study, it is plausible that all sounds originate in the same plane, we will call it sound plane. In case of \cite{gutwin_chalk_2011} this plane can be positioned in 3 different ways: vertically, horizontally, or somewhere in-between (Fig. \ref{fig:gutwinvsmystudysoundplane}a). In all cases, where the plane is positioned in an orientation that is different from the orientation of the screen, participants would have to build a mapping between for the interface. In this study, sounds are also emitted from the same plane, which is positioned horizontally (Fig. \ref{fig:gutwinvsmystudysoundplane}b).
+\begin{comment}
+\cite{gutwin_chalk_2011} do not specify the details of their spatial sound, however, since it was a 2D study, it is plausible that all sounds originate in the same plane, we will call it sound plane. In case of \cite{gutwin_chalk_2011} this plane could have been positioned in 3 different ways: vertically, horizontally, or somewhere in-between (Fig. \ref{fig:gutwinvsmystudysoundplane}a). In all cases, where the plane is positioned in an orientation that is different from the orientation of the screen, participants would have to build a mapping between for the interface. In this study, sounds are also emitted from the same plane, which is positioned horizontally (Fig. \ref{fig:gutwinvsmystudysoundplane}b).
 
-Other similarities between the two studies include: the study design, the object of analysis (\gls{wa}), and the use of auditory icons as auditory cues.
+Other similarities between the two studies include: the study design, the object of analysis (\gls{wa}), and the use of auditory icons for auditory feedback.
 
-% TODO: re-draw
+% TODO: re-draw: make a), b) subfloats
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_vs_my_study_sound_plane}
-	\caption{\cite{gutwin_chalk_2011} sound plane vs this study}
+	\caption{Comparison of sound emission planes}
 	\label{fig:gutwinvsmystudysoundplane}
 \end{figure}
+\end{comment}
 
 % TODO: linebreak
 \begin{table}[h]
   \caption{Study comparison}
   \label{table:study_comp}
-  \begin{tabular}{|l|l|l|}
+  \begin{tabularx}{\linewidth}{|X|X|X|}
   \hline
-                             & \textbf{Shared chalkboard application}                & \textbf{\gls{wa} in \gls{vr}}           \\ \hline
-  \textbf{Workspace dimensions}				 & 2D									   & 3D \\ \hline
-  \textbf{Participant's primary (distraction) task} & The same as the primary for the simulated agent & Contextually related \\ \hline
-  \textbf{Sound plane}      & Not specified             & Horizonatal          \\ \hline
-  \textbf{Type of auditory cues}                 & Auditory icons        & Auditory icons       \\ \hline
-  \textbf{Object of analysis}         & Workspace awareness   & Workspace Awareness  \\ \hline
-	\textbf{Attentional demand}         & Variable difficulty of the tracing activity   & Variable difficulty of the tracing activity; shift of focus from the participant's personal evaluation to the system evaluation; personal motivation to see their 3D drawings \\ \hline
-	  \textbf{Radar size}         & Variable (small, medium, large)   & Constant (medium)  \\ \hline
-	    \textbf{Workspace clutter}         & Variable (none, sparse, dense)   & Constant (dense)  \\ \hline
-	    \textbf{Measurements collected}         & Accuracy in determining when, where, and what type of action occurred   & Accuracy in determining where the action occurred  \\ \hline
-  \end{tabular}
+                             & \textbf{Shared chalkboard application study}                & \textbf{Workspace Awareness in Virtual Reality study}           \\ \hline
+  \centering \textbf{Workspace dimensions}				 & 2D									   & 3D \\ \hline
+  \centering \textbf{Participant's primary task} & The same as the primary for the simulated agent & Contextually related \\ \hline
+  %\centering \textbf{Sound plane}      & Not specified             & Horizonatal          \\ \hline
+  %\centering \textbf{Type of auditory cues}                 & Auditory icons        & Auditory icons       \\ \hline
+  \centering \textbf{Object of analysis}         & Workspace awareness   & Workspace Awareness  \\ \hline
+	\centering \textbf{Attentional demand}         & Variable difficulty of the tracing activity   & Variable difficulty of the tracing activity; shift of focus from the participant's personal evaluation to the system evaluation; personal motivation to see their 3D drawings \\ \hline
+	  \centering \textbf{Radar size}         & Variable (small, medium, large)   & Constant (medium)  \\ \hline
+	    \centering \textbf{Workspace clutter}         & Variable (none, sparse, dense)   & Constant (dense)  \\ \hline
+	    \centering \textbf{Measurements collected}         & Accuracy in determining when, where, and what type of action occurred   & Accuracy in determining when and where the action occurred  \\ \hline
+  \end{tabularx}
 \end{table}
 
 \paragraph{Results}
-A sample of the collected data can be seen in Fig. \ref{fig:finalstudydataexample}. The link to the complete data can be found in Appendix \ref{app:final_study_data_collected}.
+A sample of the collected data can be seen in Table  \ref{tab:finalstudy_datacollected}. Disambiguation of the colors can be found in the \textit{Issues and shortcomings }paragraph under \textit{Data collected}. The link to the complete data can be found in Appendix \ref{app:final_study_data_collected}.
 
 The following was collected:
 \begin{itemize}
@@ -539,12 +536,51 @@ The following was collected:
 	\item Group - number code for different experiment groups: 1 - \textit{Minimap and Sound}, 2 - \textit{Sound Only}, 3 - \textit{Minimap Only}.
 \end{itemize}
 
+\begin{table}[]
+	\centering
+	\caption{Data collected for the 1-st user}
+	\label{tab:finalstudy_datacollected}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{Translation id} & \textbf{Reaction time} & \textbf{Group} \\ \hline
+		201809141429023350      & 8.785538               & 1              \\ \hline
+		201809141430303052      & 0                      & 1              \\ \hline
+		201809141431203241      & 10.3826                & 1              \\ \hline
+		201809141432414310      & 8.152039               & 1              \\ \hline
+		201809141433516256      & 5.937988               & 1              \\ \hline
+		201809141434408394      & 0                      & 1              \\ \hline
+		201809141435519841      & 6.283508               & 1              \\ \hline
+		\rowcolor[HTML]{FFCC67} 
+		201809141436307651      & 6.861633               & 1              \\ \hline
+		201809141439369338      & 7.19519                & 3              \\ \hline
+		201809141440282911      & 7.336426               & 3              \\ \hline
+		201809141441404922      & 11.57239               & 3              \\ \hline
+		201809141443240140      & 9.522339               & 3              \\ \hline
+		201809141444102440      & 8.072632               & 3              \\ \hline
+		201809141445294328      & 5.132324               & 3              \\ \hline
+		201809141446249932      & 5.532593               & 3              \\ \hline
+		\rowcolor[HTML]{FFCC67} 
+		201809141447016237      & 0                      & 3              \\ \hline
+		\rowcolor[HTML]{FE0000} 
+		201809141450017908      & 6.33374                & 2              \\ \hline
+		201809141451396501      & 0                      & 2              \\ \hline
+		201809141452332029      & 6.967896               & 2              \\ \hline
+		201809141453432883      & 5.815063               & 2              \\ \hline
+		201809141454292257      & 0                      & 2              \\ \hline
+		201809141455206412      & 0                      & 2              \\ \hline
+		201809141456128075      & 0                      & 2              \\ \hline
+		201809141457263717      & 13.1925                & 2              \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{comment}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/final_study_data_example}
 	\caption{Data collected for a participant}
 	\label{fig:finalstudydataexample}
 \end{figure}
+\end{comment}
 
 When asked to rate different awareness presentations with an integer score from the most (1) to the least (3) useful, participants gave the feedback, shown in Fig. \ref{fig:finalstudyawarenesspresentationuserpreference}. It was allowed to give the same rating to different presentations (i.e. some participants ranked \textit{Minimap and Sound} and \textit{Sound Only} presentations with the score - 1).
 
@@ -558,8 +594,6 @@ When asked to rate different awareness presentations with an integer score from 
 Most participants managed to trace the first 3-4 shapes, only one was able to finish 6.
 
 \paragraph{Discussion}
-Due to a bug in the implementation, sound wouldn't play sometimes for the first translation in the \textit{Sound Only}, \textit{Minimap and Sound}, or both groups. The entries where the sound did not play were removed from the dataset prior to its analysis. Additionally, to make group observations comparable, in every group, where the sound did play on the first translation, or, like in case with the \textit{Minimap Only} group, the sound was never supposed to play, the last data entry for the group was removed. This way, experiment went from 8 observations per group for each participant to 7.
-
 The visual analysis shows that around $1/4$th of all the translations were not caught: 11 from Group 1, 19 from Group 2, and 26 from Group 3 (Fig. \ref{fig:histograms_combined}, \ref{fig:distributions_freqReaction0}).
 
 Side-by-side distributions clearly indicate that Groups 1 and 2 took less time for participants to catch them (see the violin diagram in Fig \ref{fig:distributions_violin}). Generally, the distribution of the first two groups suggests their relative similarity. The fact that the \textit{Sound Only} group has the smallest reaction times could possibly be an error and the result of a building simply being in the participant's sight. The elongated top-handle of the distribution for the \textit{Sound Only} group could indicate that it was harder to catch the building after noticing it for the first time, which also correlates with the observations of the users during the experiment.
@@ -614,22 +648,34 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 \end{comment}
 
 \begin{table}[h]
-	\label{tab:final_study_stats}
 	\caption{Statistical summary}
+	\label{tab:final_study_stats}
 	
-	\begin{tabular}{|l|l|l|l|}
+	\begin{tabularx}{\linewidth}{|X|X|X|X|}
 		\hline
 		& \textbf{Group 1: Minimap and Sound} & \textbf{Group 2: Sound Only} & \textbf{Group 3: Minimap Only} \\ \hline
 		\textbf{Mean (sec.)}  & 4.662725                            & 4.700911                     & 6.61726                        \\ \hline
 		\textbf{St. dev. (sec.)}  & 2.266442                            & 2.483499                     & 2.73528                        \\ \hline
 		\textbf{Range (sec.)} & {[}1.865601, 11.195500{]}           & {[}1.567505, 13.192500{]}    & {[}1.890381, 14.635010{]}      \\ \hline
 		\textbf{Num. caught}  & 73                                  & 65                           & 58                             \\ \hline
-	\end{tabular}
+	\end{tabularx}
 \end{table}
 
-\paragraph{Issues} \hfill
-\textit{Frame rate} The implementation of the voxel drawing system was not aimed at maximizing performance, as the result the frame rate dropped to around 70 FPS, when completing some of the shapes (i.e. the Low Poly Trees). One participants indicated that they felt a little bit dizzy due to this problem at one point.
+\paragraph{Issues and shortcomings} \hfill
 
-\textit{Minimap} Some users indicated that the minimap implementation was not the most convenient, especially in the \textit{Minimap Only}, where to monitor the map they had to take their attention of the main task. While this will most likely be the case in any implementation, a possible solution would be to see the effects of having the minimap attached to the users head in a non-obstructive way.
+\textit{Data collection} Due to an issue with the implementation, sound wouldn't play occasionally for the first translation in the \textit{Sound Only}, \textit{Minimap and Sound}, or both groups. The entries where the sound did not play were removed from the dataset prior to its analysis (marked red in Table \ref{tab:finalstudy_datacollected}). Additionally, to make group observations comparable, in every group, where the sound did play on the first translation, or, like in case with the \textit{Minimap Only} group, the sound was never supposed to play, the last data entry for the group was removed (marked orange in Table \ref{tab:finalstudy_datacollected}). This way, experiment went from 8 observations per group for each participant to 7.
 
-\textit{Controls} Some users indicated that the controller mappings chosen for the final study were not convenient (Appendix \ref{app:finalstudy_controls}). Specifically, the fact that the main function of the 3D brush controller was mapped to the trigger, but for the minimap controller - to the touchpad. The controls were chosen this way, because drawing with your thumb constantly on the touchpad did not seem so convenient, however, the laser pointer's capabilities map perfectly to the two input affordances for the touchpad, the touch and press, while the pressure sensitivity of the trigger does not provide such a clear separation between the press levels. This ambiguity of choice indicates that physical ergonomics factors should also play a role, when implementing the actual system for collaboration in immersive \gls{vr}.
+\textit{Motion sickness} The implementation of the voxel drawing system was not aimed at maximizing performance, as the result the frame rate dropped to approx. 70 FPS. One participants indicated feeling dizzy during one of such occurrences.
+
+\textit{Minimap} Some users indicated that the minimap tool was not convenient, as they had to take of attention of their main task to attend to it. Different setups were tested for the mimap presentation during development: minimap attached to the \gls{hmd}, 4 minimaps placed above the participant (Fig. \ref{fig:finalstudyminimaparound}), and the hand-held minimap. While this will most likely be the case in any implementation, a possible solution would be to see the effects of having the minimap attached to the users head in a non-obstructive way.
+
+\textit{Controls} Some users indicated that the controller mappings chosen for the final study were not convenient (Appendix \ref{app:finalstudy_controls}). Specifically, the fact that the main function of the 3D brush controller was mapped to the trigger, but for the minimap controller it was mapped to the touchpad. The controls were chosen this way, because drawing with your thumb constantly on the touchpad did not seem convenient, while the laser pointer's capabilities map perfectly to the two input modes for of a touchpad: the touch and press. The pressure sensitivity of the trigger does not provide such a clear separation between the press levels. This ambiguity of the mapping choice indicates that physical ergonomics factors also deserves an investigation in the current setup.
+
+\begin{figure}[b]
+	\centering
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/finalstudy_minimap_around1}}
+	\par
+	\subfloat{\includegraphics[width=0.7\linewidth]{figures/finalstudy_minimap_around2}}
+	\caption{Minimap surrounding the participant}
+	\label{fig:finalstudyminimaparound}
+\end{figure}
