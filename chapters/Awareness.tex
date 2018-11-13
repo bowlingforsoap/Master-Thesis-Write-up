@@ -25,13 +25,31 @@ Nevertheless, the biggest limitation of the mentioned approaches was that they a
 	\caption{Format of Goal-Directed Task Analysis \parencite{endsley_direct_nodate}}
 	\label{fig:sagoalorientedtaskanalysis}
 \end{figure}
-This yields an extensive list of questions, which assess the \gls{sa} information of primary and secondary importance (example analysis can be seen the Fig. \ref{fig:sagoalorientedtaskanalysisresultexample}).
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/SA_goal_oriented_task_analysis_result_example}
-	\caption{Example of Goal-Directed Task Analysis for En-route Air Traffic Control \parencite{endsley_direct_nodate}}
-	\label{fig:sagoalorientedtaskanalysisresultexample}
-\end{figure}
+This yields an extensive list of questions, which assess the \gls{sa} information of primary and secondary importance (example analysis can be seen the Table \ref{tab:sagoalorientedtaskanalysisresultexample}).
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+	\caption{Example of Goal-Directed Task Analysis for En-route Air Traffic Control. Adapted from: \parencite{endsley_direct_nodate}}
+	\label{tab:sagoalorientedtaskanalysisresultexample}
+	\begin{tabularx}{\linewidth}{X|l}
+		\hline
+		1.3 Maintain aircraft conformance                        & \textit{Subgoal}                            \\ \hline
+		\hspace{.25cm}1.3.1 Assess aircraft conformance to assigned parameters & \textit{Decision}                           \\ \hline
+		\hspace{.25cm}\hspace{.25cm}aircraft at/proceeding to assigned altitude?             & \multirow{2}{*}{\textit{L3: Projection}}    \\
+		\hspace{.25cm}\hspace{.25cm}aircraft proceeding to assigned altitude fast enough?    &                                             \\ \hline
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}time until aircraft reaches assigned altitude            & \multirow{3}{*}{\textit{L2: Comprehension}} \\
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}amount of altitude deviation                             &                                             \\
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}climb/descent                                            &                                             \\ \hline
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}altitude (current)                                       & \multirow{3}{*}{\textit{L1: Perception}}    \\
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}altitude (assigned)                                      &                                             \\
+		\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}\hspace{.25cm}altitude rate of change (ascending/descending)           &                                             \\ \hline
+		\hspace{.25cm}\hspace{.25cm}aircraft at/proceeding to assigned airspeed?             & \textit{L3: Projection}                     \\ \hline
+		\hspace{.25cm}...                                                      & \textit{}                                   \\ \hline
+		1.3.2 Resolve non-conformance                            & \textit{Decision}                           \\ \hline
+		\hspace{.25cm}...                                                      & \textit{}                                   \\ \hline
+		...                                                      & \textit{}                                   \\ \hline
+	\end{tabularx}
+\end{table}
 Next, the simulation is halted multiple times, and the pilots are queried on a randomly selected questions from the list. This is done to prevent giving away hints about current objective. When the simulation halts, all the control panels and other simulation elements are grayed-out. Not every pilot is queried on every question, the goal is to reach the desired statistical significance of the results by assessing a certain number of participants.
 
 % This paragraph is a bit repetetive
@@ -61,37 +79,52 @@ The \gls{wa} framework is split in 3 parts:
 	\item[Part III] How is \gls{wa} used in collaboration? 
 \end{description}
 
-In \textit{Part I} the authors address the information that collaborators might require from the workspace. While this can be any type of information, it can be categorized into the most common types. For example, the category "Who" deals with the presence, identity, and authorship questions, and contains the following questions: "Is anyone else in the workspace?", "Who is participating? Who is that?", and "Who is doing that?". An example for the "Who" category can be seen in Fig. \ref{fig:watechniquesforwhoquestions}. There are 8 categories of questions in the Part I of the framework: \textit{questions about the present} (\textit{Who?, What?, Where?}) and \textit{questions about the past} (\textit{How?, When?, Who? (past), Where? (past), What? (past)}). The \gls{wa} framework doesn't concern itself with the information about the future, because the authors consider this factor to be too not trivial and generally hard to account for in design, in general.
+In \textit{Part I} the authors address the information that collaborators might require from the workspace. While this can be any type of information, it can be categorized into the most common types. For example, the category "Who" deals with the presence, identity, and authorship questions, and contains the following questions: "Is anyone else in the workspace?", "Who is participating? Who is that?", and "Who is doing that?". An example for the "Who" category can be seen in Table \ref{tab:watechniquesforwhoquestions}. There are 8 categories of questions in the Part I of the framework: \textit{questions about the present} (\textit{Who?, What?, Where?}) and \textit{questions about the past} (\textit{How?, When?, Who? (past), Where? (past), What? (past)}). The \gls{wa} framework doesn't concern itself with the information about the future, because the authors consider this factor to be too not trivial and generally hard to account for in design, in general.
 This part of the framework allows designers to compare and design awareness support in different groupware applications by providing a fixed vocabulary for describing their systems.
 
 \textit{Part II} of the framework deals with the ways, in which the information can be delivered to the users. The authors review 3 ways, in which information can be communicated in the workspace: through \textit{bodies and consequential communication}, through \textit{artifacts and feedthrough}, and \textit{through conversation, gesture, and intentional communication}. While the name of latter speaks for itself, the former two deal with information transfer through the consequence of people's actions in the workspace, and the information emitted by the manipulated objects in the workspace (for example, a characteristic sound initiated by a person drawing in the workspace).
 By considering the different ways in which the information transfer can occur, system designers can make an educated decision about what approach to use in a particular situation.
 
-\textit{Part III} of the framework turns to the question of how we make use of the information we gather through \gls{wa}. Here we discover 5 types of activities that benefit \gls{wa} in some way: \textit{management of coupling}, \textit{simplification of communication}, \textit{coordination of actions}, \textit{anticipation}, and \textit{assistance} (see the summary in Fig. \ref{fig:summaryofactivitieswherwacanbeused}).
+\textit{Part III} of the framework turns to the question of how we make use of the information we gather through \gls{wa}. Here we discover 5 types of activities that benefit \gls{wa} in some way: \textit{management of coupling}, \textit{simplification of communication}, \textit{coordination of actions}, \textit{anticipation}, and \textit{assistance} (see the summary in Table \ref{tab:summaryofactivitieswherwacanbeused}).
 This part of the framework allows awareness designers consider different ways people make use of the awareness information, and decide where, whether, and how much of this information is required.
 
+\begin{table}[]
+	\caption{Workspace awareness techniques for “who” questions. Adapted from: \parencite{gutwin_descriptive_2002}}
+	\label{tab:watechniquesforwhoquestions}
+	\begin{tabularx}{\linewidth}{lX}
+		\hline
+		WA element (Who)            & Example interface techniques                                                                                                                                                                                                                                                                               \\ \hline
+		Presence (Is anyone there?) & • Participant list. The most basic awareness display, the participant list shows who is currently logged in to the system (although several other types of awareness information can be added to this basic idea). Presence is shown by presence in the list.                                              \\
+		& • Embodiment solutions (telepointers, view rectangles, avatars, video images). Since an embodiment is a representation of an actual person, presence is shown by the existence of the embodiment. In some cases, presence can also be heard if embodiments emit sound as they interact with the workspace. \\
+		Identity (Who is that?)     & • Participant list identifies participants with a name or picture.                                                                                                                                                                                                                                         \\
+		& • Embodiments show identity through visual characteristics of the representation, such as colour (telepointers or view rectangles), shape and appearance (avatars), or actual images (video techniques).                                                                                                   \\
+		...                         & \\ \hline                                                                                                                                                                                                                                                                                                           
+	\end{tabularx}
+\end{table}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/WA_techniques_for_WHO_questions}
-	\caption{}
-	\label{fig:watechniquesforwhoquestions}
-\end{figure}
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/summary_of_activities_wher_WA_can_be_used}
-	\caption{}
-	\label{fig:summaryofactivitieswherwacanbeused}
-\end{figure}
+\begin{table}[]
+	\caption{Summary of the activities in which workspace awareness is used. Source: \parencite{gutwin_descriptive_2002}}
+	\label{tab:summaryofactivitieswherwacanbeused}
+	
+	\begin{tabularx}{\linewidth}{lX}
+		\hline
+		Activity                        & Benefit of workspace awareness                                                                                                                        \\ \hline
+		Management of coupling          & Assists people in noticing and managing transitions between individual and shared work.                                                               \\
+		Simplification of communication & Allows people to the use of the workspace and artifacts as conversational props, including mechanisms of deixis, demonstrations, and visual evidence. \\
+		Coordination of action          & Assists people in planning and executing low-level workspace actions to mesh seamlessly with others.                                                  \\
+		Anticipation                    & Allows people to predict others’ actions and activity at several time scales.                                                                         \\
+		Assistance                      & Assists people in understanding the context where help is to be provided.                                                                             \\ \hline
+	\end{tabularx}
+\end{table}
 
 
 The complete \gls{wa} framework is summarized in Fig. \ref{fig:waframework}.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/WA_framework}
-	\caption{adapted from gutwin 2002}
+	\includegraphics[width=0.7\linewidth]{figures/wa_framework}
+	\caption{The \gls{wa} framework. Source: \parencite{gutwin_descriptive_2002}}
 	\label{fig:waframework}
 \end{figure}
 
@@ -114,7 +147,7 @@ the minimap (\textit{radar}), which showed the complete environment and the loca
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
-	\caption{Shared chalkboard application, tracing shape and minimap (Source: \parencite{gutwin_chalk_2011})}
+	\caption{Shared chalkboard application, tracing shape and minimap. Source: \parencite{gutwin_chalk_2011}}
 	\label{fig:gutwinchalk2011}
 \end{figure}
 

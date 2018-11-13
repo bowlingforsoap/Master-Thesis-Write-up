@@ -13,6 +13,7 @@
   minnames=1,
   maxbibnames=99,
   giveninits,
+  dashed=false,
   uniquename=init]{biblatex} % TODO: adapt citation style
 \usepackage{graphicx}
 \usepackage{scrhack} % necessary for listings package
@@ -40,6 +41,9 @@ multi-part-units = repeat
 \usepackage{pdfpages}
 \usepackage{url} % howpublished in .bib files to specify the URL
 \usepackage{tabularx} % table with enforce column width
+\usepackage{multirow}
+\usepackage{adjustbox} % wrap around table to adjust size
+\usepackage{rotating}
 
 \makeglossaries
 

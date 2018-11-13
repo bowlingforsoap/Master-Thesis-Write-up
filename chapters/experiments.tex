@@ -19,13 +19,6 @@ experiments were implemented with the help of Unity3d  2018.1.5f1; audio spatial
 
 Initial motivation for this work was a question of whether sudden events (movements of the buildings) in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to confirm this motivation, these are described in the \nameref{par:appearing_building} and \nameref{par:approaching_building} paragraphs.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/A1_unaware_of_A2_actions}
-	\caption{Collaborators unaware of each other's actions}
-	\label{fig:a1unawareofa2actions}
-\end{figure}
-
 \paragraph{Appearing building} 
 \label{par:appearing_building}
 The first prototype looked into how the participants' experience would be influenced, if a building suddenly appeared in-front of them, when they were occupied with their own task.
@@ -56,21 +49,23 @@ In the second prototype the decision was made to move closer to the initial conc
 4 new participant (all male) were chosen among the members of \gls{hci} group at the University of Otago; none of them took part in the previous experiment. Two had moderate and two had little experience with the \gls{vr} technology.
 
 % Procedure & Task
-The environment affordances of the environment remained the same, as in the previous prototype. The introduction remained the same, as well. The task was extended, so that when participants find the clock tower, they were asked to assume their place at the specially prepared viewing spot (Fig. \ref{fig:prototype2viewvingspot}). At this point the participants were asked to observe the clock tower and tell the experimenter, if anything seemed odd about its features (some elements of the tower were slightly off axis: see Fig. \ref{fig:prototype2clocktoweroddfeatures}). This was done to distract participants, and suddenly initiate the movement of the clock tower towards them. The speed of the clock tower building was 200 units (meters) per second, the initial distance from the viewing spot to the tower was approximately 69 meters; the clock tower would stop 0.5 meters in-front of a participant. At this point the experiment would finish, and the participants would be asked about their experience.
+The environment affordances of the environment remained the same, as in the previous prototype. The introduction remained the same, as well. The task was extended, so that when participants find the clock tower, they were asked to assume their place at the specially prepared viewing spot (Fig. \ref{fig:prototype2viewvingspot}). At this point the participants were asked to observe the clock tower and tell the experimenter, if anything seemed odd about its features (some elements of the tower were slightly off axis). This was done to distract participants, and suddenly initiate the movement of the clock tower towards them. The speed of the clock tower building was 200 units (meters) per second, the initial distance from the viewing spot to the tower was approximately 69 meters; the clock tower would stop 0.5 meters in-front of a participant. At this point the experiment would finish, and the participants would be asked about their experience.
 
 % TODO: indicate the viewing spot better
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/prototype2_viewving_spot}
+	\includegraphics[width=\linewidth]{figures/placeholders/prototype2_viewving_spot}
 	\caption{The viewing spot in-front of the university clock tower}
 	\label{fig:prototype2viewvingspot}
 \end{figure}
+\begin{comment}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/prototype2_clocktower_odd_features}
 	\caption{The odd features of the university clock tower model}
 	\label{fig:prototype2clocktoweroddfeatures}
 \end{figure}
+\end{comment}
 
 % Apparatus
 %The same apparatus was used, as in the \nameref{buildingspoppingup} prototype.
@@ -98,24 +93,25 @@ The study was carried out in a \gls{ve} that was specifically constructed for th
 
 Participants were instructed with what was the purpose of the research, this study, and the tutorial, as well as their individual task. Participants were placed at the center of the scene (C) with the building placed in front of them, and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head.
 
-Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:pilot1predefinedtutorialtranslations}).
+Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:clipimage001}d).
 
-At the start of the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated, with audio feedback turned on, to a newly selected random position (see Fig. \ref{fig:arbitrary_translation}). This was repeated 5 to 10 times for each of 6 type of sound-speed combinations.
+At the start of the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated, with audio feedback turned on, to a newly selected random position (see Fig. \ref{fig:clipimage001}e). This was repeated 5 to 10 times for each of 6 type of sound-speed combinations.
 
 After going through all the sound types and speeds, participants were asked for their honest opinion, as to which sound was the best, and what speed was the most appropriate.
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/pilot1_experiment_setup.png}
-	\caption{Experiment setup}
+	\includegraphics[width=.8\linewidth]{figures/pilot1_experiment_setup.png}
+	\caption{Experiment setup: a) \gls{ve}; b) participant's perspective; c) participant and experimenter; d) predefined translation paths; e) arbitrary translations panel}
 	\label{fig:clipimage001}
 \end{figure}
 
-\begin{figure}
+\begin{comment}
+	\begin{figure}
 	\centering
 	\subfloat[Predefined translation paths]{
 		\label{fig:pilot1predefinedtutorialtranslations}
-		\includegraphics[width=0.3\linewidth]{figures/placeholders/pilot1_predefined_tutorial_translations}
+		\includegraphics[width=0.3\linewidth]{figures/pilot1_predefined_tutorial_translations}
 	} %
 
 	\subfloat[Arbitrary translations]{
@@ -126,6 +122,7 @@ After going through all the sound types and speeds, participants were asked for 
 	\caption{Control panels}
 	\label{fig:pilot1controlpanel}
 \end{figure}
+\end{comment}
 
 
 \begin{comment}
@@ -141,15 +138,17 @@ The study followed the repeated measures design with 2 independent variables: tr
 
 Three different translation speeds were tested: \textit{slow} - 20, \textit{medium }- 40, and \textit{fast }- 60 meters per second (m/s). Sound properties (i.e. pitch, playback speed) stayed constant throughout the different speeds.
 
-Two different types of the audio feedback were tested: earcons and auditory icons. A full volume 100 Hz sine wave in mono was used for an earcon (Type: Wave (.wav), Samplerate: 44100.0 Hz, Bitdepth: 16bit, Fig. \ref{fig:pilot1sinewaveedit}). As an auditory icon a mono sound mimicking moving concrete block with sound amplitude extrema reaching full volume was used (Type: Wave (.wav), Samplerate: 48000.0 Hz, Bitdepth: 16 bit, Fig. \ref{fig:pilot1concreteonconcretesoundedit}).
+Two different types of the audio feedback were tested: earcons and auditory icons. A full volume 100 Hz sine wave in mono was used for an earcon (Type: Wave (.wav), Samplerate: 44100.0 Hz, Bitdepth: 16bit). As an auditory icon a mono sound mimicking moving concrete block with sound amplitude extrema reaching full volume was used (Type: Wave (.wav), Samplerate: 48000.0 Hz, Bitdepth: 16 bit; Fig. \ref{fig:pilot1concreteonconcretesoundedit}).
 The type of sound played first was rotated for the participants, so that 4 of them heard the auditory icon first, and the other 4 - the earcon.
 
-\begin{figure}
+\begin{comment}
+	\begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/pilot1_sinewave_edit}
 	\caption{Sine wave earcon before (top) and after (bottom) mixdown: stereo to mono}
 	\label{fig:pilot1sinewaveedit}
 \end{figure}
+\end{comment}
 
 \begin{figure}
 	\centering
@@ -170,12 +169,15 @@ Distances between the fixed translation endpoints remained the same throughout t
 
 \begin{figure}
 	\centering
+	\includegraphics[width=.5\linewidth]{figures/pilot1_top_down_scene_view.png}
 	
+	\begin{comment}
 	\subfloat[Top-down view of the scene]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view.png}}%
 	\subfloat[Major translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&major_tranlsation_paths.png}}%
 	\subfloat[All translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&all_possible_translation_paths.png}}
+	\end{comment}
 	
-	\caption{Possible translation endpoints and paths}
+	\caption{Top down view of scene setup. Major translation paths - in red; the other possible translation paths - in green}
 	\label{fig:pilot1translationpaths}
 \end{figure}
 
@@ -273,23 +275,25 @@ This \gls{vr} environment was constructed specifically for this experiment. This
 The goal of the tutorial mode was to allow the participant to understand the correlation between the visually perceived movements of the building and the sound emitted. The affordances of the environment were explained prior to the tutorial.
 
 In the tutorial mode, the building was visible, and the wall - invisible.
-40 translations were pre-scripted for the actual experiment, 20 of which were demonstrated. The control panel for this experiment can be viewed in Fig. \ref{fig:pilot2tutorialcontrolpanelhighlighted}, the buttons that are highlighted in blue were used to initiate tutorial translations. These translations were initiated in the same order for all the participants, they are additionally visualized in Fig. \ref{fig:pilot2endpointstutorialtranlstaions}.
+40 translations were pre-scripted for the actual experiment, 20 of which were demonstrated. The control panel for this experiment can be viewed in Fig. \ref{fig:pilot2tutorialcontrolpanelhighlighted}, the buttons that are highlighted in blue were used to initiate tutorial translations. These translations were initiated in the same order for all the participants, they are additionally visualized in Fig. \ref{fig:pilot2endpoints}.
 
 Participants were briefed to face the "Front" direction, when the experimenter voiced the path that the building was going to travel, or (in the experiment mode) the fact that a translation is about to get initiated. After that participants were allowed to move their head. This and the choice of the translation paths for the tutorial was informed by the idea of allowing the participant to build a complete picture, of how a translating building sounds in all the directions around the user. "Front" and "Back" directions were identified with text on a pole, and were always visible (Fig. \ref{fig:pilot2experiement_environment}).
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/pilot2_tutorial_control_panel_highlighted}
+	\includegraphics[width=0.5\linewidth]{figures/pilot2_tutorial_control_panel_highlighted}
 	\caption{Control panel}
 	\label{fig:pilot2tutorialcontrolpanelhighlighted}
 \end{figure}
 
+\begin{comment}
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{pilot2_endpoints_tutorial_tranlstaions}
 	\caption{Tutorial translations}
 	\label{fig:pilot2endpointstutorialtranlstaions}
 \end{figure}
+\end{comment}
 
 
 
@@ -311,14 +315,14 @@ The auditory icon of a concrete bock sliding on a concrete surface from the prev
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/pilot2_endpoints}
-	\caption{Translation endpoints}
+	\includegraphics[width=0.5\linewidth]{figures/pilot2_endpoints}
+	\caption{Translation endpoints with tutorial translations highlighted}
 	\label{fig:pilot2endpoints}
 \end{figure}
 
 \paragraph{Results}
 
-A sample of the collected data can be seen in Fig. \ref{fig:pilot2datasample}. The link to the complete data can be found in Appendix \ref{app:pilot2data_collected}.
+A sample of the collected data can be seen in Table \ref{tab:pilot2datasample}. The link to the complete data can be found in Appendix \ref{app:pilot2data_collected}.
 
 The following data was collected:
 \begin{itemize}
@@ -334,14 +338,67 @@ The following data was collected:
 	\item Divergence Angle From, Divergence Angle To - angular distance between the Angle From and Guess Angle From, Angle To and Guess Angle To, respectively.
 \end{itemize}
 
+\begin{comment}
 \begin{figure}
 	\centering
 	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_datasample1}}
 	\par
 	\subfloat{\includegraphics[width=0.7\linewidth]{figures/pilot2_datasample2}}
-	\caption{Collected data sample}
-	\label{fig:pilot2datasample}
+	
 \end{figure}
+\end{comment}
+
+
+\begin{sidewaystable}[]
+	\caption{Collected data sample}
+	\label{tab:pilot2datasample}
+	\begin{adjustbox}{width=\linewidth}
+	\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+		\hline
+		\textbf{From X} & \textbf{From Y} & \textbf{From Z} & \textbf{To X} & \textbf{To Y} & \textbf{To Z} & \textbf{From Abbreviation} & \textbf{To Abbreviation} & \textbf{Translation Start} & \textbf{Translation Finish} & \textbf{Guess From X} & \textbf{Guess From Y} & \textbf{Guess From Z} & \textbf{Guess To X} & \textbf{Guess To Y} & \textbf{Guess To Z} & \textbf{Guess Start} & \textbf{Guess Finish} & \textbf{Angle From} & \textbf{Angle To} & \textbf{Guess Angle From} & \textbf{Guess Angle To} & \textbf{Divergence Angle From} & \textbf{Divergence Angle To} \\ \hline
+		-20             & 1               & -20             & 20            & 1             & 20            & LB                         & RF                       & 39.71933                   & 41.60712                    & -29.03961             & 1.6408                & 0.8568682             & 29.05239            & 1.415723            & 0.03126525          & 56.90051             & 58.93457              & -135                & 45                & -88.30988                 & 89.93834                & 46.69013                       & 44.93834                     \\ \hline
+		28.28427        & 1               & 0               & 0             & 1             & -28.28427     & R                          & B                        & 69.48623                   & 70.8259                     & 29.0524               & 1.163299              & 0.03042285            & 0.02944428          & 1.79754             & -29.17183           & 78.12409             & 79.62698              & 90                  & 180               & 89.94                     & 179.9407                & -0.05934703                    & -0.05934703                  \\ \hline
+		-20             & 1               & -20             & 28.28427      & 1             & 0             & LB                         & R                        & 84.70973                   & 86.466                      & -22.44935             & 1.960525              & -18.57321             & 29.05061            & 1.951038            & -0.1460355          & 92.15167             & 94.43668              & -135                & 90                & -129.6022                 & 90.28802                & 5.397754                       & 0.2873554                    \\ \hline
+		0               & 1               & -28.28427       & 0             & 1             & 28.28427      & B                          & F                        & 98.9538                    & 100.8386                    & -0.2110887            & 1.472872              & -29.16855             & 0.08778089          & 1.72096             & 29.17078            & 105.1519             & 108.6398              & 180                 & 0                 & -179.5855                 & 0.1724585               & 0.414487                       & 0.1724585                    \\ \hline
+		20              & 1               & -20             & 20            & 1             & 20            & RB                         & RF                       & 113.0372                   & 114.3775                    & 21.31683              & 2.077843              & -19.83497             & 21.55583            & 1.55583             & 19.57696            & 121.4631             & 122.9223              & 135                 & 45                & 132.9377                  & 47.75433                & -2.06232                       & 2.754348                     \\ \hline
+		0               & 1               & 28.28427        & 20            & 1             & -20           & F                          & RB                       & 128.1597                   & 129.9193                    & 2.134993              & 2.375717              & -29.0831              & 18.96115            & 1.806356            & 22.04626            & 132.2504             & 133.3667              & 0                   & 135               & 175.8014                  & 40.69758                & 175.8014                       & -94.30243                    \\ \hline
+		-20             & 1               & -20             & 20            & 1             & -20           & LB                         & RB                       & 137.1864                   & 138.528                     & -21.82113             & 1.914259              & -19.29058             & 22.00475            & 1.362394            & -19.08619           & 149.3592             & 150.6494              & -135                & 135               & -131.4777                 & 130.9373                & 3.522256                       & -4.062739                    \\ \hline
+		-28.28427       & 1               & 0               & 20            & 1             & 20            & L                          & RF                       & 155.1902                   & 156.9438                    & -29.04824             & 1.42931               & -0.2993886            & 19.0547             & 1.633719            & 21.96827            & 158.0882             & 159.4577              & -90                 & 45                & -90.59051                 & 40.93751                & -0.590498                      & -4.062499                    \\ \hline
+		-20             & 1               & -20             & 0             & 1             & 28.28427      & LB                         & F                        & 163.4222                   & 165.1689                    & -24.13182             & 1.706224              & -16.37255             & -0.3157322          & 1.621441            & 29.16667            & 167.4014             & 168.5941              & -135                & 0                 & -124.1554                 & -0.6202354              & 10.84455                       & -0.6202354                   \\ \hline
+		0               & 1               & -28.28427       & -28.28427     & 1             & 0             & B                          & L                        & 173.0848                   & 174.4233                    & 0.9680955             & 1.381428              & -29.15416             & -29.04294           & 1.613764            & -0.6416519          & 179.0845             & 180.26                & 180                 & -90               & 178.0981                  & -91.26565               & -1.901869                      & -1.265632                    \\ \hline
+		0               & 1               & -28.28427       & 20            & 1             & 20            & B                          & RF                       & 184.2874                   & 186.0292                    & -0.1279227            & 1.283335              & -29.17005             & 22.51691            & 2.167132            & 18.49526            & 190.723              & 192.239               & 180                 & 45                & -179.749                  & 50.60051                & 0.25101                        & 5.600527                     \\ \hline
+		28.28427        & 1               & 0               & -28.28427     & 1             & 0             & R                          & L                        & 197.5581                   & 199.4448                    & 29.04962              & 0.9728605             & -0.2100608            & -29.04395           & 2.267307            & -0.5765914          & 203.4794             & 204.8865              & 90                  & -90               & 90.4143                   & -91.13731               & 0.4140146                      & -1.137288                    \\ \hline
+		20              & 1               & 20              & -20           & 1             & -20           & RF                         & LB                       & 209.9895                   & 211.8876                    & 19.77821              & 1.762834              & 21.3332               & -22.09118           & 1.682552            & -18.98647           & 220.7456             & 225.4446              & 45                  & -135              & 42.83389                  & -130.6777               & -2.166092                      & 4.322323                     \\ \hline
+		-28.28427       & 1               & 0               & 0             & 1             & 28.28427      & L                          & F                        & 274.3138                   & 275.6545                    & -29.04614             & 1.407301              & 0.4348091             & -0.08503044         & 1.997813            & 29.17083            & 277.8207             & 280.2206              & -90                 & 0                 & -89.14237                 & -0.166689               & 0.8575217                      & -0.166689                    \\ \hline
+		-20             & 1               & 20              & 20            & 1             & 20            & LF                         & RF                       & 283.5435                   & 284.8827                    & -19.14111             & 1.79873               & 21.89623              & 23.82049            & 2.166126            & 16.81595            & 288.9475             & 290.1521              & -45                 & 45                & -41.1591                  & 54.78002                & 3.84094                        & 9.780019                     \\ \hline
+		20              & 1               & -20             & -20           & 1             & -20           & RB                         & LB                       & 294.0532                   & 295.3895                    & 20.73807              & 1.742554              & -20.42301             & -18.36732           & 0.9775637           & -22.53613           & 297.2555             & 298.4013              & 135                 & -135              & 134.5615                  & -140.8194               & -0.4387946                     & -5.819384                    \\ \hline
+		-28.28427       & 1               & 0               & 20            & 1             & -20           & L                          & RB                       & 302.8529                   & 304.5954                    & -29.05181             & 1.439987              & 0.06857568            & 20.92347            & 1.445166            & -20.23555           & 309.2382             & 310.8595              & -90                 & 135               & -89.86476                 & 134.0425                & 0.1341704                      & -0.9575664                   \\ \hline
+		0               & 1               & 28.28427        & -20           & 1             & -20           & F                          & LB                       & 313.9102                   & 315.6639                    & 8.78486               & 1.708736              & -27.72901             & -28.61761           & 1.55306             & 5.140923            & 328.5334             & 330.2864              & 0                   & -135              & 162.4212                  & -79.8159                & 162.4212                       & 55.18411                     \\ \hline
+		20              & 1               & -20             & 0             & 1             & 28.28427      & RB                         & F                        & 334.5977                   & 336.351                     & 20.8276               & 1.879979              & -20.33248             & 0.01689438          & 2.12194             & 29.17205            & 339.8227             & 341.5675              & 135                 & 0                 & 134.3108                  & 0.03426402              & -0.6892704                     & 0.03426402                   \\ \hline
+		20              & 1               & 20              & -20           & 1             & 20            & RF                         & LF                       & 344.8274                   & 346.17                      & 18.09597              & 2.916296              & 22.74821              & -18.63971           & 2.638542            & 22.31424            & 350.6151             & 351.5732              & 45                  & -45               & 38.50189                  & -39.87296               & -6.498148                      & 5.127055                     \\ \hline
+		20              & 1               & 20              & -28.28427     & 1             & 0             & RF                         & L                        & 355.807                    & 357.5508                    & 29.04923              & 1.573451              & -0.2349888            & -18.29635           & 2.420022            & -22.5916            & 365.7383             & 370.6407              & 45                  & -90               & 90.46347                  & -140.9969               & 45.46347                       & -50.99688                    \\ \hline
+		28.28427        & 1               & 0               & -20           & 1             & 20            & R                          & LF                       & 373.9895                   & 375.7359                    & 20.5463               & 1.469804              & -20.61317             & -29.05194           & 1.157423            & -0.06000122         & 382.4041             & 384.3219              & 90                  & -45               & 135.0931                  & -90.11834               & 45.09309                       & -45.11833                    \\ \hline
+		0               & 1               & -28.28427       & 28.28427      & 1             & 0             & B                          & R                        & 389.7736                   & 391.1135                    & 0.6484926             & 1.069838              & -29.16067             & 29.04823            & 0.7372568           & 0.299542            & 393.1028             & 394.1862              & 180                 & 90                & 178.7261                  & 89.40919                & -1.273954                      & -0.590498                    \\ \hline
+		0               & 1               & 28.28427        & 28.28427      & 1             & 0             & F                          & R                        & 397.8997                   & 399.238                     & 22.83201              & 2.069316              & -18.1083              & 20.79775            & 1.724229            & 20.36267            & 409.4341             & 410.5405              & 0                   & 90                & 128.4183                  & 45.60561                & 128.4183                       & -44.39439                    \\ \hline
+		20              & 1               & 20              & 20            & 1             & -20           & RF                         & RB                       & 418.31                     & 419.6547                    & 19.69891              & 1.81259               & 21.40369              & 19.82174            & 2.125524            & -21.29453           & 422.8051             & 423.8861              & 45                  & 135               & 42.62495                  & 137.0515                & -2.37504                       & 2.051568                     \\ \hline
+		-20             & 1               & 20              & 0             & 1             & -28.28427     & LF                         & B                        & 437.0075                   & 438.7628                    & -16.35556             & 2.618964              & 24.01426              & -21.88393           & 2.374563            & -19.22278           & 444.0034             & 445.0387              & -45                 & 180               & -34.25788                 & -131.296                & 10.74213                       & 48.70403                     \\ \hline
+		-28.28427       & 1               & 0               & 28.28427      & 1             & 0             & L                          & R                        & 452.7713                   & 454.6602                    & -29.04592             & 1.115498              & 0.4495176             & 29.0502             & 0.7813537           & -0.1727213          & 456.7798             & 458.4675              & -90                 & 90                & -89.11336                 & 90.34065                & 0.8866904                      & 0.3403488                    \\ \hline
+		28.28427        & 1               & 0               & -20           & 1             & -20           & R                          & LB                       & 463.069                    & 464.8112                    & 29.04821              & 1.387402              & 0.3009176             & -22.98626           & 1.251772            & -17.91777           & 465.8945             & 467.7036              & 90                  & -135              & 89.40648                  & -127.9364               & -0.5934729                     & 7.063637                     \\ \hline
+		0               & 1               & 28.28427        & 0             & 1             & -28.28427     & F                          & B                        & 471.8137                   & 473.705                     & 0.06735761            & 1.731911              & -29.17114             & 0.08821505          & 1.729085            & 29.17077            & 478.0361             & 482.8707              & 0                   & 180               & 179.8673                  & 0.1735894               & 179.8673                       & -179.8264                    \\ \hline
+		28.28427        & 1               & 0               & 0             & 1             & 28.28427      & R                          & F                        & 486.6365                   & 487.9758                    & 20.94176              & 2.680607              & 20.21705              & 0.3134608           & 1.520585            & -29.16671           & 502.2359             & 503.8364              & 90                  & 0                 & 46.00875                  & 179.3842                & -43.99125                      & 179.3842                     \\ \hline
+		0               & 1               & -28.28427       & -20           & 1             & 20            & B                          & LF                       & 510.8417                   & 512.5924                    & 0.3685225             & 1.504236              & -29.16571             & -22.547             & 2.579729            & 18.46033            & 514.4913             & 515.7197              & 180                 & -45               & 179.2758                  & -50.69114               & -0.7241574                     & -5.69113                     \\ \hline
+		20              & 1               & -20             & -20           & 1             & 20            & RB                         & LF                       & 518.892                    & 520.7914                    & 21.83032              & 2.335985              & -19.28065             & -21.54316           & 2.997453            & 19.59065            & 527.3166             & 528.5029              & 135                 & -45               & 131.4511                  & -47.71763               & -3.548948                      & -2.717574                    \\ \hline
+		20              & 1               & 20              & 0             & 1             & -28.28427     & RF                         & B                        & 532.7422                   & 534.4986                    & 29.052                & 0.9385378             & -0.05642402           & -18.38524           & 3.313775            & -22.52212           & 539.2009             & 541.8908              & 45                  & 180               & 90.11128                  & -140.7746               & 45.11128                       & 39.22543                     \\ \hline
+		0               & 1               & 28.28427        & -28.28427     & 1             & 0             & F                          & L                        & 546.2361                   & 547.5757                    & -0.3595429            & 1.581038              & -29.16587             & -29.04684           & 1.452617            & 0.3894303           & 550.1028             & 551.3634              & 0                   & -90               & -179.2936                 & -89.23189               & -179.2936                      & 0.7682129                    \\ \hline
+		20              & 1               & -20             & -28.28427     & 1             & 0             & RB                         & L                        & 555.1602                   & 556.9047                    & 19.59774              & 2.493516              & -21.49364             & -29.05055           & 1.64903             & -0.1501482          & 560.1541             & 562.0724              & 135                 & -90               & 137.6417                  & -90.29613               & 2.641751                       & -0.2960753                   \\ \hline
+		-20             & 1               & -20             & -20           & 1             & 20            & LB                         & LF                       & 567.7386                   & 569.0763                    & -18.92864             & 2.616591              & 22.07336              & -22.50537           & 2.419339            & -18.50857           & 573.577              & 574.6702              & -135                & -45               & -40.61419                 & -129.4341               & 94.38581                       & -84.43411                    \\ \hline
+		-28.28427       & 1               & 0               & 0             & 1             & -28.28427     & L                          & B                        & 578.8732                   & 580.2175                    & -29.05127             & 0.8978965             & -0.1034962            & 0.9583254           & 1.309837            & -29.15468           & 581.9786             & 583.2881              & -90                 & 180               & -90.20412                 & 178.1174                & -0.2046302                     & -1.882632                    \\ \hline
+		-20             & 1               & 20              & 20            & 1             & -20           & LF                         & RB                       & 587.9667                   & 589.8551                    & -29.04444             & 1.177001              & 0.5450366             & 29.05175            & 1.231818            & 0.07212715          & 593.7642             & 595.8871              & -45                 & 135               & -88.92494                 & 89.85775                & -43.92494                      & -45.14225                    \\ \hline
+		-20             & 1               & 20              & -20           & 1             & -20           & LF                         & LB                       & 599.8282                   & 601.1689                    & -20.07892             & 2.337029              & -21.05619             & -21.13209           & 3.376208            & 20.0246             & 602.9206             & 603.7197              & -45                 & -135              & -136.3609                 & -46.54139               & -91.36095                      & 88.4586                      \\ \hline
+		-20             & 1               & 20              & 28.28427      & 1             & 0             & LF                         & R                        & 608.1597                   & 609.9161                    & -17.54933             & 2.892593              & 23.16736              & 29.04927            & 1.439725            & 0.2327894           & 616.6708             & 617.8992              & -45                 & 90                & -37.14401                 & 89.54086                & 7.855978                       & -0.4592754                   \\ \hline
+	\end{tabularx}
+	\end{adjustbox}
+\end{sidewaystable}
 
 
 
@@ -475,7 +532,7 @@ Each awareness presentation was tested for ten minutes, during which exactly eig
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{figures/placeholders/minimap_controller}
+	\includegraphics[width=0.7\linewidth]{figures/minimap_controller}
 	\caption{Controller with the minimap}
 	\label{fig:minimap_controller}
 \end{figure}

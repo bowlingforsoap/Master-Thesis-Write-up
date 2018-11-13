@@ -14,6 +14,7 @@ main.aux
 main.blg
 main.bbl
 main.acn
+main.ist
 *.pdf
 texput.log
 zoteroExport.bbl
