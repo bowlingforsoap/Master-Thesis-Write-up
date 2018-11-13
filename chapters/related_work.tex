@@ -5,16 +5,16 @@
 This master thesis focuses on two broad topics, audio feedback and collaboration, which puts it at the intersection of the fields of \gls{hci} and \gls{cscw}, \gls{vr}, and \gls{cve}. I will start by introducing the field of \gls{hci}, and an important issue of human factors.
 
 \section{HCI}
-\cite[Chapter~4.1.1]{jr_3d_2017} define \gls{hci} as "a field that seeks to understand the relationship between human users and digital technological artifacts and to design new, effective ways for humans to use computer technologies for all sorts of purposes". The word "computer", in this context, can mean anything from a smartphone to a desktop computer to a \gls{vr} setup, which in turn implies different interfaces: touch-based, 2D, immersive 3D, etc. Modern \gls{hci} deals not only with the human-computer interactions, but also pays emphasis on the computer as a medium for collaborative work, and hence "human-human interaction". The goals pursued in \gls{hci} are not to simply understand the interactions we already use today, but to design the new interactions, be it through novel hardware and software solutions or innovative application of the existing ones. 
+\parencite[Chapter~4.1.1]{jr_3d_2017} define \gls{hci} as "a field that seeks to understand the relationship between human users and digital technological artifacts and to design new, effective ways for humans to use computer technologies for all sorts of purposes". The word "computer", in this context, can mean anything from a smartphone to a desktop computer to a \gls{vr} setup, which in turn implies different interfaces: touch-based, 2D, immersive 3D, etc. Modern \gls{hci} deals not only with the human-computer interactions, but also pays emphasis on the computer as a medium for collaborative work, and hence "human-human interaction". The goals pursued in \gls{hci} are not to simply understand the interactions we already use today, but to design the new interactions, be it through novel hardware and software solutions or innovative application of the existing ones. 
 %Lately,\gls{hci} experienced a shift from focusing on the \gls{ui} to the \gls{ux}, which encompasses \gls{ui} and deals with the ecology that the system exists in (social context, cultural differences, skills and emotional state of the users, and so on).
 
 \subparagraph{Human Factors}
-One of the principal reference points in \gls{hci} is the notion of human factors, or as it is also called, ergonomics. Two of the three main factors are perception and cognition \cite{jr_3d_2017}. A a significant part of this thesis resides with these two factors. The third factor is Physical Ergonomics, which is used to design comfortable and effective interfaces with regard to the human physiology. It is not highly relevant for this work, and thus will be addressed only scarcely. A review of physical ergonomics factor can be found in \cite[Chapter~3.5]{jr_3d_2017}.
+One of the principal reference points in \gls{hci} is the notion of human factors, or as it is also called, ergonomics. Two of the three main factors are perception and cognition \parencite{jr_3d_2017}. A a significant part of this thesis resides with these two factors. The third factor is Physical Ergonomics, which is used to design comfortable and effective interfaces with regard to the human physiology. It is not highly relevant for this work, and thus will be addressed only scarcely. A review of physical ergonomics factor can be found in \parencite[Chapter~3.5]{jr_3d_2017}.
 
 % 3.1 Intro: definition and examples
 
 % 3.2 Information processing: how human IP is tied with the main human factors, the graph; short, one-paragraph, explanation of everything in the graph
-If we consider the interactions with the outside world, everything we do happens based on the information we get from our environment and body. \cite{jr_3d_2017} argue that processing of this information can be mapped to the aforementioned human factors (see Fig. \ref{fig:informationprocessingloop}).
+If we consider the interactions with the outside world, everything we do happens based on the information we get from our environment and body. \parencite{jr_3d_2017} argue that processing of this information can be mapped to the aforementioned human factors (see Fig. \ref{fig:informationprocessingloop}).
 At the perception stage, the outside events or stimuli are first received through the sensory system, and then interpreted and matched with experience from the past. Based on the interpreted information, an action can be taken, or this information can be saved in the working (short-term) memory. 
 %Short-term memory has limited capacity, and is directly affected by the attention. Contrary, long-term memory is vast, is not directly affected by the attention, and used to store information about the world. 
 Based on the actions taken, the responses can be fed back into the information processing loop.
@@ -22,7 +22,7 @@ Based on the actions taken, the responses can be fed back into the information p
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/information_processing_loop}
-	\caption{Information processing loop (Redrawn from \cite{jr_3d_2017})}
+	\caption{Information processing loop (Redrawn from \parencite{jr_3d_2017})}
 	\label{fig:informationprocessingloop}
 \end{figure}
 
@@ -33,7 +33,7 @@ Previously, I hypothesized that additional audio feedback may lead to an overall
 
 % TODO: re-read this
 % 3.4 Cognition governs awareness, a state of noticing certain details about the environment, people, or tasks.
-Moving on to cognition, it is defined as "the driving force behind the generation and usage of knowledge" in \cite{jr_3d_2017}. This factor is responsible for our thought process and is directly linked to the perception and attention. The study of cognition is a study of how these thought processes function and how cognition effects our interactions with the environment.
+Moving on to cognition, it is defined as "the driving force behind the generation and usage of knowledge" in \parencite{jr_3d_2017}. This factor is responsible for our thought process and is directly linked to the perception and attention. The study of cognition is a study of how these thought processes function and how cognition effects our interactions with the environment.
 For a user to be able to comprehend what is happening in the environment, they have to be aware of it, first. Cognition governs the concept of awareness. There are different types of awareness, but all of them concern the analysis and design of systems in such a way that they help users stay informed about the environment (for example, things like other people, tasks, or the workspace).
 %The main cognition problems that occur in the designed interface are mental (cognition) load and human error. The former can occur due to the properties of the task (difficulty, priority, etc.), or exceeding the attention and processing resources of an individual. The latter can be generally described as a lack of success in performing the task, and can be also caused by the perception and physical ergonomics issues.
 
@@ -72,9 +72,9 @@ Considering User 1 is familiar with what different sounds in the environment cor
 The recent surge of the \gls{vr} technology made it associate almost exclusively in consumer eyes with Oculus Rift- or HTC Vive-type of devices that use precise sub-millimeter tracking for the \gls{hmd} and controllers, stereo rendering, high fidelity displays, and wide-angle field of vision. And while this is exactly the kind of \gls{vr} medium we are concerned with for this project, it is useful to shortly consider the scope and terminology of the field.
 
 % \gls{vr} aims
-\cite{jr_3d_2017} define \gls{vr} as an "approach that uses displays, tracking, and other technologies to immerse the user into the \gls{ve}". A \gls{ve} is an artificial (usually 3D) environment that allows navigation, and where the view is controlled by the user in real-time. The authors note that the terms \gls{vr} and \gls{ve} are often used interchangeably in practice. 
-In actuality, the recent advances in the \gls{vr} technology were not as drastic as they might seem at the first glance. \cite{slater_immersion_2018} points out that the field had already experienced a similar level of development with head- and hand-tracking, and immersive displays in late 1980s-early 1990s. The difference with the current situation is the price (the old devices might have cost thousands or tens of thousands of dollars, as opposed to hundreds of dollars for today's setups) and the advances in computer graphics.
-Dependence on advanced computer graphics has always been a distinct feature of the \gls{vr} field. However, a large number of fairly different systems were also classified as \gls{vr}, among them: desktop VR applications (see \cite{churchill_collaborative_1998}, Example Projects section), non-visual \cite{ammi_intermodal_2015}, and highly immersive (\cite{davidson_greenspace_1996}, \cite{greenwald_cocoverse_nodate}, \cite{lena_real-time_nodate}, \cite{kulik_virtual_2018}). The binding factor being the aim to immerse one of the senses. \cite{slater_immersion_2018} defines the "immersion" property in \gls{vr}. Through it he shows how different systems can be combined under the same term - immersion is defined "as an objective property of a system, and higher or lower immersion as the extent to which a VR system can support natural sensorimotor contingencies for perception". He gives an example of a desktop \gls{vr} application, where immersion disappears as soon, as the user turns his gaze away from the screen, and an application using a tracked \gls{hmd}, which has higher immersion, because the illusion is not broken when you look away.
+\parencite{jr_3d_2017} define \gls{vr} as an "approach that uses displays, tracking, and other technologies to immerse the user into the \gls{ve}". A \gls{ve} is an artificial (usually 3D) environment that allows navigation, and where the view is controlled by the user in real-time. The authors note that the terms \gls{vr} and \gls{ve} are often used interchangeably in practice. 
+In actuality, the recent advances in the \gls{vr} technology were not as drastic as they might seem at the first glance. \parencite{slater_immersion_2018} points out that the field had already experienced a similar level of development with head- and hand-tracking, and immersive displays in late 1980s-early 1990s. The difference with the current situation is the price (the old devices might have cost thousands or tens of thousands of dollars, as opposed to hundreds of dollars for today's setups) and the advances in computer graphics.
+Dependence on advanced computer graphics has always been a distinct feature of the \gls{vr} field. However, a large number of fairly different systems were also classified as \gls{vr}, among them: desktop VR applications (see \parencite{churchill_collaborative_1998}, Example Projects section), non-visual \parencite{ammi_intermodal_2015}, and highly immersive (\parencite{davidson_greenspace_1996}, \parencite{greenwald_cocoverse_nodate}, \parencite{lena_real-time_nodate}, \parencite{kulik_virtual_2018}). The binding factor being the aim to immerse one of the senses. \parencite{slater_immersion_2018} defines the "immersion" property in \gls{vr}. Through it he shows how different systems can be combined under the same term - immersion is defined "as an objective property of a system, and higher or lower immersion as the extent to which a VR system can support natural sensorimotor contingencies for perception". He gives an example of a desktop \gls{vr} application, where immersion disappears as soon, as the user turns his gaze away from the screen, and an application using a tracked \gls{hmd}, which has higher immersion, because the illusion is not broken when you look away.
 
 %The most popular are still.. The combining factor is the attempt to trick our senses into believing we are ..
 % Immersiveness: desktop VR (see Churchill, example systems), non-visual (Ammi&Katz), surround-screens (Kulik, Lena), and HMDs (GreenSpaceII, Greenwald_CocoVerse).
@@ -89,12 +89,12 @@ Dependence on advanced computer graphics has always been a distinct feature of t
 
 \paragraph[]{CSCWs and CVEs}
 Digital collaboration has been addressed in multiple research areas and has a tangled history. Traditionally, it is considered a problem of the \gls{cscw} field, but there was time when it was debated whether it can be considered a distinct research area. 
-\gls{hci} did not always address the use of a computer as a medium for human-to-human collaboration, and \cite{bannon_perspectives_nodate} writes that the inability of \gls{hci} to address the use of a computer as a medium for human-to-human communication, and in doing so to satisfy the requirements of a group in software design, had sparked the first shift towards the research on human-computer-human interaction (HCHI). 
+\gls{hci} did not always address the use of a computer as a medium for human-to-human collaboration, and \parencite{bannon_perspectives_nodate} writes that the inability of \gls{hci} to address the use of a computer as a medium for human-to-human communication, and in doing so to satisfy the requirements of a group in software design, had sparked the first shift towards the research on human-computer-human interaction (HCHI). 
 %The main focus of the \gls{hci} is on providing the proper interface for the interaction between an individual and a computer. 
 This shift was originally supported by the \gls{cmc} movement. However, it was mostly a reactive measure, aimed at analyzing how the existing solutions integrate in the actual workspaces, instead of gathering material to help future design and re-design of collaborative systems. The proactive measure came through the establishment of the \gls{cscw} field. The special term "groupware" was coined, which indicated the emphasis on software to support the work of users in groups and their established workflows.
 
 %[CVE - churchil,greenwald]
-The next paradigm shift started to happen in the late 1990s, where the already established field of \gls{cscw} started facing the problems of its own, specifically when trying to apply the approach to more open-ended and creative tasks. \cite{churchill_collaborative_1998} argue that the \gls{cscw} approach at the time was better at addressing the routine tasks, such as those with clear requirements for the form of the input and output data: video conferencing, email, co-authoring applications, shared drawing applications, etc. In contrast, the tasks, like design, where users spend significant amount of time discussing and negotiating suffered from imposing a rigid structure early on. In answer to this problem, an approach emerged that has its origins in the domain of \gls{vr} - the \gls{cve}. Churchill and Snowdon describe \gls{cve}s as "distributed, virtual reality that is designed to support collaborative activities". The main difference from the \gls{cscw} was in the freedom of self-expression, interaction with common objects (artifacts) in the scene, and communication. The comparison of appearance of these types of systems can be observed in Fig. \ref{fig:approaches_to_collaboration}, and the differences are instantly noticeable: while \gls{cscw} looks like a traditional desktop application, the \gls{cve} reminds more of a computer game, than a tool to promote collaboration during remote collaboration. 
+The next paradigm shift started to happen in the late 1990s, where the already established field of \gls{cscw} started facing the problems of its own, specifically when trying to apply the approach to more open-ended and creative tasks. \parencite{churchill_collaborative_1998} argue that the \gls{cscw} approach at the time was better at addressing the routine tasks, such as those with clear requirements for the form of the input and output data: video conferencing, email, co-authoring applications, shared drawing applications, etc. In contrast, the tasks, like design, where users spend significant amount of time discussing and negotiating suffered from imposing a rigid structure early on. In answer to this problem, an approach emerged that has its origins in the domain of \gls{vr} - the \gls{cve}. Churchill and Snowdon describe \gls{cve}s as "distributed, virtual reality that is designed to support collaborative activities". The main difference from the \gls{cscw} was in the freedom of self-expression, interaction with common objects (artifacts) in the scene, and communication. The comparison of appearance of these types of systems can be observed in Fig. \ref{fig:approaches_to_collaboration}, and the differences are instantly noticeable: while \gls{cscw} looks like a traditional desktop application, the \gls{cve} reminds more of a computer game, than a tool to promote collaboration during remote collaboration. 
 
 \begin{figure}
 	\centering
@@ -103,13 +103,13 @@ The next paradigm shift started to happen in the late 1990s, where the already e
 	\hfill
 	\subfloat[CVE]{\includegraphics[width=0.4\linewidth]{figures/churchill_snowdon_cscw_vs_cve/Embodiments-in-MASSIVE-1}}
 	\hfill
-	\caption{Approaches to collaboration (Source: \cite{churchill_collaborative_1998})}
+	\caption{Approaches to collaboration (Source: \parencite{churchill_collaborative_1998})}
 	\label{fig:approaches_to_collaboration}
 \end{figure}
 
 %[immersive CVE - greenwald cocoverse]
-The latest leap in digital collaboration was initiated with the introduction of the aforementioned immersive \gls{vr} systems, like Oculus Rift and HTC Vive. The new hardware interfaces proved to be less foreign, and not impose high attention load for operation (the initial reason why \gls{cve}s found much broader application in gaming, than in distributed workspaces), which reignited the interest for the application of the medium in various, like collaborative learning \cite{greenwald_cocoverse_nodate}. 
-%More detail on the history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \cite{greenwald_technology_2017}.
+The latest leap in digital collaboration was initiated with the introduction of the aforementioned immersive \gls{vr} systems, like Oculus Rift and HTC Vive. The new hardware interfaces proved to be less foreign, and not impose high attention load for operation (the initial reason why \gls{cve}s found much broader application in gaming, than in distributed workspaces), which reignited the interest for the application of the medium in various, like collaborative learning \parencite{greenwald_cocoverse_nodate}. 
+%More detail on the history of the \gls{cve}s from the introduction to the topic by Churchill and Snowdon to the current day \gls{hmd}s for immersive \gls{vr} can be found in \parencite{greenwald_technology_2017}.
 
 \begin{comment}
 \paragraph{Terminology}
@@ -131,7 +131,7 @@ In this chapter I gave an overview of the relevant topics from the fields of \gl
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/Cocoverse}
-	\caption{CocoVerse, environment affordances and avatars (Source: \cite{greenwald_cocoverse_nodate})}
+	\caption{CocoVerse, environment affordances and avatars (Source: \parencite{greenwald_cocoverse_nodate})}
 	\label{fig:cocoverse}
 \end{figure}
 
@@ -140,20 +140,20 @@ We will now take a look at the some of the problems that were appraoched in the 
 
 % Interactions and navigation // THis is more a single-player problem
 % Greenspace II
-Some collaborative projects address the question of interactions with shared artifacts. From the earlier studies, \cite{davidson_greenspace_1996} present an immersive \gls{vr} system with 6 \gls{dof} tracked head and hand movements that facilitates design review and discussion of the architectural design decisions. This was much an exploratory study, where participants got to explore the design of a 3D environment in an interactive fashion. The authors report their findings on the navigation, communication, manipulation and some social affordances of the resulting application.
+Some collaborative projects address the question of interactions with shared artifacts. From the earlier studies, \parencite{davidson_greenspace_1996} present an immersive \gls{vr} system with 6 \gls{dof} tracked head and hand movements that facilitates design review and discussion of the architectural design decisions. This was much an exploratory study, where participants got to explore the design of a 3D environment in an interactive fashion. The authors report their findings on the navigation, communication, manipulation and some social affordances of the resulting application.
 % Lena
-\cite{lena_real-time_nodate} presents a research into what constitutes an interactions in \gls{vr} and utilizes the findings in the \gls{cdp} project to connect two "different realities": an interactive table computer and a CAVE-environment. Intentional non-verbal communication and embodiment are also explored.
+\parencite{lena_real-time_nodate} presents a research into what constitutes an interactions in \gls{vr} and utilizes the findings in the \gls{cdp} project to connect two "different realities": an interactive table computer and a CAVE-environment. Intentional non-verbal communication and embodiment are also explored.
 
 % Presence
 % CocoVerse
 Next popular topic of research is the different types of presence, also described as a feeling of "being there".
-Greenwald et al. (\cite{greenwald_cocoverse_nodate}, \cite{greenwald_investigating_2017}, \cite{greenwald_technology_2017}) are exploring the utility of shared immersive \gls{vr} for collaborative learning and co-operation. Authors present a system that is the first of its kind in the research community multi-user framework for collaboration and co-creation, CocoVerse (Fig. \ref{fig:cocoverse}). The topics addressed are: social presence (the quality of the medium in convincing users in the salience of the others, present in the same \gls{ve}), co-presence (psychological and emotional interactions between the users), embodiment (how users are represented), as well as non-verbal communication (i.e. through gestures).
+Greenwald et al. (\parencite{greenwald_cocoverse_nodate}, \parencite{greenwald_investigating_2017}, \parencite{greenwald_technology_2017}) are exploring the utility of shared immersive \gls{vr} for collaborative learning and co-operation. Authors present a system that is the first of its kind in the research community multi-user framework for collaboration and co-creation, CocoVerse (Fig. \ref{fig:cocoverse}). The topics addressed are: social presence (the quality of the medium in convincing users in the salience of the others, present in the same \gls{ve}), co-presence (psychological and emotional interactions between the users), embodiment (how users are represented), as well as non-verbal communication (i.e. through gestures).
 Even though, it is already closer to our initial problem formulation, this stream of research focuses mostly on the phase where users' attention is equally engaged on the same subject.
 
 % Awareness
-\cite{gutwin_descriptive_2002} split a collaborative situation into two parts: the domain task and the collaborative part. Ammi and Katz, in their study on communication via audio and haptic feedback in abstract and non-visual environments, prior to implementation, derive requirements to the individual (domain) and collaborative parts of the application \cite{ammi_intermodal_2015}. The former include the concept of \gls{sa}, and the later consists of process and \gls{wa}.
+\parencite{gutwin_descriptive_2002} split a collaborative situation into two parts: the domain task and the collaborative part. Ammi and Katz, in their study on communication via audio and haptic feedback in abstract and non-visual environments, prior to implementation, derive requirements to the individual (domain) and collaborative parts of the application \parencite{ammi_intermodal_2015}. The former include the concept of \gls{sa}, and the later consists of process and \gls{wa}.
 % Situation & Workspace awareness differences
-\gls{sa} is defined by Endsley as: "the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future" \cite{endsley_situation_1988}. In-fact, \gls{wa} is a special type of \gls{sa} in shared workspaces. The first difference is that the focus of the \gls{sa} on the domain task only is extended with the focus on collaborative task. Secondly, the extreme flow of information that is typical for \gls{sa} due to its roots in the jet fighter simulations, is reduced in volume to match the use case of shared collaboration between colleagues. Main reason for this is, as authors put it: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \cite{gutwin_descriptive_2002}.
+\gls{sa} is defined by Endsley as: "the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future" \parencite{endsley_situation_1988}. In-fact, \gls{wa} is a special type of \gls{sa} in shared workspaces. The first difference is that the focus of the \gls{sa} on the domain task only is extended with the focus on collaborative task. Secondly, the extreme flow of information that is typical for \gls{sa} due to its roots in the jet fighter simulations, is reduced in volume to match the use case of shared collaboration between colleagues. Main reason for this is, as authors put it: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \parencite{gutwin_descriptive_2002}.
 
 % Similaritites
 The part that is similar about the two types of awareness, and that makes this topic interesting in the context of current thesis, is that in both cases users are unable to gather the information they need. If, in case of a jet fighter simulation, the pilot is simply overwhelmed by the sheer volume of the information presented, then in the sorting slides task the users is failing to gather information due to the fact that the system does not present them with adequate awareness information by default.
@@ -176,11 +176,11 @@ The second part of the framework provides insights about the different sources o
 \end{enumerate}
 While 1 and 3 can be summarized as non-intentional and intentional communication, feedthrough is a mechanism of interest for our purposes, as it implies that artifacts (objects in the \gls{ve}) give off information (audio, visual, etc.) when manipulated, which simultaneously serves as a feedback to the person performing the manipulation and as a notification to the others present in the workspace.
 % Gutwin_chalk_2011
-The authors utilize this mechanism in their study on the use of synthesized audio to promote to promote \gls{wa} in a shared chalkboard application \cite{gutwin_chalk_2011}. In the systems, users are tasked with tracing a 2D shape (i.e. an outline of a ship), which is accompanied with an auditory feedback. There are two types of users in this environment - the real one (participant) and the simulated (user agent). The later is responsible for drawing shapes in the off-screen part of the workspace, while the former has two tasks - the primary and secondary. The primary task is to trace a given shape, and the secondary is to report that they noticed changes to the environment caused by the user agent. Among other topics, the authors explore the effect different awareness presentations and their combinations (type of auditory feedback, availability of the minimap of the environment, workspace clutter, and attention load) have on the \gls{wa}. They report a substantial increase in awareness due to the use of audio to convey information.
+The authors utilize this mechanism in their study on the use of synthesized audio to promote to promote \gls{wa} in a shared chalkboard application \parencite{gutwin_chalk_2011}. In the systems, users are tasked with tracing a 2D shape (i.e. an outline of a ship), which is accompanied with an auditory feedback. There are two types of users in this environment - the real one (participant) and the simulated (user agent). The later is responsible for drawing shapes in the off-screen part of the workspace, while the former has two tasks - the primary and secondary. The primary task is to trace a given shape, and the secondary is to report that they noticed changes to the environment caused by the user agent. Among other topics, the authors explore the effect different awareness presentations and their combinations (type of auditory feedback, availability of the minimap of the environment, workspace clutter, and attention load) have on the \gls{wa}. They report a substantial increase in awareness due to the use of audio to convey information.
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
-	\caption{Shared chalkboard application, tracing shape and minimap (Source: \cite{gutwin_chalk_2011})}
+	\caption{Shared chalkboard application, tracing shape and minimap (Source: \parencite{gutwin_chalk_2011})}
 	\label{fig:gutwinchalk2011}
 \end{figure}
 
@@ -196,7 +196,7 @@ Gutwin and Greenberg explore the effects of synthesized sound in a shared chalkb
 The authors study the extent of the ability of auditory cues to signal changes in the workspace, in comparison and in combination with a minimap.
 
 % Ammi & Katz
-\cite{ammi_intermodal_2015} study the application of abstract and non-visual \gls{vr} environments in the context of improving communication. The system facilitates a collaborative search of targets with the help of audio and haptic feedback. The authors work out a specification for both the individual and the collaborative aspects of the task. The concept of \gls{sa} is used to address the former, and workspace and process awarenesses - the later.
+\parencite{ammi_intermodal_2015} study the application of abstract and non-visual \gls{vr} environments in the context of improving communication. The system facilitates a collaborative search of targets with the help of audio and haptic feedback. The authors work out a specification for both the individual and the collaborative aspects of the task. The concept of \gls{sa} is used to address the former, and workspace and process awarenesses - the later.
 
 As we have seen, even in the fields of \gls{cscw} and \gls{cve}, a broad range of topics can be addressed with respect to collaboration..
 We have viewed non-visual, 2D, immersive \gls{vr} environments 
@@ -204,45 +204,45 @@ These are only some..
 We will now take a closer look at the awareness approach, as it provides us with..
 % Intentional and unintentional communication? Communication with aware person and unaware person - Nah, the difference is in the type of the task that is being conducted. In gutwin the domain task is being explored, while the others explore the collaborative part.
 
-Collaboration can be approached in different ways, depending on the task at hand. More traditional approach is with \gls{cscw} systems, it works well when the task is routine and just requires either information exchange, or an execution of a pre-defined task \cite{churchill_collaborative_1998}. For more creative and non-trivial tasks, which can be obscured by enforcing a certain workflow early-on, an approach using \gls{cve} is more appropriate.
+Collaboration can be approached in different ways, depending on the task at hand. More traditional approach is with \gls{cscw} systems, it works well when the task is routine and just requires either information exchange, or an execution of a pre-defined task \parencite{churchill_collaborative_1998}. For more creative and non-trivial tasks, which can be obscured by enforcing a certain workflow early-on, an approach using \gls{cve} is more appropriate.
 
 \paragraph{}
 % CVEs
-One of the origins of \gls{cve}s is the field of \gls{vr}. This is mostly due to the aim  to allow users creative freedom, and reduce the learning curve by providing an intuitive interface. The task of a \gls{cve} is to facilitate communication and collaboration. They allow synchronous and asynchronous task execution, and provide the support for real-time sharing of visual artifacts \cite{churchill_collaborative_1998}.
+One of the origins of \gls{cve}s is the field of \gls{vr}. This is mostly due to the aim  to allow users creative freedom, and reduce the learning curve by providing an intuitive interface. The task of a \gls{cve} is to facilitate communication and collaboration. They allow synchronous and asynchronous task execution, and provide the support for real-time sharing of visual artifacts \parencite{churchill_collaborative_1998}.
 
 \subparagraph{}
 % Cocoverse, Greenwald - first system of this kind in the research community
-A good and concise review of the history of the \gls{cve}s can be found in \cite{greenwald_technology_2017}. The state of art in the area of CVEs was reached by one of the authors, in \cite{greenwald_cocoverse_nodate} and \cite{greenwald_investigating_2017} he presents CocoVerse - a shared immersive \gls{vr} environment for local collaboration and co-creation (Fig. \ref{fig:cocoverse}).
+A good and concise review of the history of the \gls{cve}s can be found in \parencite{greenwald_technology_2017}. The state of art in the area of CVEs was reached by one of the authors, in \parencite{greenwald_cocoverse_nodate} and \parencite{greenwald_investigating_2017} he presents CocoVerse - a shared immersive \gls{vr} environment for local collaboration and co-creation (Fig. \ref{fig:cocoverse}).
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/Cocoverse}
-	\caption{CocoVerse, environment affordances and avatars (Source: \cite{greenwald_cocoverse_nodate})}
+	\caption{CocoVerse, environment affordances and avatars (Source: \parencite{greenwald_cocoverse_nodate})}
 	\label{fig:cocoverse}
 \end{figure}
 
 %% What they explored, their focus and discoveries
 %%% Goals
-Authors' main research direction is communication, collaboration, and learning in \gls{vr}. As the field of immersive \gls{vr} is relatively young, one of the main goals of those projects was to explore the feasibility and utility of such setup, and pilot methodologies for studying behavior in this setting (\cite{greenwald_investigating_2017}). The utility was analyzed by comparing different activities in the 2D viewing mode (via a monitor) and as the immersive 3D experience.
+Authors' main research direction is communication, collaboration, and learning in \gls{vr}. As the field of immersive \gls{vr} is relatively young, one of the main goals of those projects was to explore the feasibility and utility of such setup, and pilot methodologies for studying behavior in this setting (\parencite{greenwald_investigating_2017}). The utility was analyzed by comparing different activities in the 2D viewing mode (via a monitor) and as the immersive 3D experience.
 
 %%% Setup/system
 The system is a room-scale shared immersive \gls{vr} experience, which allows users to synchronously manipulate the environment with a set of hand-based tools (create 3D drawings, communicate via rough hand gestures, etc.). CocoVerse also lets the users know where others are looking, by providing them with minimalistic avatars that convey the gaze direction. Users require either a \gls{hmd} and a pair of 6 \gls{dof} controllers to use the system in the immersive mode, or simply a PC to participate in the 2D mode.
 
 %%% Focus and the results
-Authors report the overall success and promise of such setups as an engine for learning and creativity. They further review, how the sense of social presence is influenced by the complexity of avatars and high movement realism. \cite{greenwald_investigating_2017} proposes guidelines for deciding on the level of sophistication of the embodiment based on the type of experience that is being digitalized.
+Authors report the overall success and promise of such setups as an engine for learning and creativity. They further review, how the sense of social presence is influenced by the complexity of avatars and high movement realism. \parencite{greenwald_investigating_2017} proposes guidelines for deciding on the level of sophistication of the embodiment based on the type of experience that is being digitalized.
 
 % Concise: what other CVE projects addressed.
-Among other CVEs that were explored, \cite{lena_real-time_nodate} proposes a system, which connects two different mediums (an interactive table computer, and a CAVE-environment), and focuses on the way to develop consistent interactions across the environment. % TODO: more (e.g. Kulik)
+Among other CVEs that were explored, \parencite{lena_real-time_nodate} proposes a system, which connects two different mediums (an interactive table computer, and a CAVE-environment), and focuses on the way to develop consistent interactions across the environment. % TODO: more (e.g. Kulik)
 
 % Conclusion: something else is needed
 Generally, it seems that the focus of the modern \gls{cve} projects is more on exploring the aspects of the intentional communication and interactions, where users are always aware of each other during the collaboration task. I our case, the focus should be more on consequential communication, which arises as a result of user's actions.
 
 \subparagraph[CSCW]{}
 % CSCWs
-We will now turn to the field of \gls{cscw}, which is regarded by \cite{churchill_collaborative_1998} as the main way to approach the automation of the collaborative work, before the paradigm shift towards \gls{cve}s. \gls{cscw} applications also provide distributed access to a shared context. However, unlike \gls{cve}s, these applications provide a less malleable environment that is restricted by requirements of a certain workflow. Examples of \gls{cscw} applications include: emailing software, project management and conferencing tools, shared calendars and drawing tools, etc.
+We will now turn to the field of \gls{cscw}, which is regarded by \parencite{churchill_collaborative_1998} as the main way to approach the automation of the collaborative work, before the paradigm shift towards \gls{cve}s. \gls{cscw} applications also provide distributed access to a shared context. However, unlike \gls{cve}s, these applications provide a less malleable environment that is restricted by requirements of a certain workflow. Examples of \gls{cscw} applications include: emailing software, project management and conferencing tools, shared calendars and drawing tools, etc.
 
 % Chalkboard, Gutwin
-A notable work from the field of \gls{cscw} is the study presented in \cite{gutwin_chalk_2011}. The authors study the use of auditory cues to promote the up-to-the-moment understanding of another person’s interaction with the shared chalkboard application, or as they call it, the "Workspace Awareness" (WA) \cite{gutwin_descriptive_2002}. % TODO: I use the same quote in the Awareness chapter. Change.
+A notable work from the field of \gls{cscw} is the study presented in \parencite{gutwin_chalk_2011}. The authors study the use of auditory cues to promote the up-to-the-moment understanding of another person’s interaction with the shared chalkboard application, or as they call it, the "Workspace Awareness" (WA) \parencite{gutwin_descriptive_2002}. % TODO: I use the same quote in the Awareness chapter. Change.
 
 %% What they explored, their focus and discoveries
 %%% Goals
@@ -257,19 +257,19 @@ The system is a 2D shared drawing application with one real (participant) and on
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
-	\caption{Shared chalkboard application, tracing shape and minimap (Source: \cite{gutwin_chalk_2011})}
+	\caption{Shared chalkboard application, tracing shape and minimap (Source: \parencite{gutwin_chalk_2011})}
 	\label{fig:gutwinchalk2011}
 \end{figure}
 
 
 %%% Focus and the results
-One of the characteristics of the \gls{wa} is that it is a peripheral (or a secondary) task by nature \cite{gutwin_descriptive_2002}, % TODO: I might be using the same quote in the Awareness chapter. Change.
-as such, \cite{gutwin_chalk_2011} attempt to keep participant's attention on the main task by varying the difficulty of the tracing activity: the tracing shape was made to oscilate occasionally. Authors also study the effect of the workspace clutter, the size of the minimap, the type of auditory cues, and the awareness presentation on the \gls{wa}.
+One of the characteristics of the \gls{wa} is that it is a peripheral (or a secondary) task by nature \parencite{gutwin_descriptive_2002}, % TODO: I might be using the same quote in the Awareness chapter. Change.
+as such, \parencite{gutwin_chalk_2011} attempt to keep participant's attention on the main task by varying the difficulty of the tracing activity: the tracing shape was made to oscilate occasionally. Authors also study the effect of the workspace clutter, the size of the minimap, the type of auditory cues, and the awareness presentation on the \gls{wa}.
 
 The authors report significant improvements to the group awareness in cases, where it is hard to attend to the visual displays, or the line of sight is obscured. Additionally, they provide their thoughts with regards to how and why the audio awareness helps in the collaborative scenarios, as well as the possible limitations of its application.
 
 \paragraph[Bridge]{}
-The approach used in \cite{gutwin_chalk_2011} is based on their previous work on the topic of \gls{wa} \cite{gutwin_descriptive_2002}.
+The approach used in \parencite{gutwin_chalk_2011} is based on their previous work on the topic of \gls{wa} \parencite{gutwin_descriptive_2002}.
 Next, we are going to take a closer look at the awareness approach % TODO: did I define it?
 , its history, and how it aids the design of the groupware systems. 
 

@@ -10,26 +10,26 @@ This chapter reviews \gls{wa}, the structured, descriptive approach to the desig
 
 % TODO: state that situation awareness measures the awareness of the situation on all stages of information processing loop (perception=perception; comprehension=congition; projection=actions taken)
 
-\gls{sa} originated in late 1980s and seen great development  due to its utility in jet fighter piloting simulations \cite{endsley_situation_1988}. It is mostly used in attention-critical and hazardous tasks, where failure to react to the changes might lead to serious or even lethal consequences (i.e. operating a nuclear plant or a dam).
-\cite{endsley_design_1988} defines \gls{sa} as "the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future". As such it is divided into 3 separate levels: perception, comprehension, and projection.
+\gls{sa} originated in late 1980s and seen great development  due to its utility in jet fighter piloting simulations \parencite{endsley_situation_1988}. It is mostly used in attention-critical and hazardous tasks, where failure to react to the changes might lead to serious or even lethal consequences (i.e. operating a nuclear plant or a dam).
+\parencite{endsley_design_1988} defines \gls{sa} as "the perception of the elements in the environment within a volume of time and space, the comprehension of their meaning, and the projection of their status in the near future". As such it is divided into 3 separate levels: perception, comprehension, and projection.
 
-Endsley notes that the first step in gaining \gls{sa} is to "perceive the status, attributes, and dynamics of relevant elements in the environment" \cite{salvendy_copyright_nodate}. Going back to the jet fighter use case, the pilot has to keep track of all the different indicators in the cockpit. At the second level, more than the ability to take in all the need information is required, the pilot has to be able to comprehend the situation and highlight the important pieces of information with respect to the current goal. The difference between a novice and experienced pilot is that the former cannot achieve the second level of \gls{sa}, even if they were able to get the same information on the first level. Level 3 of situation awareness describes the ability of the user to employ their knowledge from the first and the second levels in order to predict the state of the system in the nearest future.
+\parencite{endsley_situation_inbook} notes that the first step in gaining \gls{sa} is to "perceive the status, attributes, and dynamics of relevant elements in the environment". Going back to the jet fighter use case, the pilot has to keep track of all the different indicators in the cockpit. At the second level, more than the ability to take in all the need information is required, the pilot has to be able to comprehend the situation and highlight the important pieces of information with respect to the current goal. The difference between a novice and experienced pilot is that the former cannot achieve the second level of \gls{sa}, even if they were able to get the same information on the first level. Level 3 of situation awareness describes the ability of the user to employ their knowledge from the first and the second levels in order to predict the state of the system in the nearest future.
 
 \paragraph{Measurement}
-\cite[p.~791-792]{endsley_situation_1988} reviews different approaches to the measurement of \gls{sa} that help system designers answer the fundamental question: "Does system A promote better SA than system B?". In her opinion, all the approaches that were available up to that point suffer from their own individual limitations. For example, the subjective approach, where the subject is asked to rate his \gls{sa} from 1 to 10 suffers from 2 major drawbacks: first, the subject is not aware of "what is really going on in the environment", and secondly, the outcome of the task can influence the rating. The psychological approach suffers from the incomplete human-computer interfaces to monitor what is going on with the user at this moment, and what they are thinking about. Finally, if the questionnaires are used, the fact that humans are not that good at recalling past mental events comes into play. Another set of problems arises, if an attempt is made to solve the issue with the questionnaire approach by querying users in real-time: they can start to attend to the information they are questioned upon more thoroughly, or they can be under a heavy attentional load at the moment, which would obstruct their answer.
+\parencite[p.~791-792]{endsley_situation_1988} reviews different approaches to the measurement of \gls{sa} that help system designers answer the fundamental question: "Does system A promote better SA than system B?". In her opinion, all the approaches that were available up to that point suffer from their own individual limitations. For example, the subjective approach, where the subject is asked to rate his \gls{sa} from 1 to 10 suffers from 2 major drawbacks: first, the subject is not aware of "what is really going on in the environment", and secondly, the outcome of the task can influence the rating. The psychological approach suffers from the incomplete human-computer interfaces to monitor what is going on with the user at this moment, and what they are thinking about. Finally, if the questionnaires are used, the fact that humans are not that good at recalling past mental events comes into play. Another set of problems arises, if an attempt is made to solve the issue with the questionnaire approach by querying users in real-time: they can start to attend to the information they are questioned upon more thoroughly, or they can be under a heavy attentional load at the moment, which would obstruct their answer.
 
-Nevertheless, the biggest limitation of the mentioned approaches was that they attempted to evaluate only a single design issue at the time. This led Endsley to the introduction of \gls{sagat} \cite{endsley_situation_1988}. First, the task goes though goal-directed analysis to determine the \gls{sa} requirements: the goal, subgoals, decisions required to actualize the given subgoal, and the knowledge required on all three levels of \gls{sa} (\ref{fig:sagoalorientedtaskanalysis}).
+Nevertheless, the biggest limitation of the mentioned approaches was that they attempted to evaluate only a single design issue at the time. This led \parencite{endsley_situation_1988} to the introduction of \gls{sagat} . First, the task goes though goal-directed analysis to determine the \gls{sa} requirements: the goal, subgoals, decisions required to actualize the given subgoal, and the knowledge required on all three levels of \gls{sa} (\ref{fig:sagoalorientedtaskanalysis}).
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/SA_goal_oriented_task_analysis}
-	\caption{Format of Goal-Directed Task Analysis (totaly spizgenoe name from: \cite{endsley_direct_nodate})}
+	\caption{Format of Goal-Directed Task Analysis (from: \parencite{endsley_direct_nodate})}
 	\label{fig:sagoalorientedtaskanalysis}
 \end{figure}
 This yields an extensive list of questions, which assess the \gls{sa} information of primary and secondary importance (example analysis can be seen the Fig. \ref{fig:sagoalorientedtaskanalysisresultexample}).
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/SA_goal_oriented_task_analysis_result_example}
-	\caption{Example of Goal-Directed Task Analysis for En-route Air Traffic Control (Endsley \& Rodgers, 1994) [from: \cite{endsley_direct_nodate}]}
+	\caption{Example of Goal-Directed Task Analysis for En-route Air Traffic Control (Endsley \& Rodgers, 1994) [from: \parencite{endsley_direct_nodate}]}
 	\label{fig:sagoalorientedtaskanalysisresultexample}
 \end{figure}
 Next, the simulation is halted multiple times, and the pilots are queried on a randomly selected questions from the list. This is done to prevent giving away hints about current objective. When the simulation halts, all the control panels and other simulation elements are grayed-out. Not every pilot is queried on every question, the goal is to reach the desired statistical significance of the results by assessing a certain number of participants.
@@ -37,7 +37,7 @@ Next, the simulation is halted multiple times, and the pilots are queried on a r
 % This paragraph is a bit repetetive
 By using \gls{sagat}, it is possible to get a snapshot of the current situation in the point of view of the pilot, which is unbiased by the recall difficulties, and that can be compared to the actual situation after the experiment. Additionally, pilots' \gls{sa} is not artificially enhanced, because the questions do not always directly address the main goals in the current situation, but can concern secondary information, which is still relevant.
 
-\cite{endsley_direct_nodate} notes that, since the introduction of \gls{sagat}, there is practical evidence that the method is valid, reliable, non-intrusive (in case of the halts are made at unpredictable time points), and is able to properly "reliably tap into memory stores" acting as a \gls{sa} index. 
+\parencite{endsley_direct_nodate} notes that, since the introduction of \gls{sagat}, there is practical evidence that the method is valid, reliable, non-intrusive (in case of the halts are made at unpredictable time points), and is able to properly "reliably tap into memory stores" acting as a \gls{sa} index. 
 
 
 \paragraph[Bridge]{}
@@ -46,13 +46,13 @@ Many ideas from the \gls{sa} concept are employed and adapted in the \gls{wa} fr
 
 \section{Workspace Awareness}
 % Definition
-\gls{wa} can be defined as "the up-to-the-moment understanding of another person’s interaction with the shared workspace" \cite{gutwin_descriptive_2002}. While this is a trivial task in real-world, face-to-face collaboration, \gls{wa} becomes a bottleneck for productive collaboration because of the limited information that systems provide about their state changes, and their unfamiliar interaction interfaces.
+\gls{wa} can be defined as "the up-to-the-moment understanding of another person’s interaction with the shared workspace" \parencite{gutwin_descriptive_2002}. While this is a trivial task in real-world, face-to-face collaboration, \gls{wa} becomes a bottleneck for productive collaboration because of the limited information that systems provide about their state changes, and their unfamiliar interaction interfaces.
  
 % Description
-It is an extension of the concept of \gls{sa}, research from the \gls{hci} and \gls{cscw} fields, as well as the authors' own observations and research \cite{gutwin_descriptive_2002}. \gls{wa} can be characterized as an adaptation of \gls{sa} for the day-to-day working scenarios. This was desired, because: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \cite{gutwin_descriptive_2002}, or to architectural collaboration in immersive \gls{vr} environments. Another major difference between \gls{sa} and \gls{wa} is that besides maintaining their \gls{sa} and performing the domain (their personal) task, collaborators have to collaborate.
+It is an extension of the concept of \gls{sa}, research from the \gls{hci} and \gls{cscw} fields, as well as the authors' own observations and research \parencite{gutwin_descriptive_2002}. \gls{wa} can be characterized as an adaptation of \gls{sa} for the day-to-day working scenarios. This was desired, because: "sorting slides on a table does not seem very similar to air combat in a jet fighter" \parencite{gutwin_descriptive_2002}, or to architectural collaboration in immersive \gls{vr} environments. Another major difference between \gls{sa} and \gls{wa} is that besides maintaining their \gls{sa} and performing the domain (their personal) task, collaborators have to collaborate.
 
 % Framework 'classification'
-This leads \cite{gutwin_descriptive_2002} to introduce the \gls{wa} framework, which provides a toolset for describing and analyzing medium-sized workspaces. The framework is applicable to real-time distributed groupware, and small mixed-focus collaboration groups busy with generation and execution tasks.
+This leads \parencite{gutwin_descriptive_2002} to introduce the \gls{wa} framework, which provides a toolset for describing and analyzing medium-sized workspaces. The framework is applicable to real-time distributed groupware, and small mixed-focus collaboration groups busy with generation and execution tasks.
 % Framework descriprion
 The \gls{wa} framework is split in 3 parts:
 \begin{description}
@@ -98,7 +98,7 @@ The complete \gls{wa} framework is summarized in Fig. \ref{fig:waframework}.
 
 \paragraph{Shared chalkboard application} 
 \label{par:shared_chalkboard_application}
-Gutwin et al. \cite{gutwin_chalk_2011} employ the notion of \gls{wa} in their study about the effects of synthesized sound in a shared chalkboard \gls{cscw}.
+Gutwin et al. \parencite{gutwin_chalk_2011} employ the notion of \gls{wa} in their study about the effects of synthesized sound in a shared chalkboard \gls{cscw}.
 %% What they explored, their focus and discoveries
 %%% Goals
 Two main goals of the study were to explore how much information can sound convey and the effectiveness of audio awareness in a \gls{cscw} application.
@@ -114,13 +114,13 @@ the minimap (\textit{radar}), which showed the complete environment and the loca
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/gutwin_chalk_2011}
-	\caption{Shared chalkboard application, tracing shape and minimap (Source: \cite{gutwin_chalk_2011})}
+	\caption{Shared chalkboard application, tracing shape and minimap (Source: \parencite{gutwin_chalk_2011})}
 	\label{fig:gutwinchalk2011}
 \end{figure}
 
 
 %%% Focus and the results
-\cite{gutwin_chalk_2011} study one main independent variable: the type of awareness presentation. To keep most of the participants attention on the shape tracing task, one of the secondary independent variables was - attentional demand. It was implemented by making the tracing shape gradually move (0, 40, or 80 pixels/second movement), and thus requiring the participant to keep track of the shapes position. The other secondary independent variables were the workspace clutter and the size of the minimap.
+\parencite{gutwin_chalk_2011} study one main independent variable: the type of awareness presentation. To keep most of the participants attention on the shape tracing task, one of the secondary independent variables was - attentional demand. It was implemented by making the tracing shape gradually move (0, 40, or 80 pixels/second movement), and thus requiring the participant to keep track of the shapes position. The other secondary independent variables were the workspace clutter and the size of the minimap.
 
 The collected dependent measures were participants' accuracy in reporting \textit{what }type of figure the agent drew, \textit{where }and \textit{when }it drew it.
 The authors used a \gls{sagat}-like approach for collecting the data: participants were tasked with pressing a space-bar as soon, as they noticed that the agent was drawing, and report aforementioned information.
@@ -129,4 +129,4 @@ The authors provide their thoughts regarding how and why the audio awareness hel
 
 
 \paragraph[Bridge to experiments]{}
-One of the basic characteristics of awareness is that it is a secondary (monitoring) task - "the overall goal is not simply to maintain awareness but to complete some task in the environment" \cite{gutwin_descriptive_2002}. This will be employed in the next chapter, in combination with the monitoring application of sonification, to study \gls{wa} in collaborative immersive \gls{vr} environment.
+One of the basic characteristics of awareness is that it is a secondary (monitoring) task - "the overall goal is not simply to maintain awareness but to complete some task in the environment" \parencite{gutwin_descriptive_2002}. This will be employed in the next chapter, in combination with the monitoring application of sonification, to study \gls{wa} in collaborative immersive \gls{vr} environment.
