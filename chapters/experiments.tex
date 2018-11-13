@@ -88,7 +88,7 @@ After the research into sonification and awareness, and after the vision for the
 \subsection{Sound Speed and Type}
 \label{study_one}
 % Goal of the study
-Feedback from the initial prototypes indicated that the speed of the moving building was too slow. The goal of this study was to derive the speed participants felt comfortable with, and that would allow them to make correct spatial judgments. Additionally, this pilot study was meant to determine what type of auditory cues to use: abstract earcons or auditory icons.
+Feedback from the initial prototypes indicated that the speed of the moving building was too slow. The goal of this study was to derive the speed participants felt comfortable with, and that would allow them to make correct spatial judgments. Additionally, this pilot study was meant to determine what type of audio feedback to use: abstract earcons or auditory icons.
 
 \paragraph{Participants}
 Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers.
@@ -100,7 +100,7 @@ Participants were instructed with the purpose the research, this study, and the 
 
 Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:pilot1predefinedtutorialtranslations}).
 
-At the start of the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated with auditory cues to a newly selected random position (see Fig. \ref{fig:arbitrary_translation}). This was repeated 5 to 10 times for each of 6 type of sound-speed combinations.
+At the start of the actual experiment, participants were asked to close their eyes and guess the path that the building traversed. It was silently positioned at a randomly selected position and then translated, with audio feedback turned on, to a newly selected random position (see Fig. \ref{fig:arbitrary_translation}). This was repeated 5 to 10 times for each of 6 type of sound-speed combinations.
 
 After going through all the sound types and speeds, participants were asked for their honest opinion, as to which sound was the best, and what speed was the most appropriate.
 
@@ -135,7 +135,7 @@ Audacity 2.2.2 was used prior to the experiments to: mixdown stereo sounds to mo
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
 \paragraph{Study design}
-The study followed the repeated measures design with 2 independent variables: translation speed and different types of auditory cues.
+The study followed the repeated measures design with 2 independent variables: translation speed and different types of audio feedback.
 
 Three different translation speeds were tested: \textit{slow} - 20, \textit{medium }- 40, and \textit{fast }- 60 meters per second (m/s). Sound properties (i.e. pitch, playbackspeed) stayed constant throughout the different speeds.
 
@@ -182,24 +182,25 @@ Distances between the fixed translation end-points remained the same throughout 
 	\label{table:pilot1_results}
 	\caption{Experiment data}
 	
-	\begin{tabular}{|l|l|l|l|}
+	\begin{tabularx}{\linewidth}{|l|l|l|X|}
 		\hline
 		\textbf{Participant} & \textbf{First sound played} & \textbf{Preferred sound} & \textbf{Preferred speed}                        \\ \hline
 		1                    & Concrete                    & Concrete                 & Medium                                          \\ \hline
 		2                    & Concrete                    & Concrete                 & Slowest, then medium                            \\ \hline
 		3                    & Sine wave                   & Concrete                 & Medium                                          \\ \hline
-		4                    & Sine wave                   & Concrete                 & First two -fine (fastest one - a bit too fast)  \\ \hline
+		4                    & Sine wave                   & Concrete                 & First two - fine (fastest one - a bit too fast)  \\ \hline
 		5                    & Concrete                    & Either                   & Slowest                                         \\ \hline
 		6                    & Sine wave                   & Sine wave                & Fast (speed didn't affect it too much)          \\ \hline
 		7                    & Concrete                    & Concrete                 & Between slow and medium                         \\ \hline
 		8                    & Sine wave                   & Concrete                 & First two - fine (fastest one - a bit too fast) \\ \hline
-	\end{tabular}
+	\end{tabularx}
 \end{table}
 
 \paragraph{Discussion}
 If we visualize the participants' preferences, and take the smallest common area, where they overlap, analysis shows that participants preferred the speed somewhere close to 40 m/s, but between 20 and 40 (Fig. \ref{fig:pilot1resultsanalysis})
 
-The preferred (concrete on concrete) sound, which was described by one participant as "dry and dull", has a distinct timbre, which is made of different harmonics and overtones. The sine wave, on the other hand, has only 1 fundamental frequency, which might make memorizing and spatial differentiation harder. Additionally, this frequency would most likely get cut of by the audio SDK, if occlusion effect was to be used.
+The choice of the sound was most likely caused by its natural fit to the ecology of the system - users expect a sound similar to the concrete on concrete auditory icon when they see a large cuboid sliding on the stone floor. However, if we consider the attributes of the chosen sounds, the auditory icon would almost always be a better choice, if simply due to fact that it has a distinct timbre with its harmonics and overtones. On the other hand, the chosen abstract earcon was a simple "timbreless" sine wave, which might make it harder to memorize.
+Additionally, in we consider sound occlusion (which was turned of in all studies), the audio spatialization SDK that I use in this experiment implements it through filtering out low-frequency component of a sound wave. And since sine wave is a single-component wave, a cases where the sound is completely masked can occur.
 
 \begin{figure}	
 	\centering
@@ -227,7 +228,7 @@ The preferred (concrete on concrete) sound, which was described by one participa
 
 \textit{False negatives} Some users, who gave answers that were close to the correct ones (i.e. the building was reported to move from R to LB, when in reality it moved from RB to LB), indicated that they were not aware that the building can move along such a path.
 
-\textit{Auditory variation} Only 2 different types of auditory cues were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
+\textit{Auditory variation} Only 2 different types of audio feedback were used in this study to indicate the translation of the building. Different sounds might need to be tested to take advantage of different sound properties on the ability to interpret the spatial sound. 
 
 \textit{Visualization} As it was a preparatory study, the participants were simply asked to close their eyes when guessing the path of the building. Besides the obvious drawback of such approach, participants reported that it is possible to predict the path by relying on the change in brightness, which is perceivable even with the eyes closed, when the building is passing by.
 
@@ -244,7 +245,7 @@ The preferred (concrete on concrete) sound, which was described by one participa
 \subsection{Spatial Judgment}
 \label{study_two}
 %Goal
-The goal of this pilot study was to see how much information about the buildings moving in the environment could be conveyed through stereo headphones with the current setup. Additional motivation was to pilot the way for participants to point out the changes to the environment, which would be needed in the final study to infer the \gls{wa} index. 
+The goal of this pilot study was to explore the extent of the front-to-back confusion problem and see how much spatial information could be conveyed through stereo headphones in the current setup. Additional motivation was to pilot the way for participants to point out the changes to the environment, which would be needed in the final study to infer the \gls{wa} index. 
 
 \paragraph{Participants}
 Thirteen participants (9 men and 4 women; mean 29.4, std. 10.7) were selected from the employees and students at the University of Otago, New Zealand. 10 had good amount of prior experience with \gls{vr}, 8 reported good hearing, and 6 were regular online gamers. More detailed data about the participants can be found in Appendix \ref{app:pilot2questionnaire_data}. Most of the participants from the first pilot study took part in the second.
@@ -316,7 +317,7 @@ The auditory icon of a concrete bock sliding on a concrete surface from the prev
 
 A sample of the collected data can be seen in Fig. \ref{fig:pilot2datasample}. The link to the complete data can be found in Appendix \ref{app:pilot2data_collected}.
 
-The following was collected:
+The following data was collected:
 \begin{itemize}
 	\item From X, From Y, From Z - start-point of the translation;
 	\item To X, To Y, To Z - end-point of the translation;
@@ -346,7 +347,7 @@ At least half of the participants reported having trouble to differentiate front
 
 \paragraph{Discussion}
 % Example visual result w/ explanation
-The results of the experiment were represented visually, as seen in the Fig. \ref{fig:b-f}. One visualization was created for each path that the building traveled in the experiment (40 visualizations). These can be found in Appendix \ref{app:pilot2visual_analysis}.
+The results of the experiment were represented visually, as seen in the Fig. \ref{fig:b-f}. One visualization was created for each out of 40 paths that the building traveled in the experiment (40 visualizations). These can be found in Appendix \ref{app:pilot2visual_analysis}.
 
 \begin{figure}
 	\centering
@@ -366,11 +367,12 @@ On this example we see the visualization of the guesses made by participants whe
 
 % Interpretation of the results
 The mean values for 29 out of 40 translations were close to the actual translation paths, if we assume the result being in the range of the negligible error of $\pm 45\degree$ as close. % Green dot
-Among the rest, 6 translations can be considered close, if we eliminate the front-to-back confusion by mirroring either one, or both the start and finish endpoints along the imaginary L-R line.
+Among the other 11 translations, six could be considered close, if we eliminate the front-to-back confusion by mirroring either one, or both the mean start and mean finish endpoints along the imaginary L-R line.
+% TODO: pic of this mirroring
 % Mean deviation for deviation of start and end /points // <- estimate - apparently, not useful for the stats analysis: https://en.wikipedia.org/wiki/Unbiased_estimation_of_standard_deviation
 
 % Conclusion
-Regardless, of many erroneous guesses, the analysis shows promise for the given setup, and, considering the previous success of \cite{gutwin_chalk_2011} in representing spatial information with auditory cues through the stereo headphones, as well as the fact that in the final study participants will have visual cues to aid them in finding the sound source, and the fact that they won't be forced to always face the same direction, this approach deserves a further analysis.
+Regardless, of many erroneous guesses, the analysis shows promise for the given setup, and, considering the previous success of \cite{gutwin_chalk_2011} in representing spatial information with audio feedback through the stereo headphones, as well as the fact that in the final study participants will have visual cues to aid them in finding the sound source, and the fact that they won't be forced to always face the same direction, this approach deserves a further analysis.
 
 %\subparagraph{Limitations}
 
@@ -396,7 +398,7 @@ Regardless, of many erroneous guesses, the analysis shows promise for the given 
 % Goal of the study
 The goal of this study was to analyze \gls{wa} that participants have of others present in the same immersive \gls{vr} environment. Participants were presented with a primary and secondary tasks. Primary task was tracing 3D models with a 3D brush, and secondary task was a \gls{wa} task - reporting changes to the environment.
 %\paragraph{Methods}
-The evaluated aspects of \gls{wa} were participants’ reaction speed when provided with different types of awareness presentation (audio and/or visual cues about the environment).
+The evaluated aspects of \gls{wa} were participants’ reaction speed when provided with different types of awareness presentation : sonification (audio feedback) and/or visualization (via the minimap) of the buildings' movement.
 
 \paragraph{Participants}
 12 participants (8 men and 4 women) were recruited among friends, employees from the chair, and students from the \gls{tum}; ages ranged from 22 to 32 (mean 25.2, std. 2.5). Only one participant reported having "partially" good hearing, others reported good hearing. 3 people reported to be familiar with \gls{vr} technology, among them, one person reported being a proficient gamer and one - having partaken in driving simulator studies. Participants were a mix of gamers, non-gamers, and casual gamers. Participants were also equally distributed among people who had experience with \gls{vr}, those who had some experience, and those who had no prior experience. Two reported being online gamers, and another two - occasional online gamers. Only one person had prior experience with architecture, and had worked in the field. One participant tried 3D drawing in the system before, but otherwise none had seen the system before, or took part in the previous studies.
@@ -405,7 +407,7 @@ The evaluated aspects of \gls{wa} were participants’ reaction speed when provi
 Participants were given a written and verbal introduction to the experiment,
 and were asked to sign the consent form for using their data.
 Next, they were placed in the immersive \gls{vr} environment, which implemented 2 modes: tutorial and experiment (Fig \ref{fig:finalstudy_immersive_vr_environment}). In the tutorial mode, only one building (the clock tower) and the test tracing shape would be visible.
-Participants learned how to use the 3D voxel brush for tracing the shapes (Fig. \ref{fig:finalstudyvoxeldrawing}), the laser pointer to indicate they noticed changes to the environment, and the minimap to locate the moving buildings. Following that, the auditory cues were introduced, and the differences between the tutorial and the actual experiment part were explained. Participants went through a small scenario, resembling the experiment, where they were asked to trace a pillar, and in the meanwhile try to catch the moving building a couple of times. They were also asked to keep track of how the building sounds and where it is visually.
+Participants learned how to use the 3D voxel brush for tracing the shapes (Fig. \ref{fig:finalstudyvoxeldrawing}), the laser pointer to indicate they noticed changes to the environment, and the minimap to locate the moving buildings. Following that, the audio feedback was introduced, and the differences between the tutorial and the actual experiment part were explained. Participants went through a small scenario, resembling the experiment, where they were asked to trace a pillar, and in the meanwhile try to catch the moving building a couple of times. They were also asked to keep track of how the building sounds and where it is visually.
 
 \begin{figure}
 	\centering
@@ -441,7 +443,7 @@ Participants did not rest between the different conditions.
 After the end of the experiment, participants were asked to fill out a questionnaire (Appendix \ref{app:final_study_questionnaire}).
 
 \paragraph{Task}
-Participants were asked to follow a scenario, in which there were 2 architects (A1 and A2), who performed their separate tasks in the same urban district (\ref{fig:urbandistrict}) in \gls{vr}. A1 (participant) had 2 tasks, primary and secondary. The primary task was to trace given 3D shapes with a 3D voxel brush, which was implemented for one of the tracked 6-\gls{dof} controllers (see Fig. ). Meanwhile, A2 (simulated invisible agent) could translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 was to keep track of changes to the environment and point them out with a virtual laser pointer (another tracked 6-\gls{dof} controller). The details of controls can be found in Appendix \ref{app:finalstudy_controls}
+Participants were asked to follow a scenario, in which there were two architects (A1 and A2), who performed their individual domain tasks in an urban district (\ref{fig:urbandistrict}) in \gls{vr}. A1 (participant) had two tasks, primary and secondary. The primary task was to trace given 3D shapes with a 3D voxel brush, which was implemented for one of the tracked 6-\gls{dof} controllers. Meanwhile, A2 (simulated invisible agent) could translate any building in the district to any other part of the district at any time. The secondary (workspace awareness) task of A1 was to keep track of changes to the environment and point them out with a virtual laser pointer (another tracked 6-\gls{dof} controller). The details of controls can be found in Appendix \ref{app:finalstudy_controls}
 
 \begin{figure}
 	\centering
@@ -460,14 +462,14 @@ Participants were asked to follow a scenario, in which there were 2 architects (
 This study followed the repeated measures design with one independent variable - the type of awareness presentation. 3 controlled awareness presentations were used
 \begin{itemize}
 	\item minimap of the district (\ref{fig:minimap_controller});
-	\item auditory cues emitted by translating buildings in the scene (sound of a concrete block sliding on a concrete surface);
-	\item combination of the minimap and auditory cues.
+	\item audio feedback emitted by translating buildings in the scene (sound of a concrete block sliding on a concrete surface);
+	\item combination of the minimap and audio feedback.
 \end{itemize}
 
 Awareness presentations were rotated for each participant, so that each presentation was seen in the same position equal number of times. 
-Each awareness presentation was tested for 10 minutes, during which exactly 8 buildings were randomly chosen and translated. In total, 24 data points were measured per participant in each session. Data collected were the reaction speed in determining the position of a moving building (catching it), along with 3D drawings created by participants. If the participant failed to catch the building, the reaction time was recorded as 0.
+Each awareness presentation was tested for ten minutes, during which exactly eight buildings were randomly chosen and translated. In total, 24 data points were measured per participant in each session. Data collected were the reaction speed in determining the position of a moving building (catching it), along with 3D drawings created by participants. If the participant failed to catch the building, the reaction time was recorded as 0.
+% TODO: add some of the voxel drawings here or to the appendix
 
-% TODO: separate screenshot of the minimap controller
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/placeholders/minimap_controller}
@@ -480,7 +482,7 @@ Participants went through them in the same order at the pace that they felt comf
 
 \paragraph{Comparison with \nameref{par:shared_chalkboard_application}}
 Since, this study extends upon \cite{gutwin_chalk_2011}, this paragraph provides the comparison of the two.
-The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. This means, first of all, that were able to look around the workspace, and notice changes to the environment, even without the help of the minimap or auditory cues. 
+The main difference between - workspace is no longer a 2D plane, but an immersive 3D \gls{vr} environment. This means, first of all, that were able to look around the workspace, and notice changes to the environment, even without the help of the minimap or audio feedback. 
 Second of all this 
 % TODO: also, the fact that the head was tracked and this influenced the sound behaviour
 
@@ -582,30 +584,30 @@ The following was collected:
 \end{figure}
 \end{comment}
 
-When asked to rate different awareness presentations with an integer score from the most (1) to the least (3) useful, participants gave the feedback, shown in Fig. \ref{fig:finalstudyawarenesspresentationuserpreference}. It was allowed to give the same rating to different presentations (i.e. some participants ranked \textit{Minimap and Sound} and \textit{Sound Only} presentations with the score - 1).
+When asked to rate different awareness presentations with an integer score from the most (1) to the least (3) useful, participants gave the feedback, shown in Fig. \ref{fig:finalstudyawarenesspresentationuserpreference}. They were allowed to give the same rating to different presentations (i.e. some participants ranked \textit{Minimap and Sound} and \textit{Sound Only} presentations with the same score \textemdash 1).
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.7\linewidth]{figures/final_study_awareness_presentation_user_preference}
-	\caption{}
+	\caption{Participants' preference of the awareness presentation}
 	\label{fig:finalstudyawarenesspresentationuserpreference}
 \end{figure}
 
 Most participants managed to trace the first 3-4 shapes, only one was able to finish 6.
 
 \paragraph{Discussion}
-The visual analysis shows that around $1/4$th of all the translations were not caught: 11 from Group 1, 19 from Group 2, and 26 from Group 3 (Fig. \ref{fig:histograms_combined}, \ref{fig:distributions_freqReaction0}).
+The visual analysis (Fig. \ref{fig:histograms_combined}, \ref{fig:distributions_freqReaction0}) shows that approx. $1/4$th of all the translations were not caught: 11 from Group 1, 19 from Group 2, and 26 from Group 3. % TODO: label multiple times defined?
 
 Side-by-side distributions clearly indicate that Groups 1 and 2 took less time for participants to catch them (see the violin diagram in Fig \ref{fig:distributions_violin}). Generally, the distribution of the first two groups suggests their relative similarity. The fact that the \textit{Sound Only} group has the smallest reaction times could possibly be an error and the result of a building simply being in the participant's sight. The elongated top-handle of the distribution for the \textit{Sound Only} group could indicate that it was harder to catch the building after noticing it for the first time, which also correlates with the observations of the users during the experiment.
 
-In general, it was observed that it was mostly due to the building or the minimap being in the participants' sight that they were able to spot the moving building in the \textit{Minimap Only} group. By contrast, in case of the groups that relied on the auditory cues, participants were always informed of translations happening, even if they had difficulties exactly locating it (i.e. in the \textit{Sound Only} group).
+I observed that it was mostly due to the building or the minimap being in the participants' sight that they were able to spot the moving building in the \textit{Minimap Only} group. By contrast, in case of the groups that relied on the audio feedback, participants were always informed of translations happening, even if they had difficulties exactly locating it (i.e. in the \textit{Sound Only} group).
 
 % TODO: about how the performance should also be judged by how focused the participants were on their main task 
 % + figures of some of the voxel drawings (side-by-sides of the same shape to prove the point).
 
 % TODO: None of the participants reported annoyence with the auditory cues, even though it was expected.
 
-The results of the analysis and participant-feedback suggest that the additional auditory cues help users to improve their awareness of the workspace. The best best awareness presentation was the \textit{Minimap and Sound} group, followed by \textit{Sound Only} and \textit{Minimap Only}.
+The results of the analysis and participant-feedback suggest that the additional audio feedback help users to improve their awareness of the workspace. The best best awareness presentation was the \textit{Minimap and Sound} group, followed by \textit{Sound Only} and \textit{Minimap Only}.
 
 Statistical summary for each group can be found in Table \ref{tab:final_study_stats}.
 
@@ -627,25 +629,11 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 	
 	\par \smallskip
 	%TODO: distribution in Google Sheets for aesthetics?
-	\subfloat[Reaction time distribution per group, excluding uncaught buildings]{\label{fig:distributions_violin}\includegraphics[width=0.7\linewidth]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotViolinNon0}}
+	\subfloat[Reaction time distribution per group, excluding uncaught buildings]{\label{fig:distributions_violin}\includegraphics[width=0.7\linewidth]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotViolinNon0}} % TODO: label multiple times defined? Like, meaning, in the same figure?
 	
 	\caption{Data distributions}
 	\label{fig:histograms}
 \end{figure}
-
-
-	
-\begin{comment}
-	\begin{figure}
-	\centering
-	
-	\subfloat[Side-by-side comparison of reaction time]{\label{fig:distributions_violin}\includegraphics[scale=.15]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotViolinNon0.png}}
-	\subfloat[Uncaught buildings]{\label{fig:distributions_freqReaction0}\includegraphics[scale=.15]{D:/Documents/studies/ss18/Thesis/Studies/WorkspaceAwareness/RplotFreqColorReaction0.png}}
-	
-	\label{fig:distributions}
-	\caption{Other data distributions}
-\end{figure}
-\end{comment}
 
 \begin{table}[h]
 	\caption{Statistical summary}
