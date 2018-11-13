@@ -15,9 +15,9 @@ experiments were implemented with the help of Unity3d  2018.1.5f1; audio spatial
 
 %The design of all the experiments was similar in regard to how they approached collaboration: all the studies were a simulation of collaborative use case, meaning that 
 
-\section{Proof of Problem}
+\section{Confirming the Problem}
 
-Initial motivation for this work was a question of whether sudden events (movements of the buildings) in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to validate this motivation, these are described in the \nameref{par:appearing_building} and \nameref{par:approaching_building} paragraphs.
+Initial motivation for this work was a question of whether sudden events (movements of the buildings) in \gls{vr} would cause uncomfortable experience for users (Fig. \ref{fig:a1unawareofa2actions}). Two prototypes were developed to confirm this motivation, these are described in the \nameref{par:appearing_building} and \nameref{par:approaching_building} paragraphs.
 
 \begin{figure}
 	\centering
@@ -91,12 +91,12 @@ After the research into sonification and awareness, and after the vision for the
 Feedback from the initial prototypes indicated that the speed of the moving building was too slow. The goal of this study was to derive the speed participants felt comfortable with, and that would allow them to make correct spatial judgments. Additionally, this pilot study was meant to determine what type of audio feedback to use: abstract earcons or auditory icons.
 
 \paragraph{Participants}
-Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers.
+Eight participants (7 men, 1 woman) were chosen among the members of the \gls{hci} group at the University of Otago, New Zealand. One had reported bad hearing, and one had a flu.  None of the participants had any architectural background, some were online gamers (requires skills similar to working in a shared workspace).
 
 \paragraph{Procedure \& Task}
 The study was carried out in a \gls{ve} that was specifically constructed for this purpose (see Fig. \ref{fig:clipimage001}). A participant would be placed at the Center (C) of the environment. A real-sized building, approximated with a cuboid, was present in the environment. It could be translated by the experimenter from and to any of the predefined positions: Left Front (LF), Right Front (RF), Left Back (LB), Right Back (RB), Front (F), Back (B), Left (L), Right (R), C. When the building moved, it would emit sound.
 
-Participants were instructed with the purpose the research, this study, and the tutorial, as well as their individual task. Participants were placed at the center of the scene (C) with the building placed in front of them, and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head.
+Participants were instructed with what was the purpose of the research, this study, and the tutorial, as well as their individual task. Participants were placed at the center of the scene (C) with the building placed in front of them, and asked to preserve the orientation of the chair they were seated upon, but were also told that they were allowed to move their head.
 
 Participants were put through a tutorial to build a correlation between the visually perceived movements of the building and the emitted sound: the building was translated along the major directions (C-F, C-L, L-R, L-C, C-B), and then additionally between randomly selected positions from the predefined set (Fig. \ref{fig:pilot1predefinedtutorialtranslations}).
 
@@ -128,18 +128,20 @@ After going through all the sound types and speeds, participants were asked for 
 \end{figure}
 
 
+\begin{comment}
 \paragraph{Apparatus}
 % Apparatus (i.e Unity, Resonance Audio, stereo headphones, Vive)
 Experiment was implemented with the help of Unity3d  2018.1.5f1 and Resonance Audio SDK for Unity, version 1.2.1 with sound occlusion turned off. For the hardware, HTC Vive \gls{vr} headset, along with on-ear stereo headphones, and a Windows 10 PC.
 Audacity 2.2.2 was used prior to the experiments to: mixdown stereo sounds to mono, make audio tracks seamless, and increase the volume.
+\end{comment}
 
 % Study Factors and Conditions: what my factors are, conditions == independent variables' values
 \paragraph{Study design}
 The study followed the repeated measures design with 2 independent variables: translation speed and different types of audio feedback.
 
-Three different translation speeds were tested: \textit{slow} - 20, \textit{medium }- 40, and \textit{fast }- 60 meters per second (m/s). Sound properties (i.e. pitch, playbackspeed) stayed constant throughout the different speeds.
+Three different translation speeds were tested: \textit{slow} - 20, \textit{medium }- 40, and \textit{fast }- 60 meters per second (m/s). Sound properties (i.e. pitch, playback speed) stayed constant throughout the different speeds.
 
-Two different types of the audio feedback were tested: earcons and auditory icons. A full volume 100 Hz sine wave in mono was used for an earcon (Type: Wave (.wav), Samplerate: 44100.0 Hz, Bitdepth: 16bit, Fig. \ref{fig:pilot1sinewaveedit}). As an auditory icon a mono sound mimicking moving concrete block with sound amplitude extrema reaching full volume was used (Type: Wave (.wav), Samplerate: 48000.0 Hz, Bitdepth: 16 bit, Source: https://freesound.org/people/FreqMan/sounds/25846/, Fig. \ref{fig:pilot1concreteonconcretesoundedit}).
+Two different types of the audio feedback were tested: earcons and auditory icons. A full volume 100 Hz sine wave in mono was used for an earcon (Type: Wave (.wav), Samplerate: 44100.0 Hz, Bitdepth: 16bit, Fig. \ref{fig:pilot1sinewaveedit}). As an auditory icon a mono sound mimicking moving concrete block with sound amplitude extrema reaching full volume was used (Type: Wave (.wav), Samplerate: 48000.0 Hz, Bitdepth: 16 bit, Fig. \ref{fig:pilot1concreteonconcretesoundedit}).
 The type of sound played first was rotated for the participants, so that 4 of them heard the auditory icon first, and the other 4 - the earcon.
 
 \begin{figure}
@@ -158,7 +160,7 @@ The type of sound played first was rotated for the participants, so that 4 of th
 
 Translations were pseudo-randomized across participants, their selection was made with some degree of bias towards longer translation paths, so that users have more time to analyze the sound and guess (i.e. the path from RB to LB would be longer, than just RB to B). Different translation paths can be seen in Fig. \ref{fig:pilot1translationpaths}.
 
-Distances between the fixed translation end-points remained the same throughout the experiment: 20 Unity3d units (meters) between C-F, C-L, C-R, C-B, L-LB, and so on.
+Distances between the fixed translation endpoints remained the same throughout the experiment: 20 Unity3d units (meters) between C-F, C-L, C-R, C-B, L-LB, and so on.
 
 \paragraph{Results} \hfill
 
@@ -173,7 +175,7 @@ Distances between the fixed translation end-points remained the same throughout 
 	\subfloat[Major translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&major_tranlsation_paths.png}}%
 	\subfloat[All translation paths]{\includegraphics[scale=.4]{figures/pilot1_top_down_scene_view&all_possible_translation_paths.png}}
 	
-	\caption{Possible translation end-points and paths}
+	\caption{Possible translation endpoints and paths}
 	\label{fig:pilot1translationpaths}
 \end{figure}
 
@@ -197,7 +199,8 @@ Distances between the fixed translation end-points remained the same throughout 
 \end{table}
 
 \paragraph{Discussion}
-If we visualize the participants' preferences, and take the smallest common area, where they overlap, analysis shows that participants preferred the speed somewhere close to 40 m/s, but between 20 and 40 (Fig. \ref{fig:pilot1resultsanalysis})
+I visualized the participants' preferences using the ideas from the fuzzy logic: each answer was interpreted as a linguistic variable describing the desired speed (Fig. \ref{fig:pilot1resultsanalysis_medium}, \ref{fig:pilot1resultsanalysis_slowestThen}, \ref{fig:pilot1resultsanalysis_firstTwo}, \ref{fig:pilot1resultsanalysis_slowest}, \ref{fig:pilot1resultsanalysis_fast}, \ref{fig:pilot1resultsanalysis_between}), their smallest common area defines the group preference (Fig. \ref{fig:pilot1resultsanalysis_answersCombined}), and the projection of the point with the highest preference (truth value) on the X-axis defines the preferred speed.
+This analysis showed that participants preferred the speed somewhere close to 40 m/s, but between 20 and 40 m/s.
 
 The choice of the sound was most likely caused by its natural fit to the ecology of the system - users expect a sound similar to the concrete on concrete auditory icon when they see a large cuboid sliding on the stone floor. However, if we consider the attributes of the chosen sounds, the auditory icon would almost always be a better choice, if simply due to fact that it has a distinct timbre with its harmonics and overtones. On the other hand, the chosen abstract earcon was a simple "timbreless" sine wave, which might make it harder to memorize.
 Additionally, in we consider sound occlusion (which was turned of in all studies), the audio spatialization SDK that I use in this experiment implements it through filtering out low-frequency component of a sound wave. And since sine wave is a single-component wave, a cases where the sound is completely masked can occur.
@@ -205,20 +208,20 @@ Additionally, in we consider sound occlusion (which was turned of in all studies
 \begin{figure}	
 	\centering
 	
-	\subfloat["Medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_medium.png}}%
-	\subfloat["Slowest, then medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest_then_medium.png}}%
-	\subfloat["First two - fine..."]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_first_two_fine.png}}%
-	\subfloat["Slowest"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest.png}}
+	\subfloat["Medium"]{\label{fig:pilot1resultsanalysis_medium}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_medium.png}}%
+	\subfloat["Slowest, then medium"]{\label{fig:pilot1resultsanalysis_slowestThen}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest_then_medium.png}}%
+	\subfloat["First two - fine..."]{\label{fig:pilot1resultsanalysis_firstTwo}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_first_two_fine.png}}%
+	\subfloat["Slowest"]{\label{fig:pilot1resultsanalysis_slowest}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_slowest.png}}
 	
 	\par\medskip
-	\subfloat["Fast..."]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_fast.png}}%
-	\subfloat["Between slow and medium"]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_between_medium_and_slow.png}}%
-	\subfloat[Answers combined with 12\% opacity each]{\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_result_no_highlight.png}}	
+	\subfloat["Fast..."]{\label{fig:pilot1resultsanalysis_fast}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_fast.png}}%
+	\subfloat["Between slow and medium"]{\label{fig:pilot1resultsanalysis_between}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_between_medium_and_slow.png}}%
+	\subfloat[Answers combined]{\label{fig:pilot1resultsanalysis_answersCombined}\includegraphics[scale=.075]{figures/pilot1/results/speed_fuzzy_preference_result_no_highlight.png}}	
 	
 	\par\medskip
-	\subfloat[Preferred speed according to analysis]{\includegraphics[scale=.15]{figures/pilot1/results/speed_fuzzy_preference_result.png}}
+	\subfloat[Preferred speed according to analysis]{\label{fig:pilot1resultsanalysis_result}\includegraphics[scale=.15]{figures/pilot1/results/speed_fuzzy_preference_result.png}}
 	
-	\caption{Visual analysis of results, pilot 1}
+	\caption{Visual analysis of the results}
 	\label{fig:pilot1resultsanalysis}
 \end{figure}
 
@@ -292,12 +295,12 @@ Participants were briefed to face the "Front" direction, when the experimenter v
 
 After the tutorial translations were demonstrated, participants were asked if they were ready to proceed to the actual experiment. Only one participant asked to repeat some of the translations to gain a better spatial understanding.
 
-In the experiment mode participants were not able to see the building, but would still hear the sounds when it started moving. The wall around the user was visible. The end-points of the translations of the building were always on this wall. Participants were asked to indicate where the building translated from and to with the help of a simulated laser pointer attached to the controller. The details of the controls can be found in Appendix \ref{app:pilot2_controls}.
+In the experiment mode participants were not able to see the building, but would still hear the sounds when it started moving. The wall around the user was visible. The endpoints of the translations of the building were always on this wall. Participants were asked to indicate where the building translated from and to with the help of a simulated laser pointer attached to the controller. The details of the controls can be found in Appendix \ref{app:pilot2_controls}.
 
 All 40 translations were initiated in a pseudo-random order for each participant. This order was decided by the experimenter. Each translation could be initiated only once, to make sure no translations were initiated multiple times (after the initiation the button for this translation would be grayed-out and rendered inactive, see Fir. \ref{fig:pilot2tutorialcontrolpanelhighlighted}). The experimenter was responsible for  initiating the translations.
 Participants answers were recorded by the system in a CSV file.
 
-When participants went through all the 40 translations, the experiment would end. Experimenter thanked the participants and ask for their feedback concerning the experiment.
+When participants went through all the 40 translations, the experiment would end. Experimenter asked participants for feedback concerning the experiment.
 
 %\paragraph{Apparatus} The same, as in \ref{study_one} \nameref{study_one}, with addition of 6 \gls{dof} tracked controllers.
 
@@ -319,9 +322,9 @@ A sample of the collected data can be seen in Fig. \ref{fig:pilot2datasample}. T
 
 The following data was collected:
 \begin{itemize}
-	\item From X, From Y, From Z - start-point of the translation;
-	\item To X, To Y, To Z - end-point of the translation;
-	\item From Abbreviation, To Abbreviation - name abbreviation of the start- and end-points (i.e. "LB" corresponds to "Left Back");
+	\item From X, From Y, From Z - start endpoint of the translation;
+	\item To X, To Y, To Z - finish endpoint of the translation;
+	\item From Abbreviation, To Abbreviation - name abbreviation of the start and finish endpoints (i.e. "LB" corresponds to "Left Back");
 	\item Translation Start, Translation Finish - time in seconds since the beginning of the game, until the translation started and finished, respectively;
 	\item Guess From X, Guess From Y, Guess From Z - participant-perceived start-point of the translation;
 	\item Guess To X, Guess To Y, Guess To Z - participant-perceived end-point of the translation;
@@ -357,10 +360,10 @@ The results of the experiment were represented visually, as seen in the Fig. \re
 \end{figure}
 
 This visualization can be thought of as a top-down projection of the experiment environment.
-Individual answers are shown with semi-transparent directional rays of red-blue gradient. The beginning of individual rays is wider and red, the ending - thiner and blue. The transparency value $t$ was approx. equal $7.7$, and was computed as $t = 100 / n_{p}$, where $ n_{p} $ is the number of participants.
-The information in the left corner ("PATH") describes the actual translation path: "abbr." - name abbreviation of the path, "act." - actual angles the building traveled from and to. This data is also visualized with the green line, whose end-points are marked with big green circles and "From", and "To" labels.
-The information in the right corner ("STATS (deg.)") gives the statistical data for this path in degrees: "mean" - mean values for the "Guess From" and "Guess To" entries, respectively. This information is also visualized with the red line, whose end-points are marked with small red circles and "m.From", and "m.To" (which stand for: "mean From" and "mean To", respectively).
-Start- end end-points of translations are marked with their respective name abbreviations and deviation angles from the Front direction.
+Individual answers are shown with semi-transparent directional rays of red-blue gradient. The beginning of individual rays is wider and red, the ending - thiner and blue. The transparency value $t$ was approx. equal to $7.7$, and was computed as $t = 100 / n_{p}$, where $ n_{p} $ is the number of participants.
+The information in the left corner ("PATH") describes the actual translation path: "abbr." - name abbreviation of the path, "act." - actual angles the building traveled from and to. This data is also visualized with the green line, whose endpoints are marked with big green circles and "From", and "To" labels.
+The information in the right corner ("STATS (deg.)") gives the statistical data for this path in degrees: "mean" - mean values for the "Guess From" and "Guess To" entries, respectively. This information is also visualized with the red line, whose endpoints are marked with small red circles and "m.From", and "m.To" (which stand for: "mean From" and "mean To", respectively).
+Start end finish endpoints of translations are marked with their respective name abbreviations and deviation angles from the Front direction.
 
 On this example we see the visualization of the guesses made by participants when the building traveled from Back to Front (B-F). A certain number of participants have guessed correctly, which is indicated by a brighter (or less transparent) overlay of the directional rays. The mean value goes from approx. $152.3\degree$ to approx. $- 30.8\degree$. The error of $\pm 45\degree$ can be considered negligible due to the limitations of the stereo headphones and the absence of the visual cues. At least 5 participants have guessed incorrectly, and at least one thought that the building moved from Front to Back, which is indicated by the red ray ending starting at the F point and going straight down.
 
@@ -372,7 +375,7 @@ Among the other 11 translations, six could be considered close, if we eliminate 
 % Mean deviation for deviation of start and end /points // <- estimate - apparently, not useful for the stats analysis: https://en.wikipedia.org/wiki/Unbiased_estimation_of_standard_deviation
 
 % Conclusion
-Regardless, of many erroneous guesses, the analysis shows promise for the given setup, and, considering the previous success of \cite{gutwin_chalk_2011} in representing spatial information with audio feedback through the stereo headphones, as well as the fact that in the final study participants will have visual cues to aid them in finding the sound source, and the fact that they won't be forced to always face the same direction, this approach deserves a further analysis.
+Regardless, of many erroneous guesses, the analysis shows promise for the given setup, and, considering the previous success of \cite{gutwin_chalk_2011} in representing spatial information with audio feedback through the stereo headphones, as well as the fact that in the final study participants will have visual cues to aid them in finding the sound source, and the fact that they won't be forced to always face the same direction, this approach was deemed suitable for the us in the final study.
 
 %\subparagraph{Limitations}
 
