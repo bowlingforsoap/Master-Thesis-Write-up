@@ -13,6 +13,7 @@ main.bcf
 main.aux
 main.blg
 main.bbl
+main.acn
 *.pdf
 texput.log
 zoteroExport.bbl
