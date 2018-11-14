@@ -352,8 +352,8 @@ The following data was collected:
 \begin{sidewaystable}[]
 	\caption{Collected data sample}
 	\label{tab:pilot2datasample}
-	\begin{adjustbox}{width=\linewidth}
-	\begin{tabularx}{\linewidth}{|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X|}
+	\begin{adjustbox}{width=\textwidth}
+	\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|l|}
 		\hline
 		\textbf{From X} & \textbf{From Y} & \textbf{From Z} & \textbf{To X} & \textbf{To Y} & \textbf{To Z} & \textbf{From Abbreviation} & \textbf{To Abbreviation} & \textbf{Translation Start} & \textbf{Translation Finish} & \textbf{Guess From X} & \textbf{Guess From Y} & \textbf{Guess From Z} & \textbf{Guess To X} & \textbf{Guess To Y} & \textbf{Guess To Z} & \textbf{Guess Start} & \textbf{Guess Finish} & \textbf{Angle From} & \textbf{Angle To} & \textbf{Guess Angle From} & \textbf{Guess Angle To} & \textbf{Divergence Angle From} & \textbf{Divergence Angle To} \\ \hline
 		-20             & 1               & -20             & 20            & 1             & 20            & LB                         & RF                       & 39.71933                   & 41.60712                    & -29.03961             & 1.6408                & 0.8568682             & 29.05239            & 1.415723            & 0.03126525          & 56.90051             & 58.93457              & -135                & 45                & -88.30988                 & 89.93834                & 46.69013                       & 44.93834                     \\ \hline
@@ -396,7 +396,7 @@ The following data was collected:
 		-20             & 1               & 20              & 20            & 1             & -20           & LF                         & RB                       & 587.9667                   & 589.8551                    & -29.04444             & 1.177001              & 0.5450366             & 29.05175            & 1.231818            & 0.07212715          & 593.7642             & 595.8871              & -45                 & 135               & -88.92494                 & 89.85775                & -43.92494                      & -45.14225                    \\ \hline
 		-20             & 1               & 20              & -20           & 1             & -20           & LF                         & LB                       & 599.8282                   & 601.1689                    & -20.07892             & 2.337029              & -21.05619             & -21.13209           & 3.376208            & 20.0246             & 602.9206             & 603.7197              & -45                 & -135              & -136.3609                 & -46.54139               & -91.36095                      & 88.4586                      \\ \hline
 		-20             & 1               & 20              & 28.28427      & 1             & 0             & LF                         & R                        & 608.1597                   & 609.9161                    & -17.54933             & 2.892593              & 23.16736              & 29.04927            & 1.439725            & 0.2327894           & 616.6708             & 617.8992              & -45                 & 90                & -37.14401                 & 89.54086                & 7.855978                       & -0.4592754                   \\ \hline
-	\end{tabularx}
+	\end{tabular}
 	\end{adjustbox}
 \end{sidewaystable}
 
@@ -719,11 +719,9 @@ Statistical summary for each group can be found in Table \ref{tab:final_study_st
 
 \textit{Controls} Some users indicated that the controller mappings chosen for the final study were not convenient (Appendix \ref{app:finalstudy_controls}). Specifically, the fact that the main function of the 3D brush controller was mapped to the trigger, but for the minimap controller it was mapped to the touchpad. The controls were chosen this way, because drawing with your thumb constantly on the touchpad did not seem convenient, while the laser pointer's capabilities map perfectly to the two input modes for of a touchpad: the touch and press. The pressure sensitivity of the trigger does not provide such a clear separation between the press levels. This ambiguity of the mapping choice indicates that physical ergonomics factors also deserves an investigation in the current setup.
 
-\begin{figure}[b]
+\begin{figure}[h]
 	\centering
-	\subfloat{\includegraphics[width=0.7\linewidth]{figures/finalstudy_minimap_around1}}
-	\par
-	\subfloat{\includegraphics[width=0.7\linewidth]{figures/finalstudy_minimap_around2}}
+	\subfloat{\includegraphics[width=0.9\linewidth]{figures/finalstudy_minimap_around2}}
 	\caption{Minimap surrounding the participant}
 	\label{fig:finalstudyminimaparound}
 \end{figure}
