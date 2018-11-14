@@ -7,8 +7,6 @@ The use of sound effects has a long history, already in 1931 certain sound effec
 
 \section{Properties} 
 I will start by introducing the the basic attributes of sound, which will be helpful for the further discussion. First of all, sound are audible waves of pressure traveling trough a medium, and emitted by a vibrating object. The range of audible frequencies depends on the species, for humans it is usually 20 Hz to 20 kHz. Frequency of the sound defines its pitch, higher and lower pitch correspond to higher and lower frequency, respectively. A tone is a sound with a certain pitch The lowest frequency of a vibrating object is called the fundamental frequency (indicated as f; Fig. \ref{fig:fundamentalfrequencyandharmonics}). Its positive integer multiples are called harmonics (indicated as 2f, 3f, and so on). The fundamental frequency is also called the first harmonic. Pressure waves with higher frequency than that of the first harmonic, but not its positive integer multiples, are called overtones. A musical tone (a steady periodic sound) can have the same fundamental frequency, duration, and loudness, as another tone, but have a different feel. For example, consider the same melody played by a banjo and a guitar. They will feel differently due to an attribute called timbre (or tone color) \parencite{noauthor_fundamental_nodate}. \parencite{blattner_earcons_1989} write: "the timbre of a sound is usually described with adjectives such as bright, warm, harsh, hollow, twangy, or brassy". A sound that comprises of one sine wave, only its fundamental frequency, is timbreless, "the sine wave lacks timbre in the same sense that white lacks color" \parencite{blattner_earcons_1989}.
-% different instruments have different timbre (i.e. a banjo and a guitar); timbre == tone color
-% TODO: what is sound (waveform), fundamental frequencies, timbre, harmonics, and overtones
 
 \begin{figure}
 	\centering
@@ -26,8 +24,7 @@ I will start by introducing the the basic attributes of sound, which will be hel
 \end{description}
 The authors also note that auditory cues combined with visual cues can be used to form better spatial perception of the environment. Additionally, the familiarity with the environment can influence the listener's ability to locate the sound source.
 
-Another important aspect for presenting the aural information to the listener is the selection of an \textit{auditory display} \parencite[p.~153]{jr_3d_2017}. It defines in which way the audio is synthesized, how it is presented to the listener % TODO: do you mean the medium?
-, and the ways in which the auditory cues are used in the application.
+Another important aspect for presenting the aural information to the listener is the selection of an \textit{auditory display} \parencite[p.~153]{jr_3d_2017}. It defines the way in which audio is synthesized, how it is presented to the listener, and the ways in which audio feedback are used in the application.
 Different approaches to audio synthesis (i.e. using mathematical models, or sound sampling) have direct influence on the resulting auditory cues. For example, in case of taking HRTF measurements during sound sampling, this is usually done in echo-free environments, therefore, the recorded sound is stripped of the reverberation effect. This influences the perception of distance to the sound source
 
 The authors point out several different ways in which audio displays can be used:
@@ -61,7 +58,6 @@ The former mainly explores the trade-off between intrusiveness of the sound and 
 
 %% Audience based: emotional associations, auesthetic and acoustic ecology (allowing users to choose the ecology), and comprehesibility and audibility.
 There can be different audience related sonification problems, \parencite{hermann_sonification_2011} reviews three: \textit{emotive associations}, \textit{aesthetic and acoustic ecology}, and \textit{comprehensiveness and audibility}. Different users require different information from the data, and emotive association accounts for that. It describes the problem of presenting information that is too detailed to the parties that do not need it (i.e. sonification of the weather reports for meteorologists and average consumers should be yield different results). Aesthetic and acoustic ecology corresponds to the idea of combining compatible sounds in an auditory display (in terms of frequency and intensity balance, correspond to the same theme, and take the cultural and personal differences of the audience into account. Comprehensiveness and audibility of auditory cues can be highly dependent on the social and cultural norms, and therefore have to be designed with the listener target group in mind.
-% TODO: put sound ecologies in the possible future work, if more sounds were to be added they should be competible
 
 \paragraph[]{Earcons and auditory icons}
 The last topic I will review in this chapter concerns different ways of sonifying information. \parencite{blattner_earcons_1989} review earcons, the aural analogy of a visual icon (i.e. desktop icons in Windows or Mac OS), and divide them into three groups, in alignment with previous research on the visual icons: \textit{representational}, \textit{abstract}, and \textit{semi-abstract earcons}. 
